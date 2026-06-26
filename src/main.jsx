@@ -2,9 +2,9 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import Papa from 'papaparse';
 import {
-  BookOpen, Brain, CheckCircle2, ChevronRight, Database, FileText, Flame,
-  GraduationCap, Import, KeyRound, LayoutDashboard, LogOut, NotebookTabs,
-  PlayCircle, Shield, Sparkles, Target, Trophy, XCircle
+  BarChart3, BookOpen, Brain, CheckCircle2, ChevronRight, Clock3, Database, FileText, Flame,
+  GraduationCap, Import, KeyRound, LayoutDashboard, ListChecks, LogOut, NotebookTabs,
+  PlayCircle, RotateCcw, Shield, Sparkles, Target, Trophy, XCircle
 } from 'lucide-react';
 import sampleQuestions from './data/sampleQuestions.json';
 import libraryContent from './data/libraryContent.json';
@@ -18,6 +18,39 @@ const DISCIPLINES = [
 ];
 
 const starterDiscursivas = libraryContent.discursivas;
+
+function formatTime(totalSeconds = 0) {
+  const h = Math.floor(totalSeconds / 3600);
+  const m = Math.floor((totalSeconds % 3600) / 60);
+  const s = totalSeconds % 60;
+  return h ? `${h}h ${String(m).padStart(2,'0')}m` : `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+
+function getTodayKey(){ return new Date().toISOString().slice(0,10); }
+
+function buildMission(stats, errors, flashcards) {
+  const weak = stats.weak?.disciplina || 'Direito Penal';
+  const second = stats.byDisc.filter(x => x.disciplina !== weak).sort((a,b)=>a.pct-b.pct)[0]?.disciplina || 'Direito Processual Penal';
+  return [
+    { id:'m1', type:'questoes', title:`20 questões de ${weak}`, detail:'Treino dirigido na disciplina crítica.' },
+    { id:'m2', type:'questoes', title:`10 questões de ${second}`, detail:'Reforço do segundo ponto de atenção.' },
+    { id:'m3', type:'revisao', title:`Revisar ${Math.min(5, Math.max(1, errors.length))} erro(s) do dossiê`, detail:'Transforme erro em acerto recorrente.' },
+    { id:'m4', type:'flashcards', title:`Fazer ${Math.min(10, Math.max(5, flashcards.length || 5))} flashcards`, detail:'Memorização rápida de lei seca e conceitos.' },
+    { id:'m5', type:'discursiva', title:'1 discursiva curta com espelho', detail:'Treino de escrita objetiva e fundamentada.' }
+  ];
+}
+
+function computeTopicWeakness(errors) {
+  const map = new Map();
+  errors.forEach(e => {
+    const key = `${e.disciplina || e.question?.disciplina}||${e.tema || e.question?.tema}`;
+    const item = map.get(key) || { disciplina: e.disciplina || e.question?.disciplina, tema: e.tema || e.question?.tema, count:0, last:e.created_at };
+    item.count += 1;
+    if (!item.last || e.created_at > item.last) item.last = e.created_at;
+    map.set(key, item);
+  });
+  return [...map.values()].sort((a,b)=>b.count-a.count);
+}
 
 const normalizeQuestion = (q, index = 0) => ({
   id: q.id || crypto.randomUUID?.() || `q-${Date.now()}-${index}`,
@@ -108,6 +141,8 @@ function App() {
     <main className="main-panel">
       <Hero settings={settings} setSettings={setSettings} session={session} />
       {view === 'dashboard' && <Dashboard stats={stats} questions={questions} errors={errors} flashcards={flashcards} setView={setView} />}
+      {view === 'stats' && <PerformanceIntel stats={stats} answers={answers} errors={errors} setView={setView} />}
+      {view === 'review' && <SmartReview errors={errors} setErrors={setErrors} setView={setView} />}
       {view === 'study' && <StudyRoom questions={questions} saveAnswer={saveAnswer} settings={settings} />}
       {view === 'exam' && <Exam questions={questions} saveAnswer={saveAnswer} />}
       {view === 'errors' && <ErrorsDossier errors={errors} setErrors={setErrors} setView={setView} />}
@@ -119,6 +154,7 @@ function App() {
       {view === 'library' && <LibraryContent content={libraryContent} questions={questions} setView={setView} />}
       {view === 'map' && <EditalMap stats={stats} />}
     </main>
+    <BottomNav view={view} setView={setView} />
   </div>;
 }
 
@@ -127,13 +163,20 @@ function Splash(){ return <div className="splash"><Shield size={42}/><h1>Delegad
 function Sidebar({ view, setView, session }) {
   const items = [
     ['dashboard','Central do Candidato',LayoutDashboard], ['study','Sala de Treinamento',Brain], ['exam','Prova Real',PlayCircle],
-    ['errors','Dossiê de Erros',NotebookTabs], ['flashcards','Cartões',BookOpen], ['discursive','Peça Escrita',FileText],
+    ['stats','Inteligência',BarChart3], ['review','Revisão Inteligente',ListChecks], ['errors','Dossiê de Erros',NotebookTabs], ['flashcards','Cartões',BookOpen], ['discursive','Peça Escrita',FileText],
     ['professor','Professor IA',Sparkles], ['library','Biblioteca do Edital',GraduationCap], ['map','Mapa do Edital',Target], ['import','Banco de Questões',Import], ['auth', session ? 'Conta' : 'Login', KeyRound]
   ];
   return <aside className="sidebar">
     <div className="brand"><div className="badge"><Shield size={24}/></div><div><b>Delegado PC-SP</b><span>Inteligência de Estudos</span></div></div>
     <nav>{items.map(([id,label,Icon]) => <button key={id} className={view===id?'active':''} onClick={()=>setView(id)}><Icon size={18}/>{label}</button>)}</nav>
   </aside>;
+}
+
+function BottomNav({ view, setView }) {
+  const items = [
+    ['dashboard','Central',LayoutDashboard], ['study','Treino',Brain], ['exam','Prova',PlayCircle], ['review','Revisão',ListChecks], ['library','Mais',GraduationCap]
+  ];
+  return <nav className="bottom-nav">{items.map(([id,label,Icon]) => <button key={id} className={view===id?'active':''} onClick={()=>setView(id)}><Icon size={19}/><span>{label}</span></button>)}</nav>;
 }
 
 function Hero({ settings, setSettings, session }) {
@@ -144,16 +187,43 @@ function Hero({ settings, setSettings, session }) {
 }
 
 function Dashboard({ stats, questions, errors, flashcards, setView }) {
+  const [done, setDone] = useLocalState(`pcsp:mission:${getTodayKey()}`, {});
+  const mission = buildMission(stats, errors, flashcards);
+  const completed = mission.filter(m => done[m.id]).length;
   return <div className="grid-page">
     <Metric icon={Database} label="Questões no banco" value={questions.length} />
     <Metric icon={CheckCircle2} label="Acertos gerais" value={`${stats.pct}%`} />
     <Metric icon={Flame} label="Erros no dossiê" value={errors.length} />
     <Metric icon={BookOpen} label="Flashcards" value={flashcards.length} />
-    <section className="panel wide"><h2>Missão de hoje</h2><div className="mission"><p><b>Roteiro sugerido:</b> 20 questões, revisar 5 erros, fazer 3 flashcards e uma peça escrita curta.</p><button onClick={()=>setView('study')}>Iniciar treinamento <ChevronRight size={16}/></button></div></section>
-    <section className="panel"><h2>Alerta de investigação</h2><p className="muted">{stats.weak ? `Disciplina crítica atual: ${stats.weak.disciplina} (${stats.weak.pct}% de acerto).` : 'Responda questões para gerar diagnóstico.'}</p></section>
+    <section className="panel wide mission-panel"><div className="panel-title-row"><div><p className="kicker">Mentor de Estudos</p><h2>Missão de Hoje</h2></div><strong className="mission-score">{completed}/{mission.length}</strong></div>
+      <div className="mission-progress"><i style={{width:`${Math.round(completed/mission.length*100)}%`}}></i></div>
+      <div className="mission-list">{mission.map(m => <label key={m.id} className={done[m.id]?'mission-item done':'mission-item'}><input type="checkbox" checked={!!done[m.id]} onChange={e=>setDone({...done,[m.id]:e.target.checked})}/><span><b>{m.title}</b><small>{m.detail}</small></span></label>)}</div>
+      <div className="button-row"><button className="primary" onClick={()=>setView('study')}>Iniciar treino <ChevronRight size={16}/></button><button className="ghost" onClick={()=>setView('review')}>Revisão inteligente</button></div></section>
+    <section className="panel"><h2>Alerta de investigação</h2><p className="muted">{stats.weak ? `Disciplina crítica atual: ${stats.weak.disciplina} (${stats.weak.pct}% de acerto).` : 'Responda questões para gerar diagnóstico.'}</p><button className="ghost" onClick={()=>setView('stats')}>Ver inteligência</button></section>
     <section className="panel wide"><h2>Inteligência por disciplina</h2><div className="bars">{stats.byDisc.map(d=><div key={d.disciplina} className="bar-row"><span>{d.disciplina}</span><div><i style={{width:`${d.pct}%`}}></i></div><b>{d.total?`${d.pct}%`:'--'}</b></div>)}</div></section>
   </div>;
 }
+
+function PerformanceIntel({ stats, answers, errors, setView }) {
+  const topics = computeTopicWeakness(errors);
+  const last7 = answers.filter(a => Date.now() - new Date(a.created_at).getTime() < 7*24*60*60*1000);
+  const today = answers.filter(a => a.created_at?.slice(0,10) === getTodayKey());
+  return <section className="panel performance-page"><div className="toolbar"><div><p className="kicker">Inteligência de Desempenho</p><h2>Diagnóstico do candidato</h2><p className="muted">Tudo salvo localmente neste navegador até ativarmos login/Supabase.</p></div><button className="primary" onClick={()=>setView('study')}>Treinar agora</button></div>
+    <div className="library-metrics"><Metric icon={CheckCircle2} label="Acertos gerais" value={`${stats.pct}%`}/><Metric icon={Clock3} label="Questões hoje" value={today.length}/><Metric icon={BarChart3} label="Últimos 7 dias" value={last7.length}/><Metric icon={Flame} label="Temas críticos" value={topics.length}/></div>
+    <div className="intel-grid"><section className="intel-card"><h3>Ranking por disciplina</h3><div className="bars">{stats.byDisc.map(d=><div key={d.disciplina} className="bar-row"><span>{d.disciplina}</span><div><i style={{width:`${d.pct}%`}}></i></div><b>{d.total?`${d.pct}%`:'--'}</b></div>)}</div></section>
+    <section className="intel-card"><h3>Temas mais errados</h3>{topics.length ? topics.slice(0,8).map(t=><div className="weak-topic" key={`${t.disciplina}-${t.tema}`}><b>{t.tema}</b><span>{t.disciplina}</span><em>{t.count} erro(s)</em></div>) : <p className="muted">Erre e revise questões para criar diagnóstico por tema.</p>}</section></div>
+  </section>;
+}
+
+function SmartReview({ errors, setErrors, setView }) {
+  const topics = computeTopicWeakness(errors);
+  const queue = errors.slice(0,12);
+  return <section className="panel review-page"><div className="toolbar"><div><p className="kicker">Revisão Inteligente</p><h2>Fila de revisão por erros</h2><p className="muted">Prioriza erros recentes e temas reincidentes. Quando ativarmos Supabase, isso sincroniza entre Mac e celular.</p></div><button className="primary" onClick={()=>setView('study')}>Fazer novas questões</button></div>
+    <div className="review-layout"><div className="review-list"><h3>Revisar agora</h3>{queue.length ? queue.map(e => <article className="review-card" key={e.id}><span>{e.question.disciplina}</span><h4>{e.question.tema}</h4><p>{e.question.enunciado}</p><small>Você marcou {e.selected}; gabarito {e.question.gabarito}</small><details><summary>Ver correção</summary><p>{e.question.comentario}</p><b>Fundamento:</b><p>{e.question.fundamento}</p><b>Macete:</b><p>{e.question.macete}</p></details><button className="ghost" onClick={()=>setErrors(prev=>prev.filter(x=>x.id!==e.id))}>Marcar como dominado</button></article>) : <Empty title="Sem erros para revisar" text="Responda no modo estudo para gerar uma fila inteligente."/>}</div>
+    <aside className="review-sidebar"><h3>Temas reincidentes</h3>{topics.slice(0,8).map(t=><div className="topic-pill" key={`${t.disciplina}-${t.tema}`}><b>{t.tema}</b><span>{t.count}x • {t.disciplina}</span></div>)}<div className="info"><b>Regra de revisão</b><p>Errou hoje: revise amanhã. Errou de novo: revise em 3 dias. Acertou várias vezes: marque como dominado.</p></div></aside></div>
+  </section>;
+}
+
 function Metric({ icon:Icon, label, value }){ return <section className="metric"><Icon/><span>{label}</span><strong>{value}</strong></section>; }
 
 function StudyRoom({ questions, saveAnswer, settings }) {
@@ -202,12 +272,40 @@ function Correction({ q, selected, correct, tdah, next }) {
 function Info({ title, text }){ return <div className="info"><b>{title}</b><p>{text}</p></div>; }
 
 function Exam({ questions, saveAnswer }) {
-  const [size, setSize] = useState(10); const [running, setRunning] = useState(false); const [paper, setPaper] = useState([]); const [answers, setLocalAnswers] = useState({}); const [done, setDone] = useState(false);
-  function start(){ setPaper([...questions].sort(()=>Math.random()-0.5).slice(0, size)); setRunning(true); setDone(false); setLocalAnswers({}); }
-  async function finish(){ for (const q of paper) if (answers[q.id]) await saveAnswer(q, answers[q.id], 'exam'); setDone(true); }
+  const [size, setSize] = useState(10);
+  const [running, setRunning] = useState(false);
+  const [paper, setPaper] = useState([]);
+  const [answers, setLocalAnswers] = useState({});
+  const [done, setDone] = useState(false);
+  const [startedAt, setStartedAt] = useState(null);
+  const [elapsed, setElapsed] = useState(0);
+  const [marked, setMarked] = useState({});
+
+  useEffect(() => {
+    if (!running || done || !startedAt) return;
+    const t = setInterval(() => setElapsed(Math.floor((Date.now() - startedAt) / 1000)), 1000);
+    return () => clearInterval(t);
+  }, [running, done, startedAt]);
+
+  function start(){ setPaper([...questions].sort(()=>Math.random()-0.5).slice(0, size)); setRunning(true); setDone(false); setLocalAnswers({}); setMarked({}); setStartedAt(Date.now()); setElapsed(0); window.scrollTo({top:0, behavior:'smooth'}); }
+  async function finish(){ for (const q of paper) if (answers[q.id]) await saveAnswer(q, answers[q.id], 'exam'); setDone(true); window.scrollTo({top:0, behavior:'smooth'}); }
+  function restart(){ setRunning(false); setDone(false); setPaper([]); setLocalAnswers({}); setMarked({}); }
   const correct = paper.filter(q => answers[q.id] === q.gabarito).length;
-  if (!running) return <section className="panel"><h2>Prova Real</h2><p className="muted">Aqui a resposta não aparece na hora. Você treina como prova.</p><select value={size} onChange={e=>setSize(Number(e.target.value))}><option value="10">Rápida - 10 questões</option><option value="80">Modelo 2023 - 80 questões</option><option value="100">Modelo 2022/2018 - 100 questões</option></select><button className="primary" onClick={start}>Começar prova</button></section>;
-  return <section className="panel exam-panel"><h2>Prova Real</h2><p className="muted">Modo prova: marque as alternativas e confira o gabarito apenas ao finalizar.</p>{paper.map((q,n)=><div key={q.id} className="exam-item"><div className="exam-head"><b>Questão {n+1} — {q.disciplina}</b><span>{q.tema}</span></div><p className="exam-statement">{q.enunciado}</p><div className="exam-alternatives">{Object.entries(q.alternativas || {}).map(([letter,text])=><button key={letter} className={answers[q.id]===letter?'selected':''} onClick={()=>setLocalAnswers({...answers,[q.id]:letter})}><b>{letter}</b><span>{text}</span></button>)}</div>{done && <div className={answers[q.id]===q.gabarito?'exam-result green':'exam-result red'}><b>Gabarito: {q.gabarito}</b><span>Sua resposta: {answers[q.id] || 'não marcada'}</span></div>}</div>)}{!done ? <button className="primary finish-exam" onClick={finish}>Finalizar prova</button> : <div className="result-big"><Trophy/> Resultado: {correct}/{paper.length} ({Math.round(correct/paper.length*100)}%)</div>}</section>;
+  const answered = Object.keys(answers).length;
+  const pending = paper.length - answered;
+  const pct = paper.length ? Math.round(correct/paper.length*100) : 0;
+  const byDisc = DISCIPLINES.map(d => {
+    const list = paper.filter(q => q.disciplina === d);
+    const ok = list.filter(q => answers[q.id] === q.gabarito).length;
+    return { disciplina:d, total:list.length, correct:ok, pct:list.length ? Math.round(ok/list.length*100) : 0 };
+  }).filter(x=>x.total);
+
+  if (!running) return <section className="panel"><h2>Prova Real</h2><p className="muted">Aqui a resposta não aparece na hora. Você treina como prova, com cronômetro, progresso e resultado por disciplina.</p><select value={size} onChange={e=>setSize(Number(e.target.value))}><option value="10">Rápida - 10 questões</option><option value="80">Modelo 2023 - 80 questões</option><option value="100">Modelo 2022/2018 - 100 questões</option></select><button className="primary" onClick={start}>Começar prova</button></section>;
+  return <section className="panel exam-panel"><div className="exam-sticky-head"><div><h2>Prova Real</h2><p className="muted">Respondidas {answered}/{paper.length} • Pendentes {pending} • Marcadas {Object.values(marked).filter(Boolean).length}</p></div><div className="exam-timer"><Clock3 size={18}/>{formatTime(elapsed)}</div></div>
+    <div className="exam-progress"><i style={{width:`${Math.round(answered/paper.length*100)}%`}}></i></div>
+    {done && <div className="result-summary"><Trophy/><div><h3>Resultado: {correct}/{paper.length} ({pct}%)</h3><p>Tempo total: {formatTime(elapsed)}</p></div><button className="ghost" onClick={restart}><RotateCcw size={16}/> Nova prova</button></div>}
+    {done && <div className="result-disciplines"><h3>Resultado por disciplina</h3><div className="bars">{byDisc.map(d=><div key={d.disciplina} className="bar-row"><span>{d.disciplina}</span><div><i style={{width:`${d.pct}%`}}></i></div><b>{d.correct}/{d.total}</b></div>)}</div></div>}
+    {paper.map((q,n)=><div key={q.id} className={marked[q.id]?'exam-item marked':'exam-item'}><div className="exam-head"><b>Questão {n+1} — {q.disciplina}</b><span>{q.tema}</span></div><p className="exam-statement">{q.enunciado}</p><div className="exam-alternatives">{Object.entries(q.alternativas || {}).map(([letter,text])=><button key={letter} className={answers[q.id]===letter?'selected':''} onClick={()=>!done && setLocalAnswers({...answers,[q.id]:letter})}><b>{letter}</b><span>{text}</span></button>)}</div><div className="exam-tools"><button className="ghost" onClick={()=>setMarked({...marked,[q.id]:!marked[q.id]})}>{marked[q.id]?'Desmarcar revisão':'Marcar para revisão'}</button></div>{done && <div className={answers[q.id]===q.gabarito?'exam-result green':'exam-result red'}><b>Gabarito: {q.gabarito}</b><span>Sua resposta: {answers[q.id] || 'não marcada'}</span><details><summary>Comentário</summary><p>{q.comentario}</p><b>Fundamento:</b><p>{q.fundamento}</p></details></div>}</div>)}{!done ? <div className="finish-bar"><span>{answered}/{paper.length} respondidas • {formatTime(elapsed)}</span><button className="primary finish-exam" onClick={finish}>Finalizar prova</button></div> : <div className="result-big"><Trophy/> Resultado final registrado no desempenho local</div>}</section>;
 }
 
 function ErrorsDossier({ errors, setErrors }) {
