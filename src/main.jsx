@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import sampleQuestions from './data/sampleQuestions.json';
 import libraryContent from './data/libraryContent.json';
+import legalContent from './data/legalContent.json';
 import { supabase, hasSupabase } from './lib/supabaseClient';
 import { askProfessor } from './lib/professorAi';
 import './styles/app.css';
@@ -152,6 +153,7 @@ function App() {
       {view === 'auth' && <Auth session={session} />}
       {view === 'professor' && <ProfessorIA questions={questions} settings={settings} setSettings={setSettings} />}
       {view === 'library' && <LibraryContent content={libraryContent} questions={questions} setView={setView} />}
+      {view === 'laws' && <LegalCode content={legalContent} questions={questions} setView={setView} />}
       {view === 'map' && <EditalMap stats={stats} />}
     </main>
     <BottomNav view={view} setView={setView} />
@@ -164,7 +166,7 @@ function Sidebar({ view, setView, session }) {
   const items = [
     ['dashboard','Central do Candidato',LayoutDashboard], ['study','Sala de Treinamento',Brain], ['exam','Prova Real',PlayCircle],
     ['stats','Inteligência',BarChart3], ['review','Revisão Inteligente',ListChecks], ['errors','Dossiê de Erros',NotebookTabs], ['flashcards','Cartões',BookOpen], ['discursive','Peça Escrita',FileText],
-    ['professor','Professor IA',Sparkles], ['library','Biblioteca do Edital',GraduationCap], ['map','Mapa do Edital',Target], ['import','Banco de Questões',Import], ['auth', session ? 'Conta' : 'Login', KeyRound]
+    ['professor','Professor IA',Sparkles], ['library','Biblioteca do Edital',GraduationCap], ['laws','Lei Seca Inteligente',BookOpen], ['map','Mapa do Edital',Target], ['import','Banco de Questões',Import], ['auth', session ? 'Conta' : 'Login', KeyRound]
   ];
   return <aside className="sidebar">
     <div className="brand"><div className="badge"><Shield size={24}/></div><div><b>Delegado PC-SP</b><span>Inteligência de Estudos</span></div></div>
@@ -360,6 +362,52 @@ function LibraryContent({ content, questions, setView }) {
       {tab==='flashcards' && items.map(f=><article className="library-card" key={f.id}><span>{f.disciplina}</span><h3>{f.tema}</h3><b>{f.frente}</b><p>{f.verso}</p></article>)}
       {tab==='discursivas' && items.map(d=><article className="library-card" key={d.id}><span>{d.disciplina}</span><h3>{d.tema}</h3><p>{d.enunciado}</p><details><summary>Espelho de correção</summary><p>{d.espelho}</p><ul>{(d.criterios||[]).map(c=><li key={c}>{c}</li>)}</ul></details></article>)}
       {tab==='questoes' && items.slice(0,120).map(q=><article className="library-card" key={q.id}><span>{q.disciplina}</span><h3>{q.tema}</h3><p>{q.enunciado}</p><b>Gabarito: {q.gabarito}</b><p className="muted">{q.fundamento}</p></article>)}
+    </div>
+  </section>;
+}
+
+
+function LegalCode({ content, questions, setView }) {
+  const [discipline, setDiscipline] = useState('Todas');
+  const [query, setQuery] = useState('');
+  const [active, setActive] = useState(null);
+  const filtered = (content || []).filter(item => {
+    const discOk = discipline === 'Todas' || item.disciplina === discipline;
+    const text = `${item.disciplina} ${item.diploma} ${item.artigo} ${item.tema} ${item.resumo_simples}`.toLowerCase();
+    return discOk && text.includes(query.toLowerCase());
+  });
+  const selected = active ? filtered.find(x => x.id === active) || filtered[0] : filtered[0];
+  const relatedQuestions = selected ? questions.filter(q => {
+    const hay = `${q.disciplina} ${q.tema} ${(q.tags||[]).join(' ')} ${q.enunciado}`.toLowerCase();
+    return (selected.questoes_relacionadas_tags || []).some(tag => hay.includes(String(tag).toLowerCase().split(' ')[0]));
+  }).slice(0, 6) : [];
+  const counts = DISCIPLINES.map(d => ({ disciplina: d, total: (content || []).filter(x => x.disciplina === d).length }));
+  return <section className="panel laws-page">
+    <div className="toolbar"><div><p className="kicker">Lei Seca Inteligente</p><h2>Artigos essenciais do edital</h2><p className="muted">Resumo simples, por que cai, pegadinha, analogia, flashcard e questões relacionadas.</p></div><button className="primary" onClick={()=>setView('study')}>Treinar artigos</button></div>
+    <div className="library-metrics">
+      <Metric icon={BookOpen} label="Artigos mapeados" value={(content||[]).length}/>
+      <Metric icon={Target} label="Disciplinas" value={counts.filter(c=>c.total).length}/>
+      <Metric icon={Sparkles} label="Flashcards legais" value={(content||[]).length}/>
+      <Metric icon={Database} label="Questões vinculáveis" value={questions.length}/>
+    </div>
+    <div className="library-controls"><select value={discipline} onChange={e=>{setDiscipline(e.target.value); setActive(null);}}><option>Todas</option>{DISCIPLINES.map(d=><option key={d}>{d}</option>)}</select><input value={query} onChange={e=>{setQuery(e.target.value); setActive(null);}} placeholder="Buscar artigo, lei, tema ou palavra-chave..."/></div>
+    <div className="law-layout">
+      <aside className="law-list">
+        {filtered.map(item => <button key={item.id} className={selected?.id===item.id?'active':''} onClick={()=>setActive(item.id)}><span>{item.disciplina}</span><b>{item.diploma} • {item.artigo}</b><small>{item.tema}</small></button>)}
+      </aside>
+      {selected ? <article className="law-detail">
+        <div className="law-title"><span>{selected.disciplina}</span><h3>{selected.diploma} — {selected.artigo}</h3><p>{selected.tema}</p></div>
+        <div className="law-cards">
+          <Info title="Resumo simples" text={selected.resumo_simples}/>
+          <Info title="Por que cai" text={selected.por_que_cai}/>
+          <Info title="Como a VUNESP cobra" text={selected.como_vunesp_cobra}/>
+          <Info title="Pegadinha" text={selected.pegadinha}/>
+          <Info title="Analogia" text={selected.analogia}/>
+          <div className="info flash-law"><b>Flashcard relacionado</b><p><strong>Frente:</strong> {selected.flashcard?.frente}</p><p><strong>Verso:</strong> {selected.flashcard?.verso}</p></div>
+        </div>
+        <div className="related-box"><div className="panel-title-row"><h3>Questões relacionadas</h3><button className="ghost" onClick={()=>setView('study')}>Ir para treino</button></div>{relatedQuestions.length ? relatedQuestions.map(q => <div className="related-question" key={q.id}><b>{q.disciplina} • {q.tema}</b><p>{q.enunciado}</p><small>Gabarito {q.gabarito} • {q.fundamento}</small></div>) : <p className="muted">Ainda não localizei questão diretamente vinculada por tags. Use a busca da Sala de Treinamento pelo tema.</p>}</div>
+        <p className="muted law-note">{selected.observacao}</p>
+      </article> : <Empty title="Nenhum artigo encontrado" text="Ajuste os filtros para ver a Lei Seca Inteligente."/>}
     </div>
   </section>;
 }

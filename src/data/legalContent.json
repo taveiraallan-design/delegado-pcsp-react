@@ -1,0 +1,3324 @@
+[
+  {
+    "id": "lei-001",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 1º",
+    "tema": "Legalidade e anterioridade",
+    "resumo_simples": "Não há crime nem pena sem lei anterior.",
+    "por_que_cai": "É a porta de entrada de qualquer questão penal.",
+    "como_vunesp_cobra": "A VUNESP costuma cobrar a literalidade e situações com costume, analogia e medida provisória.",
+    "pegadinha": "Dizer que costume cria crime ou pena.",
+    "analogia": "É como uma regra de jogo: ninguém pode ser punido por regra criada depois da jogada.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 1º: qual é a ideia central de Legalidade e anterioridade?",
+      "verso": "Legalidade = lei anterior + definição do crime + pena prevista."
+    },
+    "questoes_relacionadas_tags": [
+      "legalidade e anterioridade",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-002",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 2º",
+    "tema": "Abolitio criminis e lei penal benéfica",
+    "resumo_simples": "Lei posterior que deixa de considerar o fato crime extingue efeitos penais; a lei mais benéfica retroage.",
+    "por_que_cai": "Cai em conflitos de lei penal no tempo.",
+    "como_vunesp_cobra": "A banca troca retroatividade benéfica por prejudicial.",
+    "pegadinha": "A lei penal mais grave nunca retroage contra o réu.",
+    "analogia": "Se a placa de proibido estacionar foi retirada, não faz sentido manter multa penal do passado.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 2º: qual é a ideia central de Abolitio criminis e lei penal benéfica?",
+      "verso": "Benéfica retroage; prejudicial não."
+    },
+    "questoes_relacionadas_tags": [
+      "abolitio criminis e lei penal benéfica",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-003",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 4º",
+    "tema": "Tempo do crime",
+    "resumo_simples": "Considera-se praticado o crime no momento da ação ou omissão.",
+    "por_que_cai": "Ajuda a resolver imputabilidade, menoridade e lei penal no tempo.",
+    "como_vunesp_cobra": "VUNESP pergunta se vale o momento do resultado ou da conduta.",
+    "pegadinha": "Confundir teoria da atividade com teoria do resultado.",
+    "analogia": "O sistema tira a foto no momento da conduta.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 4º: qual é a ideia central de Tempo do crime?",
+      "verso": "Tempo = atividade."
+    },
+    "questoes_relacionadas_tags": [
+      "tempo do crime",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-004",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 6º",
+    "tema": "Lugar do crime",
+    "resumo_simples": "O Brasil adota a teoria da ubiquidade: local da ação/omissão ou do resultado.",
+    "por_que_cai": "Importante para crimes à distância e competência.",
+    "como_vunesp_cobra": "A banca mistura teoria da atividade, resultado e ubiquidade.",
+    "pegadinha": "Dizer que só importa onde ocorreu o resultado.",
+    "analogia": "É como marcar dois pontos no mapa: onde começou e onde bateu.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 6º: qual é a ideia central de Lugar do crime?",
+      "verso": "Lugar = ubiquidade."
+    },
+    "questoes_relacionadas_tags": [
+      "lugar do crime",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-005",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 13",
+    "tema": "Relação de causalidade",
+    "resumo_simples": "O resultado só é imputável a quem lhe deu causa.",
+    "por_que_cai": "Base para crimes materiais, omissão e concausas.",
+    "como_vunesp_cobra": "A banca costuma inserir causa superveniente relativamente independente.",
+    "pegadinha": "Atribuir resultado sem nexo causal.",
+    "analogia": "É a corrente que liga conduta ao resultado. Se quebra, muda a imputação.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 13: qual é a ideia central de Relação de causalidade?",
+      "verso": "Sem nexo, sem resultado imputável."
+    },
+    "questoes_relacionadas_tags": [
+      "relação de causalidade",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-006",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 13, §2º",
+    "tema": "Omissão penalmente relevante",
+    "resumo_simples": "A omissão importa quando o agente tinha dever jurídico de agir.",
+    "por_que_cai": "Muito cobrado em crimes omissivos impróprios.",
+    "como_vunesp_cobra": "A VUNESP pergunta quem é garantidor.",
+    "pegadinha": "Achar que qualquer omissão gera crime comissivo por omissão.",
+    "analogia": "O garantidor é o salva-vidas jurídico: tinha obrigação de impedir o afogamento.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 13, §2º: qual é a ideia central de Omissão penalmente relevante?",
+      "verso": "Garantidor: lei, contrato, risco criado ou dever assumido."
+    },
+    "questoes_relacionadas_tags": [
+      "omissão penalmente relevante",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-007",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 14",
+    "tema": "Crime consumado e tentado",
+    "resumo_simples": "Consumação ocorre com todos os elementos do tipo; tentativa ocorre quando a execução começa e não se consuma por circunstâncias alheias.",
+    "por_que_cai": "Tema clássico de teoria do crime.",
+    "como_vunesp_cobra": "A banca confunde preparação com execução.",
+    "pegadinha": "Punir tentativa quando houve só preparação impunível.",
+    "analogia": "Preparar é comprar a ferramenta; tentar é começar a usar no crime.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 14: qual é a ideia central de Crime consumado e tentado?",
+      "verso": "Tentativa exige início de execução."
+    },
+    "questoes_relacionadas_tags": [
+      "crime consumado e tentado",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-008",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 15",
+    "tema": "Desistência voluntária e arrependimento eficaz",
+    "resumo_simples": "O agente responde pelos atos já praticados se voluntariamente desiste ou impede o resultado.",
+    "por_que_cai": "Cai muito em tentativa.",
+    "como_vunesp_cobra": "A banca troca desistência voluntária por tentativa abandonada por causa externa.",
+    "pegadinha": "Chamar de desistência quando o agente para porque a polícia chegou.",
+    "analogia": "É como frear por vontade própria antes do acidente; se freia porque bateu, não é desistência.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 15: qual é a ideia central de Desistência voluntária e arrependimento eficaz?",
+      "verso": "Voluntário = ponte para art. 15."
+    },
+    "questoes_relacionadas_tags": [
+      "desistência voluntária e arrependimento eficaz",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-009",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 16",
+    "tema": "Arrependimento posterior",
+    "resumo_simples": "Nos crimes sem violência ou grave ameaça, reparação do dano até recebimento da denúncia reduz pena.",
+    "por_que_cai": "Muito cobrado em crimes patrimoniais.",
+    "como_vunesp_cobra": "A banca troca momento: antes do recebimento da denúncia.",
+    "pegadinha": "Aplicar em roubo, que tem violência/grave ameaça.",
+    "analogia": "É um desconto penal por consertar o prejuízo a tempo.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 16: qual é a ideia central de Arrependimento posterior?",
+      "verso": "Sem violência + reparou antes da denúncia = redução."
+    },
+    "questoes_relacionadas_tags": [
+      "arrependimento posterior",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-010",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 17",
+    "tema": "Crime impossível",
+    "resumo_simples": "Não se pune tentativa por absoluta ineficácia do meio ou absoluta impropriedade do objeto.",
+    "por_que_cai": "Tema clássico de tentativa.",
+    "como_vunesp_cobra": "A banca usa pegadinha entre impossibilidade absoluta e relativa.",
+    "pegadinha": "Confundir meio relativamente ineficaz com crime impossível.",
+    "analogia": "Tentar matar com arma de brinquedo realista é meio impossível para matar.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 17: qual é a ideia central de Crime impossível?",
+      "verso": "Absoluta impossibilidade = crime impossível."
+    },
+    "questoes_relacionadas_tags": [
+      "crime impossível",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-011",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 18",
+    "tema": "Dolo e culpa",
+    "resumo_simples": "Dolo é vontade/assunção do risco; culpa é imprudência, negligência ou imperícia.",
+    "por_que_cai": "Base de quase todo Direito Penal.",
+    "como_vunesp_cobra": "A VUNESP cobra dolo eventual x culpa consciente.",
+    "pegadinha": "Dizer que culpa consciente aceita o risco.",
+    "analogia": "Dolo eventual: se der ruim, paciência. Culpa consciente: eu consigo evitar.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 18: qual é a ideia central de Dolo e culpa?",
+      "verso": "Aceitou risco = dolo eventual."
+    },
+    "questoes_relacionadas_tags": [
+      "dolo e culpa",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-012",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 20",
+    "tema": "Erro de tipo",
+    "resumo_simples": "Erro sobre elemento do tipo exclui dolo; pode permitir punição culposa se prevista.",
+    "por_que_cai": "Altíssima incidência em teoria do crime.",
+    "como_vunesp_cobra": "A banca confunde erro de tipo com erro de proibição.",
+    "pegadinha": "Dizer que erro de tipo sempre exclui culpa.",
+    "analogia": "É errar a fotografia do fato.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 20: qual é a ideia central de Erro de tipo?",
+      "verso": "Erro de tipo: erro sobre fato."
+    },
+    "questoes_relacionadas_tags": [
+      "erro de tipo",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-013",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 21",
+    "tema": "Erro de proibição",
+    "resumo_simples": "Erro sobre a ilicitude pode isentar pena se inevitável ou reduzi-la se evitável.",
+    "por_que_cai": "Muito cobrado em culpabilidade.",
+    "como_vunesp_cobra": "A banca confunde desconhecimento da lei com erro sobre ilicitude.",
+    "pegadinha": "Dizer que ninguém pode alegar desconhecimento da lei sem distinção.",
+    "analogia": "É saber o que fez, mas achar que era permitido.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 21: qual é a ideia central de Erro de proibição?",
+      "verso": "Erro de proibição: erro sobre ser proibido."
+    },
+    "questoes_relacionadas_tags": [
+      "erro de proibição",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-014",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 23",
+    "tema": "Excludentes de ilicitude",
+    "resumo_simples": "Estado de necessidade, legítima defesa, estrito cumprimento do dever legal e exercício regular de direito excluem ilicitude.",
+    "por_que_cai": "Questões de caso prático cobram muito.",
+    "como_vunesp_cobra": "A VUNESP mistura requisitos de cada excludente.",
+    "pegadinha": "Confundir legítima defesa com vingança.",
+    "analogia": "É o carimbo de justificativa: o fato típico existe, mas não é ilícito.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 23: qual é a ideia central de Excludentes de ilicitude?",
+      "verso": "Típico pode não ser ilícito."
+    },
+    "questoes_relacionadas_tags": [
+      "excludentes de ilicitude",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-015",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 25",
+    "tema": "Legítima defesa",
+    "resumo_simples": "Repele injusta agressão atual ou iminente usando moderadamente meios necessários.",
+    "por_que_cai": "Muito cobrada em casos práticos.",
+    "como_vunesp_cobra": "A banca troca agressão futura/remota por iminente.",
+    "pegadinha": "Aceitar excesso como legítima defesa.",
+    "analogia": "É o escudo jurídico, não a espada da vingança.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 25: qual é a ideia central de Legítima defesa?",
+      "verso": "Atual/iminente + injusta + moderação."
+    },
+    "questoes_relacionadas_tags": [
+      "legítima defesa",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-016",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 26",
+    "tema": "Inimputabilidade por doença mental",
+    "resumo_simples": "Isento de pena quem era inteiramente incapaz de entender ou determinar-se.",
+    "por_que_cai": "Importante em culpabilidade e medida de segurança.",
+    "como_vunesp_cobra": "A banca troca inimputabilidade com semi-imputabilidade.",
+    "pegadinha": "Achar que qualquer transtorno exclui pena.",
+    "analogia": "É como o sistema de responsabilidade estar desligado no momento do fato.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 26: qual é a ideia central de Inimputabilidade por doença mental?",
+      "verso": "Inteiramente incapaz = isento."
+    },
+    "questoes_relacionadas_tags": [
+      "inimputabilidade por doença mental",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-017",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 29",
+    "tema": "Concurso de pessoas",
+    "resumo_simples": "Quem concorre para o crime incide nas penas na medida de sua culpabilidade.",
+    "por_que_cai": "Tema clássico e recorrente.",
+    "como_vunesp_cobra": "A banca cobra participação de menor importância e cooperação dolosamente distinta.",
+    "pegadinha": "Dizer que todos sempre recebem a mesma pena.",
+    "analogia": "É uma equipe criminosa: cada um responde pelo papel que desempenhou.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 29: qual é a ideia central de Concurso de pessoas?",
+      "verso": "Pena na medida da culpabilidade."
+    },
+    "questoes_relacionadas_tags": [
+      "concurso de pessoas",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-018",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 59",
+    "tema": "Fixação da pena-base",
+    "resumo_simples": "Culpabilidade, antecedentes, conduta social e demais circunstâncias orientam pena-base.",
+    "por_que_cai": "Cai em parte geral e discursiva.",
+    "como_vunesp_cobra": "A banca confunde fases da dosimetria.",
+    "pegadinha": "Usar agravante na primeira fase.",
+    "analogia": "É o painel de controle inicial da pena.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 59: qual é a ideia central de Fixação da pena-base?",
+      "verso": "Art. 59 = primeira fase."
+    },
+    "questoes_relacionadas_tags": [
+      "fixação da pena-base",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-019",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 69",
+    "tema": "Concurso material",
+    "resumo_simples": "Mais de uma ação ou omissão, dois ou mais crimes: somam-se as penas.",
+    "por_que_cai": "Muito cobrado em concurso de crimes.",
+    "como_vunesp_cobra": "A banca troca material, formal e continuidade delitiva.",
+    "pegadinha": "Aplicar exasperação no concurso material.",
+    "analogia": "Crimes em gavetas separadas: soma tudo.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 69: qual é a ideia central de Concurso material?",
+      "verso": "Material = soma."
+    },
+    "questoes_relacionadas_tags": [
+      "concurso material",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-020",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 70",
+    "tema": "Concurso formal",
+    "resumo_simples": "Uma só ação ou omissão gera dois ou mais crimes; regra é exasperação.",
+    "por_que_cai": "Tema recorrente.",
+    "como_vunesp_cobra": "A banca diferencia formal próprio e impróprio.",
+    "pegadinha": "Aplicar sempre uma única pena sem aumento.",
+    "analogia": "Uma pedra quebrando duas janelas.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 70: qual é a ideia central de Concurso formal?",
+      "verso": "Formal = uma conduta, vários crimes."
+    },
+    "questoes_relacionadas_tags": [
+      "concurso formal",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-021",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 71",
+    "tema": "Crime continuado",
+    "resumo_simples": "Crimes da mesma espécie em condições semelhantes podem ser tratados como continuação.",
+    "por_que_cai": "Cai junto com concurso de crimes.",
+    "como_vunesp_cobra": "A banca cobra requisitos: tempo, lugar, modo e semelhantes.",
+    "pegadinha": "Confundir habitualidade criminosa com continuidade delitiva.",
+    "analogia": "É uma sequência com o mesmo roteiro.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 71: qual é a ideia central de Crime continuado?",
+      "verso": "Continuidade exige semelhança objetiva."
+    },
+    "questoes_relacionadas_tags": [
+      "crime continuado",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-022",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 107",
+    "tema": "Extinção da punibilidade",
+    "resumo_simples": "Lista hipóteses como morte do agente, anistia, graça, indulto, prescrição e decadência.",
+    "por_que_cai": "Tema frequente em objetiva.",
+    "como_vunesp_cobra": "A VUNESP troca extinção da punibilidade com exclusão do crime.",
+    "pegadinha": "Dizer que morte da vítima extingue punibilidade.",
+    "analogia": "É apagar o poder de punir, não dizer que o fato não existiu.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 107: qual é a ideia central de Extinção da punibilidade?",
+      "verso": "Art. 107 = causas extintivas."
+    },
+    "questoes_relacionadas_tags": [
+      "extinção da punibilidade",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-023",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 121",
+    "tema": "Homicídio",
+    "resumo_simples": "Matar alguém; qualificado quando presentes circunstâncias especiais.",
+    "por_que_cai": "Crime contra a vida é núcleo obrigatório.",
+    "como_vunesp_cobra": "A banca cobra qualificadoras e causas de aumento.",
+    "pegadinha": "Confundir motivo torpe com motivo fútil.",
+    "analogia": "Homicídio é o tipo matriz dos crimes contra a vida.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 121: qual é a ideia central de Homicídio?",
+      "verso": "Torpe = moralmente repugnante; fútil = desproporcional."
+    },
+    "questoes_relacionadas_tags": [
+      "homicídio",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-024",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 155",
+    "tema": "Furto",
+    "resumo_simples": "Subtrair coisa alheia móvel sem violência ou grave ameaça.",
+    "por_que_cai": "Cai muito em crimes patrimoniais.",
+    "como_vunesp_cobra": "A banca compara furto, roubo e extorsão.",
+    "pegadinha": "Dizer que grave ameaça é furto qualificado.",
+    "analogia": "Furto é pegar escondido; roubo é pegar usando violência/ameaça.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 155: qual é a ideia central de Furto?",
+      "verso": "Sem violência = furto."
+    },
+    "questoes_relacionadas_tags": [
+      "furto",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-025",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 157",
+    "tema": "Roubo",
+    "resumo_simples": "Subtração com violência ou grave ameaça.",
+    "por_que_cai": "Patrimonial mais cobrado.",
+    "como_vunesp_cobra": "A VUNESP cobra majorantes, concurso de agentes e arma.",
+    "pegadinha": "Confundir roubo com extorsão.",
+    "analogia": "Roubo: a vítima sofre a violência e perde a coisa; extorsão: a vítima entrega/colabora.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 157: qual é a ideia central de Roubo?",
+      "verso": "Roubo = subtrair com violência/ameaça."
+    },
+    "questoes_relacionadas_tags": [
+      "roubo",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-026",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 158",
+    "tema": "Extorsão",
+    "resumo_simples": "Constranger alguém mediante violência ou grave ameaça para obter vantagem econômica indevida.",
+    "por_que_cai": "Cai no comparativo com roubo.",
+    "como_vunesp_cobra": "A banca foca na colaboração da vítima.",
+    "pegadinha": "Tratar toda ameaça patrimonial como roubo.",
+    "analogia": "Na extorsão, a vítima é forçada a participar da entrega.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 158: qual é a ideia central de Extorsão?",
+      "verso": "Extorsão = constranger para obter vantagem."
+    },
+    "questoes_relacionadas_tags": [
+      "extorsão",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-027",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 171",
+    "tema": "Estelionato",
+    "resumo_simples": "Obter vantagem ilícita induzindo ou mantendo alguém em erro mediante fraude.",
+    "por_que_cai": "Muito cobrado por atualidade e crimes patrimoniais.",
+    "como_vunesp_cobra": "A banca explora fraude eletrônica e representação.",
+    "pegadinha": "Confundir estelionato com furto mediante fraude.",
+    "analogia": "Estelionato é convencer a vítima a entregar; furto mediante fraude é distrair para subtrair.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 171: qual é a ideia central de Estelionato?",
+      "verso": "Vítima entrega enganada = estelionato."
+    },
+    "questoes_relacionadas_tags": [
+      "estelionato",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-028",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 312",
+    "tema": "Peculato",
+    "resumo_simples": "Funcionário público se apropria, desvia ou concorre culposamente para subtração.",
+    "por_que_cai": "Crimes funcionais são muito importantes para Delegado.",
+    "como_vunesp_cobra": "A banca compara peculato, concussão e corrupção passiva.",
+    "pegadinha": "Esquecer que peculato exige qualidade funcional ligada ao bem.",
+    "analogia": "É o agente público usando a chave do cargo para mexer no patrimônio.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 312: qual é a ideia central de Peculato?",
+      "verso": "Peculato = posse/acesso em razão do cargo."
+    },
+    "questoes_relacionadas_tags": [
+      "peculato",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-029",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 316",
+    "tema": "Concussão",
+    "resumo_simples": "Funcionário público exige vantagem indevida em razão da função.",
+    "por_que_cai": "Clássico em crimes contra Administração.",
+    "como_vunesp_cobra": "A VUNESP troca exigir por solicitar/receber.",
+    "pegadinha": "Confundir concussão com corrupção passiva.",
+    "analogia": "Concussão é cobrança autoritária: exige. Corrupção passiva é pedir/receber/aceitar.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 316: qual é a ideia central de Concussão?",
+      "verso": "Concussão = exigir."
+    },
+    "questoes_relacionadas_tags": [
+      "concussão",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-030",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 317",
+    "tema": "Corrupção passiva",
+    "resumo_simples": "Solicitar, receber ou aceitar promessa de vantagem indevida.",
+    "por_que_cai": "Muito cobrado e comparado com concussão.",
+    "como_vunesp_cobra": "A banca foca nos verbos do tipo.",
+    "pegadinha": "Dizer que precisa efetivo recebimento.",
+    "analogia": "Se o agente só aceita a promessa, o tipo já pode estar completo.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 317: qual é a ideia central de Corrupção passiva?",
+      "verso": "Solicitar/receber/aceitar promessa."
+    },
+    "questoes_relacionadas_tags": [
+      "corrupção passiva",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-031",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 333",
+    "tema": "Corrupção ativa",
+    "resumo_simples": "Oferecer ou prometer vantagem indevida a funcionário público.",
+    "por_que_cai": "Comparativo com corrupção passiva.",
+    "como_vunesp_cobra": "A VUNESP pergunta se depende de aceitação do funcionário.",
+    "pegadinha": "Dizer que corrupção ativa depende de recebimento.",
+    "analogia": "A proposta ilícita já acende o crime.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 333: qual é a ideia central de Corrupção ativa?",
+      "verso": "Oferecer/prometer = ativa."
+    },
+    "questoes_relacionadas_tags": [
+      "corrupção ativa",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-032",
+    "disciplina": "Direito Penal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 359-L",
+    "tema": "Abolição violenta do Estado Democrático de Direito",
+    "resumo_simples": "Tentar abolir o Estado Democrático de Direito mediante violência ou grave ameaça.",
+    "por_que_cai": "Tema novo e relevante em crimes contra instituições democráticas.",
+    "como_vunesp_cobra": "A banca cobra elemento violência/grave ameaça.",
+    "pegadinha": "Tratar mera opinião política como crime.",
+    "analogia": "O Direito Penal atua quando há ataque violento ao regime democrático.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 359-L: qual é a ideia central de Abolição violenta do Estado Democrático de Direito?",
+      "verso": "Exige violência ou grave ameaça."
+    },
+    "questoes_relacionadas_tags": [
+      "abolição violenta do estado democrático de direito",
+      "direito penal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-033",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 4º",
+    "tema": "Polícia judiciária",
+    "resumo_simples": "A polícia judiciária apura infrações penais e autoria.",
+    "por_que_cai": "Base institucional para Delegado.",
+    "como_vunesp_cobra": "A banca pergunta natureza e finalidade do inquérito.",
+    "pegadinha": "Confundir polícia administrativa com polícia judiciária.",
+    "analogia": "Polícia judiciária monta o dossiê investigativo para a persecução penal.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 4º: qual é a ideia central de Polícia judiciária?",
+      "verso": "Polícia judiciária = investigação penal."
+    },
+    "questoes_relacionadas_tags": [
+      "polícia judiciária",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-034",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 5º",
+    "tema": "Início do inquérito policial",
+    "resumo_simples": "Define formas de instauração do inquérito.",
+    "por_que_cai": "Tema central para Delegado.",
+    "como_vunesp_cobra": "A VUNESP cobra de ofício, requisição, requerimento e representação.",
+    "pegadinha": "Dizer que todo crime depende de representação.",
+    "analogia": "É o botão de partida da investigação.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 5º: qual é a ideia central de Início do inquérito policial?",
+      "verso": "A forma depende da ação penal."
+    },
+    "questoes_relacionadas_tags": [
+      "início do inquérito policial",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-035",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 6º",
+    "tema": "Diligências iniciais",
+    "resumo_simples": "Após ciência da infração, autoridade deve preservar local, colher provas e ouvir envolvidos.",
+    "por_que_cai": "Cai em inquérito e atuação do Delegado.",
+    "como_vunesp_cobra": "A banca cobra providências imediatas.",
+    "pegadinha": "Esquecer preservação de local de crime.",
+    "analogia": "É o protocolo de primeira resposta investigativa.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 6º: qual é a ideia central de Diligências iniciais?",
+      "verso": "Primeiras horas: preservar, colher, documentar."
+    },
+    "questoes_relacionadas_tags": [
+      "diligências iniciais",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-036",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 10",
+    "tema": "Prazo do inquérito",
+    "resumo_simples": "Regra: 10 dias preso e 30 dias solto, ressalvadas leis especiais.",
+    "por_que_cai": "Questão de lei seca recorrente.",
+    "como_vunesp_cobra": "A banca troca prazos e mistura com leis especiais.",
+    "pegadinha": "Aplicar prazo do réu solto ao indiciado preso.",
+    "analogia": "Preso tem relógio apertado; solto tem prazo mais amplo.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 10: qual é a ideia central de Prazo do inquérito?",
+      "verso": "10 preso; 30 solto."
+    },
+    "questoes_relacionadas_tags": [
+      "prazo do inquérito",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-037",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 13",
+    "tema": "Atribuições complementares da autoridade policial",
+    "resumo_simples": "Autoridade policial pode fornecer informações, cumprir requisições e representar por medidas.",
+    "por_que_cai": "Importante para papel do Delegado.",
+    "como_vunesp_cobra": "A banca cobra representação por prisão preventiva e diligências.",
+    "pegadinha": "Achar que Delegado só cumpre ordem, sem iniciativa investigativa.",
+    "analogia": "É o Delegado alimentando o processo com informação e medidas necessárias.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 13: qual é a ideia central de Atribuições complementares da autoridade policial?",
+      "verso": "Delegado pode representar por cautelares."
+    },
+    "questoes_relacionadas_tags": [
+      "atribuições complementares da autoridade policial",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-038",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 18",
+    "tema": "Novas pesquisas após arquivamento",
+    "resumo_simples": "Arquivado o inquérito, autoridade policial pode proceder a novas pesquisas se houver notícia de novas provas.",
+    "por_que_cai": "Cai em arquivamento e coisa julgada.",
+    "como_vunesp_cobra": "A VUNESP pergunta se arquivamento impede nova investigação.",
+    "pegadinha": "Achar que arquivamento sempre encerra definitivamente.",
+    "analogia": "O arquivo não destrói a pasta; novas provas podem reabrir pesquisa.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 18: qual é a ideia central de Novas pesquisas após arquivamento?",
+      "verso": "Novas provas reativam investigação."
+    },
+    "questoes_relacionadas_tags": [
+      "novas pesquisas após arquivamento",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-039",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 24",
+    "tema": "Ação penal pública",
+    "resumo_simples": "A ação pública é promovida pelo Ministério Público, dependendo de representação quando a lei exigir.",
+    "por_que_cai": "Tema básico e recorrente.",
+    "como_vunesp_cobra": "A banca troca titularidade e condições de procedibilidade.",
+    "pegadinha": "Dizer que Delegado propõe ação penal pública.",
+    "analogia": "Delegado investiga; MP acusa.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 24: qual é a ideia central de Ação penal pública?",
+      "verso": "Titular da ação pública = MP."
+    },
+    "questoes_relacionadas_tags": [
+      "ação penal pública",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-040",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 28",
+    "tema": "Arquivamento do inquérito",
+    "resumo_simples": "Trata do controle do arquivamento pelo Ministério Público conforme regra atual.",
+    "por_que_cai": "Tema sensível e cobrado em atualizações.",
+    "como_vunesp_cobra": "A banca pode cobrar fluxo do arquivamento e controle interno.",
+    "pegadinha": "Usar modelo antigo sem observar alterações legislativas.",
+    "analogia": "É o filtro decisório do MP sobre seguir ou arquivar.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 28: qual é a ideia central de Arquivamento do inquérito?",
+      "verso": "Arquivamento é ato do MP com controle próprio."
+    },
+    "questoes_relacionadas_tags": [
+      "arquivamento do inquérito",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-041",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 41",
+    "tema": "Requisitos da denúncia ou queixa",
+    "resumo_simples": "Exposição do fato, qualificação, classificação e rol de testemunhas quando necessário.",
+    "por_que_cai": "Cai em peça acusatória.",
+    "como_vunesp_cobra": "A VUNESP cobra inépcia por falta de descrição do fato.",
+    "pegadinha": "Achar que basta indicar artigo de lei.",
+    "analogia": "A denúncia precisa contar a história mínima do fato.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 41: qual é a ideia central de Requisitos da denúncia ou queixa?",
+      "verso": "Denúncia sem fato = problema."
+    },
+    "questoes_relacionadas_tags": [
+      "requisitos da denúncia ou queixa",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-042",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 155",
+    "tema": "Livre convencimento motivado e prova judicializada",
+    "resumo_simples": "Juiz forma convicção pela prova produzida em contraditório judicial, com ressalvas.",
+    "por_que_cai": "Cai muito em provas.",
+    "como_vunesp_cobra": "A banca cobra diferença entre elementos informativos e provas.",
+    "pegadinha": "Condenar só com inquérito, salvo cautelares/não repetíveis/antecipadas.",
+    "analogia": "Inquérito é rascunho investigativo; prova judicial é texto revisado em contraditório.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 155: qual é a ideia central de Livre convencimento motivado e prova judicializada?",
+      "verso": "Condenação exige prova judicial."
+    },
+    "questoes_relacionadas_tags": [
+      "livre convencimento motivado e prova judicializada",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-043",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 157",
+    "tema": "Provas ilícitas",
+    "resumo_simples": "Provas ilícitas são inadmissíveis e devem ser desentranhadas.",
+    "por_que_cai": "Tema recorrente em provas.",
+    "como_vunesp_cobra": "A banca cobra derivação e fonte independente.",
+    "pegadinha": "Confundir prova ilícita com prova ilegítima sem avaliar consequência.",
+    "analogia": "Fruto da árvore contaminada pode contaminar os frutos.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 157: qual é a ideia central de Provas ilícitas?",
+      "verso": "Ilícita entra fora do processo."
+    },
+    "questoes_relacionadas_tags": [
+      "provas ilícitas",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-044",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 158-A",
+    "tema": "Cadeia de custódia",
+    "resumo_simples": "Conjunto de procedimentos para manter e documentar a história do vestígio.",
+    "por_que_cai": "Muito importante para investigação moderna.",
+    "como_vunesp_cobra": "A VUNESP cobra rastreabilidade e preservação.",
+    "pegadinha": "Achar que cadeia de custódia é só perícia final.",
+    "analogia": "É o lacre e o diário de bordo da prova.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 158-A: qual é a ideia central de Cadeia de custódia?",
+      "verso": "Vestígio precisa de rastreio."
+    },
+    "questoes_relacionadas_tags": [
+      "cadeia de custódia",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-045",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 226",
+    "tema": "Reconhecimento de pessoas",
+    "resumo_simples": "Estabelece procedimento para reconhecimento.",
+    "por_que_cai": "Tema prático e atual.",
+    "como_vunesp_cobra": "A banca cobra formalidades e riscos de reconhecimento irregular.",
+    "pegadinha": "Tratar reconhecimento fotográfico informal como prova absoluta.",
+    "analogia": "Reconhecer alguém exige procedimento, não palpite visual.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 226: qual é a ideia central de Reconhecimento de pessoas?",
+      "verso": "Reconhecimento precisa método."
+    },
+    "questoes_relacionadas_tags": [
+      "reconhecimento de pessoas",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-046",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 240",
+    "tema": "Busca e apreensão",
+    "resumo_simples": "Busca pode ser domiciliar ou pessoal, com finalidades específicas.",
+    "por_que_cai": "Cai em diligências policiais.",
+    "como_vunesp_cobra": "A banca cobra hipóteses e limites de busca.",
+    "pegadinha": "Confundir busca pessoal com domiciliar.",
+    "analogia": "Busca é a lupa autorizada pela lei.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 240: qual é a ideia central de Busca e apreensão?",
+      "verso": "Domicílio exige mais cautela."
+    },
+    "questoes_relacionadas_tags": [
+      "busca e apreensão",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-047",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 244",
+    "tema": "Busca pessoal",
+    "resumo_simples": "Dispensa mandado em caso de prisão ou fundada suspeita.",
+    "por_que_cai": "Muito cobrado em atuação policial.",
+    "como_vunesp_cobra": "A banca cobra fundada suspeita, não intuição genérica.",
+    "pegadinha": "Achar que qualquer nervosismo basta.",
+    "analogia": "Fundada suspeita é pista concreta, não palpite.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 244: qual é a ideia central de Busca pessoal?",
+      "verso": "Busca pessoal exige base objetiva."
+    },
+    "questoes_relacionadas_tags": [
+      "busca pessoal",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-048",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 283",
+    "tema": "Prisão e cautelares",
+    "resumo_simples": "Prisão depende de ordem escrita fundamentada, flagrante ou hipóteses legais.",
+    "por_que_cai": "Cai em prisão e medidas cautelares.",
+    "como_vunesp_cobra": "A banca mistura execução de pena, cautelar e flagrante.",
+    "pegadinha": "Tratar prisão preventiva como antecipação de pena.",
+    "analogia": "A liberdade é regra; prisão precisa chave legal.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 283: qual é a ideia central de Prisão e cautelares?",
+      "verso": "Prisão exige fundamento legal."
+    },
+    "questoes_relacionadas_tags": [
+      "prisão e cautelares",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-049",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 302",
+    "tema": "Flagrante delito",
+    "resumo_simples": "Define hipóteses de flagrante próprio, impróprio e presumido.",
+    "por_que_cai": "Altíssima incidência.",
+    "como_vunesp_cobra": "A banca pergunta quem está em flagrante.",
+    "pegadinha": "Confundir flagrante preparado com esperado.",
+    "analogia": "Flagrante é a fotografia quente do crime ou sua perseguição imediata.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 302: qual é a ideia central de Flagrante delito?",
+      "verso": "Flagrante tem hipóteses do art. 302."
+    },
+    "questoes_relacionadas_tags": [
+      "flagrante delito",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-050",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 306",
+    "tema": "Comunicação da prisão em flagrante",
+    "resumo_simples": "Prisão deve ser comunicada ao juiz, MP e família/defensor.",
+    "por_que_cai": "Cai em garantias do preso.",
+    "como_vunesp_cobra": "A banca cobra prazos e destinatários.",
+    "pegadinha": "Esquecer comunicação à defesa/família.",
+    "analogia": "É o aviso obrigatório de que o Estado prendeu alguém.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 306: qual é a ideia central de Comunicação da prisão em flagrante?",
+      "verso": "Prisão precisa comunicação imediata."
+    },
+    "questoes_relacionadas_tags": [
+      "comunicação da prisão em flagrante",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-051",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 310",
+    "tema": "Audiência de custódia e controle do flagrante",
+    "resumo_simples": "Juiz relaxa ilegalidade, converte em preventiva ou concede liberdade, conforme o caso.",
+    "por_que_cai": "Cai muito em cautelares.",
+    "como_vunesp_cobra": "A banca troca relaxamento, liberdade provisória e conversão.",
+    "pegadinha": "Converter automaticamente flagrante em preventiva.",
+    "analogia": "O flagrante passa por uma triagem judicial.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 310: qual é a ideia central de Audiência de custódia e controle do flagrante?",
+      "verso": "Flagrante não vira preventiva sozinho."
+    },
+    "questoes_relacionadas_tags": [
+      "audiência de custódia e controle do flagrante",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-052",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 312",
+    "tema": "Prisão preventiva",
+    "resumo_simples": "Exige pressupostos e fundamentos cautelares, não sendo pena antecipada.",
+    "por_que_cai": "Um dos artigos mais importantes para Delegado.",
+    "como_vunesp_cobra": "A VUNESP cobra ordem pública, instrução, aplicação da lei e perigo da liberdade.",
+    "pegadinha": "Dizer que gravidade abstrata basta.",
+    "analogia": "Preventiva é freio de emergência do processo.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 312: qual é a ideia central de Prisão preventiva?",
+      "verso": "Preventiva protege processo/sociedade, não antecipa pena."
+    },
+    "questoes_relacionadas_tags": [
+      "prisão preventiva",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-053",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 313",
+    "tema": "Cabimento da preventiva",
+    "resumo_simples": "Indica hipóteses de admissibilidade da prisão preventiva.",
+    "por_que_cai": "Cai junto com art. 312.",
+    "como_vunesp_cobra": "A banca separa pressupostos/fundamentos de cabimento.",
+    "pegadinha": "Usar art. 312 sem verificar art. 313.",
+    "analogia": "Art. 312 é o motivo; art. 313 é a porta de entrada.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 313: qual é a ideia central de Cabimento da preventiva?",
+      "verso": "Preventiva = 312 + 313."
+    },
+    "questoes_relacionadas_tags": [
+      "cabimento da preventiva",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-054",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 319",
+    "tema": "Medidas cautelares diversas",
+    "resumo_simples": "Lista cautelares alternativas à prisão.",
+    "por_que_cai": "Cai muito por proporcionalidade.",
+    "como_vunesp_cobra": "A banca cobra que prisão é última ratio.",
+    "pegadinha": "Ignorar cautelares e prender sempre.",
+    "analogia": "Antes do cadeado, há controles menores.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 319: qual é a ideia central de Medidas cautelares diversas?",
+      "verso": "Prisão é última medida."
+    },
+    "questoes_relacionadas_tags": [
+      "medidas cautelares diversas",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-055",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 395",
+    "tema": "Rejeição da denúncia ou queixa",
+    "resumo_simples": "Denúncia é rejeitada se inepta, faltar pressuposto/condição ou justa causa.",
+    "por_que_cai": "Cai em ação penal e processo.",
+    "como_vunesp_cobra": "A banca diferencia rejeição de absolvição sumária.",
+    "pegadinha": "Tratar falta de justa causa como mérito absoluto.",
+    "analogia": "É o filtro inicial da acusação.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 395: qual é a ideia central de Rejeição da denúncia ou queixa?",
+      "verso": "Art. 395 = barreira de entrada."
+    },
+    "questoes_relacionadas_tags": [
+      "rejeição da denúncia ou queixa",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-056",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 564",
+    "tema": "Nulidades",
+    "resumo_simples": "Lista hipóteses de nulidade no processo penal.",
+    "por_que_cai": "Tema cobrado em provas finais.",
+    "como_vunesp_cobra": "A banca cobra prejuízo e convalidação.",
+    "pegadinha": "Achar que toda irregularidade anula tudo.",
+    "analogia": "Nulidade é remédio para vício relevante, não para detalhe inofensivo.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 564: qual é a ideia central de Nulidades?",
+      "verso": "Sem prejuízo, em regra, sem nulidade."
+    },
+    "questoes_relacionadas_tags": [
+      "nulidades",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-057",
+    "disciplina": "Direito Processual Penal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 647",
+    "tema": "Habeas corpus",
+    "resumo_simples": "Cabe quando alguém sofre ou se acha ameaçado de violência/coação ilegal na liberdade.",
+    "por_que_cai": "Remédio constitucional/processual central.",
+    "como_vunesp_cobra": "A banca cobra cabimento preventivo e liberatório.",
+    "pegadinha": "Achar que só cabe depois da prisão.",
+    "analogia": "É o extintor contra coação ilegal à liberdade.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 647: qual é a ideia central de Habeas corpus?",
+      "verso": "HC protege locomoção."
+    },
+    "questoes_relacionadas_tags": [
+      "habeas corpus",
+      "direito processual penal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-058",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 11.343/2006",
+    "artigo": "Art. 28",
+    "tema": "Porte de droga para consumo pessoal",
+    "resumo_simples": "Trata da posse de drogas para uso pessoal e medidas aplicáveis.",
+    "por_que_cai": "Cai muito em diferenciação com tráfico.",
+    "como_vunesp_cobra": "A banca compara art. 28 com art. 33.",
+    "pegadinha": "Dizer que quantidade sozinha define tráfico.",
+    "analogia": "Usuário é contexto; traficante é comércio/mercancia com circunstâncias.",
+    "flashcard": {
+      "frente": "Lei 11.343/2006, Art. 28: qual é a ideia central de Porte de droga para consumo pessoal?",
+      "verso": "Analise natureza, quantidade, local, conduta e circunstâncias."
+    },
+    "questoes_relacionadas_tags": [
+      "porte de droga para consumo pessoal",
+      "legislação especial",
+      "lei 11.343/2006"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-059",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 11.343/2006",
+    "artigo": "Art. 33",
+    "tema": "Tráfico de drogas",
+    "resumo_simples": "Tipo penal amplo com múltiplos verbos ligados ao tráfico.",
+    "por_que_cai": "Uma das leis especiais mais cobradas.",
+    "como_vunesp_cobra": "A VUNESP cobra verbos nucleares e tráfico privilegiado.",
+    "pegadinha": "Achar que vender é o único verbo do tráfico.",
+    "analogia": "O tipo é uma rede de verbos: transportar, guardar, vender, trazer etc.",
+    "flashcard": {
+      "frente": "Lei 11.343/2006, Art. 33: qual é a ideia central de Tráfico de drogas?",
+      "verso": "Tráfico não é só venda."
+    },
+    "questoes_relacionadas_tags": [
+      "tráfico de drogas",
+      "legislação especial",
+      "lei 11.343/2006"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-060",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 11.343/2006",
+    "artigo": "Art. 33, §4º",
+    "tema": "Tráfico privilegiado",
+    "resumo_simples": "Redução de pena para primário, bons antecedentes, não dedicação criminosa e não integração em organização criminosa.",
+    "por_que_cai": "Tema clássico em jurisprudência e lei seca.",
+    "como_vunesp_cobra": "A banca cobra requisitos cumulativos.",
+    "pegadinha": "Achar que primariedade basta.",
+    "analogia": "É um redutor para o traficante ocasional, não para o profissional.",
+    "flashcard": {
+      "frente": "Lei 11.343/2006, Art. 33, §4º: qual é a ideia central de Tráfico privilegiado?",
+      "verso": "Requisitos são cumulativos."
+    },
+    "questoes_relacionadas_tags": [
+      "tráfico privilegiado",
+      "legislação especial",
+      "lei 11.343/2006"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-061",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 11.343/2006",
+    "artigo": "Art. 35",
+    "tema": "Associação para o tráfico",
+    "resumo_simples": "Associação estável de duas ou mais pessoas para tráfico.",
+    "por_que_cai": "Cai no comparativo com organização criminosa.",
+    "como_vunesp_cobra": "A banca troca estabilidade e número mínimo.",
+    "pegadinha": "Confundir concurso eventual com associação.",
+    "analogia": "Não é encontro casual; é parceria estável.",
+    "flashcard": {
+      "frente": "Lei 11.343/2006, Art. 35: qual é a ideia central de Associação para o tráfico?",
+      "verso": "Associação exige estabilidade e permanência."
+    },
+    "questoes_relacionadas_tags": [
+      "associação para o tráfico",
+      "legislação especial",
+      "lei 11.343/2006"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-062",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 11.340/2006",
+    "artigo": "Art. 5º",
+    "tema": "Violência doméstica e familiar contra mulher",
+    "resumo_simples": "Define o âmbito da violência doméstica e familiar.",
+    "por_que_cai": "Lei Maria da Penha é muito cobrada.",
+    "como_vunesp_cobra": "A banca pergunta se exige coabitação ou vínculo afetivo atual.",
+    "pegadinha": "Dizer que precisa morar junto.",
+    "analogia": "A proteção segue a relação, não apenas o endereço.",
+    "flashcard": {
+      "frente": "Lei 11.340/2006, Art. 5º: qual é a ideia central de Violência doméstica e familiar contra mulher?",
+      "verso": "Não exige coabitação."
+    },
+    "questoes_relacionadas_tags": [
+      "violência doméstica e familiar contra mulher",
+      "legislação especial",
+      "lei 11.340/2006"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-063",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 11.340/2006",
+    "artigo": "Art. 7º",
+    "tema": "Formas de violência",
+    "resumo_simples": "Violência física, psicológica, sexual, patrimonial e moral.",
+    "por_que_cai": "Cai em classificação de condutas.",
+    "como_vunesp_cobra": "A VUNESP dá caso prático e pede modalidade.",
+    "pegadinha": "Reduzir violência doméstica a agressão física.",
+    "analogia": "A lei protege corpo, mente, patrimônio, liberdade sexual e honra.",
+    "flashcard": {
+      "frente": "Lei 11.340/2006, Art. 7º: qual é a ideia central de Formas de violência?",
+      "verso": "Violência doméstica não é só física."
+    },
+    "questoes_relacionadas_tags": [
+      "formas de violência",
+      "legislação especial",
+      "lei 11.340/2006"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-064",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 11.340/2006",
+    "artigo": "Art. 22",
+    "tema": "Medidas protetivas de urgência",
+    "resumo_simples": "Medidas contra o agressor para proteger a mulher.",
+    "por_que_cai": "Muito cobrado em atuação policial e judicial.",
+    "como_vunesp_cobra": "A banca pergunta afastamento, contato e restrições.",
+    "pegadinha": "Achar que depende de processo criminal já instaurado.",
+    "analogia": "É o botão de emergência de proteção.",
+    "flashcard": {
+      "frente": "Lei 11.340/2006, Art. 22: qual é a ideia central de Medidas protetivas de urgência?",
+      "verso": "Medida protetiva é tutela urgente."
+    },
+    "questoes_relacionadas_tags": [
+      "medidas protetivas de urgência",
+      "legislação especial",
+      "lei 11.340/2006"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-065",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 10.826/2003",
+    "artigo": "Art. 12",
+    "tema": "Posse irregular de arma",
+    "resumo_simples": "Possuir ou manter arma de uso permitido em casa/trabalho sem autorização.",
+    "por_que_cai": "Cai no comparativo posse x porte.",
+    "como_vunesp_cobra": "A banca troca local da arma.",
+    "pegadinha": "Confundir posse com porte.",
+    "analogia": "Posse é arma parada no endereço; porte é arma circulando.",
+    "flashcard": {
+      "frente": "Lei 10.826/2003, Art. 12: qual é a ideia central de Posse irregular de arma?",
+      "verso": "Posse = casa/trabalho."
+    },
+    "questoes_relacionadas_tags": [
+      "posse irregular de arma",
+      "legislação especial",
+      "lei 10.826/2003"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-066",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 10.826/2003",
+    "artigo": "Art. 14",
+    "tema": "Porte ilegal de arma de uso permitido",
+    "resumo_simples": "Portar, deter, transportar ou trazer consigo arma de uso permitido sem autorização.",
+    "por_que_cai": "Cai muito no Estatuto do Desarmamento.",
+    "como_vunesp_cobra": "A banca cobra verbos e autorização.",
+    "pegadinha": "Achar que só portar na cintura caracteriza.",
+    "analogia": "Porte é a arma em circulação.",
+    "flashcard": {
+      "frente": "Lei 10.826/2003, Art. 14: qual é a ideia central de Porte ilegal de arma de uso permitido?",
+      "verso": "Porte = fora do local autorizado."
+    },
+    "questoes_relacionadas_tags": [
+      "porte ilegal de arma de uso permitido",
+      "legislação especial",
+      "lei 10.826/2003"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-067",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 10.826/2003",
+    "artigo": "Art. 16",
+    "tema": "Arma de uso restrito/proibido",
+    "resumo_simples": "Condutas com arma de uso restrito ou proibido.",
+    "por_que_cai": "Tema recorrente e sensível.",
+    "como_vunesp_cobra": "A banca cobra diferença de uso permitido e restrito.",
+    "pegadinha": "Aplicar art. 14 a arma restrita.",
+    "analogia": "Quanto mais perigosa a categoria, mais grave o enquadramento.",
+    "flashcard": {
+      "frente": "Lei 10.826/2003, Art. 16: qual é a ideia central de Arma de uso restrito/proibido?",
+      "verso": "Uso restrito/proibido muda o tipo."
+    },
+    "questoes_relacionadas_tags": [
+      "arma de uso restrito/proibido",
+      "legislação especial",
+      "lei 10.826/2003"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-068",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 12.850/2013",
+    "artigo": "Art. 1º, §1º",
+    "tema": "Organização criminosa",
+    "resumo_simples": "Associação de 4 ou mais pessoas, estruturalmente ordenada e com divisão de tarefas.",
+    "por_que_cai": "Muito cobrada em Delegado.",
+    "como_vunesp_cobra": "A banca cobra número mínimo e estrutura.",
+    "pegadinha": "Confundir associação criminosa com organização criminosa.",
+    "analogia": "Organização criminosa é empresa criminosa com hierarquia/estrutura.",
+    "flashcard": {
+      "frente": "Lei 12.850/2013, Art. 1º, §1º: qual é a ideia central de Organização criminosa?",
+      "verso": "4 ou mais + estrutura + divisão."
+    },
+    "questoes_relacionadas_tags": [
+      "organização criminosa",
+      "legislação especial",
+      "lei 12.850/2013"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-069",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 12.850/2013",
+    "artigo": "Art. 3º-A e seguintes",
+    "tema": "Colaboração premiada",
+    "resumo_simples": "Meio de obtenção de prova negociado com controle judicial.",
+    "por_que_cai": "Cai em investigação moderna.",
+    "como_vunesp_cobra": "A banca cobra voluntariedade e controle judicial.",
+    "pegadinha": "Tratar colaboração como prova absoluta.",
+    "analogia": "Colaboração é mapa dado por colaborador; ainda precisa confirmação.",
+    "flashcard": {
+      "frente": "Lei 12.850/2013, Art. 3º-A e seguintes: qual é a ideia central de Colaboração premiada?",
+      "verso": "Colaboração precisa corroboração."
+    },
+    "questoes_relacionadas_tags": [
+      "colaboração premiada",
+      "legislação especial",
+      "lei 12.850/2013"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-070",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 13.869/2019",
+    "artigo": "Art. 1º",
+    "tema": "Abuso de autoridade",
+    "resumo_simples": "Crimes de abuso exigem finalidade específica.",
+    "por_que_cai": "Lei especial importante para atividade policial.",
+    "como_vunesp_cobra": "A banca cobra dolo específico.",
+    "pegadinha": "Achar que mero erro funcional vira crime automaticamente.",
+    "analogia": "Não basta errar: precisa finalidade abusiva prevista.",
+    "flashcard": {
+      "frente": "Lei 13.869/2019, Art. 1º: qual é a ideia central de Abuso de autoridade?",
+      "verso": "Abuso exige finalidade específica."
+    },
+    "questoes_relacionadas_tags": [
+      "abuso de autoridade",
+      "legislação especial",
+      "lei 13.869/2019"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-071",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 9.455/1997",
+    "artigo": "Art. 1º",
+    "tema": "Tortura",
+    "resumo_simples": "Define condutas de tortura, inclusive mediante violência ou grave ameaça com finalidades específicas.",
+    "por_que_cai": "Muito cobrada em direitos humanos e legislação especial.",
+    "como_vunesp_cobra": "A banca compara tortura e maus-tratos.",
+    "pegadinha": "Confundir sofrimento intenso com mera violência sem finalidade típica.",
+    "analogia": "Tortura é violência qualificada por finalidade e intensidade.",
+    "flashcard": {
+      "frente": "Lei 9.455/1997, Art. 1º: qual é a ideia central de Tortura?",
+      "verso": "Finalidade típica importa."
+    },
+    "questoes_relacionadas_tags": [
+      "tortura",
+      "legislação especial",
+      "lei 9.455/1997"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-072",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 8.072/1990",
+    "artigo": "Art. 1º",
+    "tema": "Crimes hediondos",
+    "resumo_simples": "Lista crimes considerados hediondos.",
+    "por_que_cai": "Lei seca muito cobrada.",
+    "como_vunesp_cobra": "A banca cobra rol legal e equiparados.",
+    "pegadinha": "Dizer que qualquer crime grave é hediondo.",
+    "analogia": "Hediondo não é opinião; é etiqueta legal.",
+    "flashcard": {
+      "frente": "Lei 8.072/1990, Art. 1º: qual é a ideia central de Crimes hediondos?",
+      "verso": "Hediondez depende da lei."
+    },
+    "questoes_relacionadas_tags": [
+      "crimes hediondos",
+      "legislação especial",
+      "lei 8.072/1990"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-073",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 7.716/1989",
+    "artigo": "Art. 20",
+    "tema": "Crime de racismo",
+    "resumo_simples": "Criminaliza práticas de discriminação/preconceito por raça, cor, etnia, religião ou procedência nacional.",
+    "por_que_cai": "Tema importante em DH e legislação.",
+    "como_vunesp_cobra": "A banca cobra diferença com injúria racial e alterações recentes.",
+    "pegadinha": "Tratar racismo como crime de ação privada.",
+    "analogia": "É ataque discriminatório ao grupo/identidade protegida.",
+    "flashcard": {
+      "frente": "Lei 7.716/1989, Art. 20: qual é a ideia central de Crime de racismo?",
+      "verso": "Racismo tem proteção coletiva."
+    },
+    "questoes_relacionadas_tags": [
+      "crime de racismo",
+      "legislação especial",
+      "lei 7.716/1989"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-074",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 9.296/1996",
+    "artigo": "Art. 1º",
+    "tema": "Interceptação telefônica",
+    "resumo_simples": "Depende de ordem judicial e finalidade de investigação criminal ou instrução penal.",
+    "por_que_cai": "Cai em provas e investigação.",
+    "como_vunesp_cobra": "A banca cobra reserva de jurisdição.",
+    "pegadinha": "Confundir interceptação com gravação ambiental por um interlocutor.",
+    "analogia": "Interceptar é terceiro escutando comunicação alheia com autorização judicial.",
+    "flashcard": {
+      "frente": "Lei 9.296/1996, Art. 1º: qual é a ideia central de Interceptação telefônica?",
+      "verso": "Interceptação exige juiz."
+    },
+    "questoes_relacionadas_tags": [
+      "interceptação telefônica",
+      "legislação especial",
+      "lei 9.296/1996"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-075",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 9.296/1996",
+    "artigo": "Art. 2º",
+    "tema": "Hipóteses de não cabimento",
+    "resumo_simples": "Não cabe interceptação sem indícios razoáveis, quando prova puder ser feita por outros meios ou fato punido só com detenção.",
+    "por_que_cai": "Cai em requisitos negativos.",
+    "como_vunesp_cobra": "A banca pergunta quando não pode.",
+    "pegadinha": "Autorizar interceptação como primeira opção sempre.",
+    "analogia": "É ferramenta invasiva: só entra quando necessário.",
+    "flashcard": {
+      "frente": "Lei 9.296/1996, Art. 2º: qual é a ideia central de Hipóteses de não cabimento?",
+      "verso": "Interceptação é subsidiária."
+    },
+    "questoes_relacionadas_tags": [
+      "hipóteses de não cabimento",
+      "legislação especial",
+      "lei 9.296/1996"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-076",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 12.037/2009",
+    "artigo": "Art. 3º",
+    "tema": "Identificação criminal",
+    "resumo_simples": "Admite identificação criminal em hipóteses legais mesmo quando há identificação civil.",
+    "por_que_cai": "Cai em investigação e garantias.",
+    "como_vunesp_cobra": "A banca cobra exceções à identificação civil suficiente.",
+    "pegadinha": "Achar que identificação civil sempre impede a criminal.",
+    "analogia": "Identificação criminal é reforço quando a lei autoriza.",
+    "flashcard": {
+      "frente": "Lei 12.037/2009, Art. 3º: qual é a ideia central de Identificação criminal?",
+      "verso": "Regra civil, exceções criminais."
+    },
+    "questoes_relacionadas_tags": [
+      "identificação criminal",
+      "legislação especial",
+      "lei 12.037/2009"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-077",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 9.099/1995",
+    "artigo": "Art. 61",
+    "tema": "Infração de menor potencial ofensivo",
+    "resumo_simples": "Define infrações de menor potencial ofensivo.",
+    "por_que_cai": "Cai em JECRIM.",
+    "como_vunesp_cobra": "A banca cobra pena máxima e rito.",
+    "pegadinha": "Confundir com crime de menor gravidade informal.",
+    "analogia": "É uma porta processual simplificada para infrações leves.",
+    "flashcard": {
+      "frente": "Lei 9.099/1995, Art. 61: qual é a ideia central de Infração de menor potencial ofensivo?",
+      "verso": "Menor potencial depende da pena legal."
+    },
+    "questoes_relacionadas_tags": [
+      "infração de menor potencial ofensivo",
+      "legislação especial",
+      "lei 9.099/1995"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-078",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 9.099/1995",
+    "artigo": "Art. 76",
+    "tema": "Transação penal",
+    "resumo_simples": "Proposta antes da denúncia em infrações de menor potencial, se requisitos presentes.",
+    "por_que_cai": "Cai em benefícios despenalizadores.",
+    "como_vunesp_cobra": "A banca compara transação com suspensão condicional do processo.",
+    "pegadinha": "Dizer que transação é confissão de culpa.",
+    "analogia": "É acordo processual para evitar ação penal.",
+    "flashcard": {
+      "frente": "Lei 9.099/1995, Art. 76: qual é a ideia central de Transação penal?",
+      "verso": "Transação vem antes da ação."
+    },
+    "questoes_relacionadas_tags": [
+      "transação penal",
+      "legislação especial",
+      "lei 9.099/1995"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-079",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 9.099/1995",
+    "artigo": "Art. 89",
+    "tema": "Suspensão condicional do processo",
+    "resumo_simples": "Pode ocorrer em crimes com pena mínima até 1 ano, presentes requisitos.",
+    "por_que_cai": "Muito cobrado em JECRIM.",
+    "como_vunesp_cobra": "A banca troca pena mínima por máxima.",
+    "pegadinha": "Confundir com sursis penal.",
+    "analogia": "O processo fica em pausa condicionada.",
+    "flashcard": {
+      "frente": "Lei 9.099/1995, Art. 89: qual é a ideia central de Suspensão condicional do processo?",
+      "verso": "Suspensão do processo = pena mínima até 1 ano."
+    },
+    "questoes_relacionadas_tags": [
+      "suspensão condicional do processo",
+      "legislação especial",
+      "lei 9.099/1995"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-080",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 8.069/1990",
+    "artigo": "Art. 103",
+    "tema": "Ato infracional",
+    "resumo_simples": "Conduta descrita como crime ou contravenção praticada por criança/adolescente.",
+    "por_que_cai": "Cai em ECA e atuação policial.",
+    "como_vunesp_cobra": "A banca confunde ato infracional com crime.",
+    "pegadinha": "Chamar adolescente de réu condenado criminalmente.",
+    "analogia": "É espelho do crime, mas com resposta socioeducativa.",
+    "flashcard": {
+      "frente": "Lei 8.069/1990, Art. 103: qual é a ideia central de Ato infracional?",
+      "verso": "Adolescente pratica ato infracional."
+    },
+    "questoes_relacionadas_tags": [
+      "ato infracional",
+      "legislação especial",
+      "lei 8.069/1990"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-081",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 8.069/1990",
+    "artigo": "Art. 112",
+    "tema": "Medidas socioeducativas",
+    "resumo_simples": "Lista medidas aplicáveis ao adolescente autor de ato infracional.",
+    "por_que_cai": "Tema recorrente.",
+    "como_vunesp_cobra": "A banca cobra advertência, obrigação de reparar, prestação, LA, semiliberdade e internação.",
+    "pegadinha": "Tratar medida socioeducativa como pena criminal.",
+    "analogia": "É resposta educativa, não pena criminal clássica.",
+    "flashcard": {
+      "frente": "Lei 8.069/1990, Art. 112: qual é a ideia central de Medidas socioeducativas?",
+      "verso": "Socioeducativa não é pena comum."
+    },
+    "questoes_relacionadas_tags": [
+      "medidas socioeducativas",
+      "legislação especial",
+      "lei 8.069/1990"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-082",
+    "disciplina": "Legislação Especial",
+    "diploma": "Lei 13.260/2016",
+    "artigo": "Art. 2º",
+    "tema": "Terrorismo",
+    "resumo_simples": "Define terrorismo com finalidade específica de provocar terror social/generalizado.",
+    "por_que_cai": "Tema eventual em legislação especial.",
+    "como_vunesp_cobra": "A banca cobra finalidade e exclusões legais.",
+    "pegadinha": "Tratar manifestação política automaticamente como terrorismo.",
+    "analogia": "Terrorismo exige finalidade específica e atos tipificados.",
+    "flashcard": {
+      "frente": "Lei 13.260/2016, Art. 2º: qual é a ideia central de Terrorismo?",
+      "verso": "Finalidade específica é chave."
+    },
+    "questoes_relacionadas_tags": [
+      "terrorismo",
+      "legislação especial",
+      "lei 13.260/2016"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-083",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 1º",
+    "tema": "Fundamentos da República",
+    "resumo_simples": "Soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho/livre iniciativa e pluralismo político.",
+    "por_que_cai": "Base de Constitucional e Direitos Humanos.",
+    "como_vunesp_cobra": "A VUNESP cobra mnemônicos e aplicação em caso prático.",
+    "pegadinha": "Confundir fundamentos com objetivos.",
+    "analogia": "São os pilares do prédio constitucional.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 1º: qual é a ideia central de Fundamentos da República?",
+      "verso": "Fundamentos = base; objetivos = metas."
+    },
+    "questoes_relacionadas_tags": [
+      "fundamentos da república",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-084",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 2º",
+    "tema": "Separação dos Poderes",
+    "resumo_simples": "Poderes independentes e harmônicos entre si.",
+    "por_que_cai": "Cai em organização do Estado.",
+    "como_vunesp_cobra": "A banca cobra controle recíproco.",
+    "pegadinha": "Achar que independência elimina controles.",
+    "analogia": "São engrenagens separadas que precisam funcionar juntas.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 2º: qual é a ideia central de Separação dos Poderes?",
+      "verso": "Independência + harmonia."
+    },
+    "questoes_relacionadas_tags": [
+      "separação dos poderes",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-085",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 3º",
+    "tema": "Objetivos fundamentais",
+    "resumo_simples": "Construir sociedade livre, justa e solidária; desenvolvimento; erradicar pobreza; promover bem de todos.",
+    "por_que_cai": "Diferencia de fundamentos.",
+    "como_vunesp_cobra": "A banca troca art. 1º e art. 3º.",
+    "pegadinha": "Chamar objetivo de fundamento.",
+    "analogia": "Objetivos são o destino no GPS constitucional.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 3º: qual é a ideia central de Objetivos fundamentais?",
+      "verso": "Objetivos = verbos/metas."
+    },
+    "questoes_relacionadas_tags": [
+      "objetivos fundamentais",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-086",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 5º",
+    "tema": "Direitos e garantias fundamentais",
+    "resumo_simples": "Núcleo dos direitos individuais e coletivos.",
+    "por_que_cai": "É o artigo mais importante da prova.",
+    "como_vunesp_cobra": "A banca cobra remédios, inviolabilidades e garantias processuais.",
+    "pegadinha": "Tentar decorar sem entender aplicação.",
+    "analogia": "É a caixa de ferramentas do cidadão contra abusos.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 5º: qual é a ideia central de Direitos e garantias fundamentais?",
+      "verso": "Art. 5º é prioridade máxima."
+    },
+    "questoes_relacionadas_tags": [
+      "direitos e garantias fundamentais",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-087",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 5º, XI",
+    "tema": "Inviolabilidade domiciliar",
+    "resumo_simples": "Casa é asilo inviolável, com exceções constitucionais.",
+    "por_que_cai": "Cai em busca domiciliar e atividade policial.",
+    "como_vunesp_cobra": "A banca cobra flagrante, desastre, socorro e ordem judicial durante o dia.",
+    "pegadinha": "Achar que mandado judicial vale à noite em regra.",
+    "analogia": "A casa é cofre constitucional com chaves específicas.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 5º, XI: qual é a ideia central de Inviolabilidade domiciliar?",
+      "verso": "Mandado judicial: dia."
+    },
+    "questoes_relacionadas_tags": [
+      "inviolabilidade domiciliar",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-088",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 5º, XII",
+    "tema": "Sigilo das comunicações",
+    "resumo_simples": "Protege correspondência, comunicações e dados, com exceção judicial para comunicações telefônicas na forma da lei.",
+    "por_que_cai": "Cai em interceptação.",
+    "como_vunesp_cobra": "A banca mistura quebra de dados com interceptação.",
+    "pegadinha": "Dizer que Delegado pode interceptar sem juiz.",
+    "analogia": "Comunicação tem cadeado constitucional.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 5º, XII: qual é a ideia central de Sigilo das comunicações?",
+      "verso": "Interceptação telefônica exige juiz."
+    },
+    "questoes_relacionadas_tags": [
+      "sigilo das comunicações",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-089",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 5º, LXI",
+    "tema": "Prisão",
+    "resumo_simples": "Ninguém será preso senão em flagrante ou por ordem escrita e fundamentada da autoridade judiciária competente, salvo hipóteses militares.",
+    "por_que_cai": "Cai em prisões e garantias.",
+    "como_vunesp_cobra": "A banca cobra ordem fundamentada e flagrante.",
+    "pegadinha": "Achar que ordem administrativa basta.",
+    "analogia": "Liberdade é regra; prisão precisa chave constitucional.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 5º, LXI: qual é a ideia central de Prisão?",
+      "verso": "Flagrante ou ordem judicial."
+    },
+    "questoes_relacionadas_tags": [
+      "prisão",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-090",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 5º, LXIII",
+    "tema": "Direitos do preso",
+    "resumo_simples": "Preso será informado de seus direitos, inclusive silêncio e assistência.",
+    "por_que_cai": "Tema essencial para Delegado.",
+    "como_vunesp_cobra": "A VUNESP cobra direito ao silêncio e comunicação.",
+    "pegadinha": "Dizer que silêncio prejudica o preso.",
+    "analogia": "É o manual de garantias entregue no momento da prisão.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 5º, LXIII: qual é a ideia central de Direitos do preso?",
+      "verso": "Silêncio é garantia."
+    },
+    "questoes_relacionadas_tags": [
+      "direitos do preso",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-091",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 5º, LXVIII",
+    "tema": "Habeas corpus",
+    "resumo_simples": "Concede-se HC contra violência ou coação ilegal na liberdade de locomoção.",
+    "por_que_cai": "Remédio constitucional mais cobrado em penal/processual.",
+    "como_vunesp_cobra": "A banca compara HC preventivo e repressivo.",
+    "pegadinha": "Usar HC para direito patrimonial sem liberdade.",
+    "analogia": "É o alvará constitucional contra coação ilegal.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 5º, LXVIII: qual é a ideia central de Habeas corpus?",
+      "verso": "HC = locomoção."
+    },
+    "questoes_relacionadas_tags": [
+      "habeas corpus",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-092",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 5º, LXIX",
+    "tema": "Mandado de segurança",
+    "resumo_simples": "Protege direito líquido e certo não amparado por HC ou HD.",
+    "por_que_cai": "Cai em remédios constitucionais.",
+    "como_vunesp_cobra": "A banca diferencia MS, HC, HD e MI.",
+    "pegadinha": "Usar MS quando cabe HC.",
+    "analogia": "MS é o guarda-chuva para direito comprovável de plano.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 5º, LXIX: qual é a ideia central de Mandado de segurança?",
+      "verso": "Líquido e certo + sem HC/HD."
+    },
+    "questoes_relacionadas_tags": [
+      "mandado de segurança",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-093",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 5º, LXXII",
+    "tema": "Habeas data",
+    "resumo_simples": "Acesso ou retificação de informações pessoais em bancos de dados públicos/governamentais.",
+    "por_que_cai": "Cai em remédios constitucionais.",
+    "como_vunesp_cobra": "A banca confunde com LGPD e MS.",
+    "pegadinha": "Usar HD para qualquer documento público.",
+    "analogia": "É o remédio para ver/corrigir seu cadastro.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 5º, LXXII: qual é a ideia central de Habeas data?",
+      "verso": "HD = dados pessoais."
+    },
+    "questoes_relacionadas_tags": [
+      "habeas data",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-094",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 37",
+    "tema": "Princípios da Administração Pública",
+    "resumo_simples": "Legalidade, impessoalidade, moralidade, publicidade e eficiência.",
+    "por_que_cai": "Cai em Administrativo e Constitucional.",
+    "como_vunesp_cobra": "A banca cobra LIMPE e aplicação.",
+    "pegadinha": "Confundir princípios expressos com implícitos.",
+    "analogia": "É o código de conduta da máquina pública.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 37: qual é a ideia central de Princípios da Administração Pública?",
+      "verso": "LIMPE."
+    },
+    "questoes_relacionadas_tags": [
+      "princípios da administração pública",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-095",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 60, §4º",
+    "tema": "Cláusulas pétreas",
+    "resumo_simples": "Limitações materiais ao poder de reforma constitucional.",
+    "por_que_cai": "Cai em controle e teoria constitucional.",
+    "como_vunesp_cobra": "A banca pergunta o que não pode ser abolido.",
+    "pegadinha": "Dizer que cláusula pétrea não pode ser sequer alterada.",
+    "analogia": "Pode reformar a casa, mas não derrubar as colunas.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 60, §4º: qual é a ideia central de Cláusulas pétreas?",
+      "verso": "Pétrea impede abolição."
+    },
+    "questoes_relacionadas_tags": [
+      "cláusulas pétreas",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-096",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 102",
+    "tema": "Competência do STF",
+    "resumo_simples": "Define competências do Supremo Tribunal Federal.",
+    "por_que_cai": "Cai em organização do Judiciário.",
+    "como_vunesp_cobra": "A banca cobra controle concentrado e foro.",
+    "pegadinha": "Confundir STF com STJ.",
+    "analogia": "STF guarda a Constituição; STJ uniformiza lei federal.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 102: qual é a ideia central de Competência do STF?",
+      "verso": "STF = Constituição."
+    },
+    "questoes_relacionadas_tags": [
+      "competência do stf",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-097",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 105",
+    "tema": "Competência do STJ",
+    "resumo_simples": "Define competências do Superior Tribunal de Justiça.",
+    "por_que_cai": "Cai em organização do Judiciário e recursos.",
+    "como_vunesp_cobra": "A banca compara com STF.",
+    "pegadinha": "Achar que STJ julga questão constitucional típica.",
+    "analogia": "STJ é o tribunal da lei federal.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 105: qual é a ideia central de Competência do STJ?",
+      "verso": "STJ = lei federal."
+    },
+    "questoes_relacionadas_tags": [
+      "competência do stj",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-098",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 129",
+    "tema": "Funções institucionais do Ministério Público",
+    "resumo_simples": "Inclui promover ação penal pública e controle externo da atividade policial.",
+    "por_que_cai": "Importante para Delegado.",
+    "como_vunesp_cobra": "A banca cobra titularidade da ação penal e controle externo.",
+    "pegadinha": "Confundir controle externo com subordinação hierárquica.",
+    "analogia": "Controle externo fiscaliza, não transforma Delegado em subordinado do MP.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 129: qual é a ideia central de Funções institucionais do Ministério Público?",
+      "verso": "MP acusa; polícia investiga."
+    },
+    "questoes_relacionadas_tags": [
+      "funções institucionais do ministério público",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-099",
+    "disciplina": "Direito Constitucional",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 144",
+    "tema": "Segurança pública",
+    "resumo_simples": "Define órgãos de segurança pública e atribuições.",
+    "por_que_cai": "Artigo mais importante para carreira policial.",
+    "como_vunesp_cobra": "A VUNESP cobra polícia civil, federal, militar, penal e guardas.",
+    "pegadinha": "Confundir polícia judiciária com policiamento ostensivo.",
+    "analogia": "É o organograma constitucional da segurança pública.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 144: qual é a ideia central de Segurança pública?",
+      "verso": "PC = polícia judiciária estadual."
+    },
+    "questoes_relacionadas_tags": [
+      "segurança pública",
+      "direito constitucional",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-100",
+    "disciplina": "Direitos Humanos",
+    "diploma": "Declaração Universal dos Direitos Humanos",
+    "artigo": "Art. 1º",
+    "tema": "Igualdade e dignidade",
+    "resumo_simples": "Todos nascem livres e iguais em dignidade e direitos.",
+    "por_que_cai": "Base de Direitos Humanos.",
+    "como_vunesp_cobra": "A banca cobra universalidade e dignidade.",
+    "pegadinha": "Achar que direitos humanos são privilégio de grupos específicos.",
+    "analogia": "É o chão comum de toda pessoa.",
+    "flashcard": {
+      "frente": "Declaração Universal dos Direitos Humanos, Art. 1º: qual é a ideia central de Igualdade e dignidade?",
+      "verso": "Dignidade é ponto de partida."
+    },
+    "questoes_relacionadas_tags": [
+      "igualdade e dignidade",
+      "direitos humanos",
+      "declaração universal dos direitos humanos"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-101",
+    "disciplina": "Direitos Humanos",
+    "diploma": "Declaração Universal dos Direitos Humanos",
+    "artigo": "Art. 3º",
+    "tema": "Vida, liberdade e segurança",
+    "resumo_simples": "Todo ser humano tem direito à vida, liberdade e segurança pessoal.",
+    "por_que_cai": "Cai em atividade policial e proteção básica.",
+    "como_vunesp_cobra": "A VUNESP cobra relação entre segurança pública e direitos.",
+    "pegadinha": "Opor segurança pública a direitos humanos sempre.",
+    "analogia": "Segurança pública deve proteger direitos, não negá-los.",
+    "flashcard": {
+      "frente": "Declaração Universal dos Direitos Humanos, Art. 3º: qual é a ideia central de Vida, liberdade e segurança?",
+      "verso": "Segurança é direito humano."
+    },
+    "questoes_relacionadas_tags": [
+      "vida, liberdade e segurança",
+      "direitos humanos",
+      "declaração universal dos direitos humanos"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-102",
+    "disciplina": "Direitos Humanos",
+    "diploma": "CADH/Pacto de San José",
+    "artigo": "Art. 7º",
+    "tema": "Liberdade pessoal",
+    "resumo_simples": "Protege liberdade e estabelece garantias contra prisão arbitrária.",
+    "por_que_cai": "Muito ligado a prisões.",
+    "como_vunesp_cobra": "A banca cobra controle judicial e comunicação.",
+    "pegadinha": "Normalizar prisão sem controle.",
+    "analogia": "É o cinto de segurança internacional contra prisões ilegais.",
+    "flashcard": {
+      "frente": "CADH/Pacto de San José, Art. 7º: qual é a ideia central de Liberdade pessoal?",
+      "verso": "Prisão deve ser legal e controlada."
+    },
+    "questoes_relacionadas_tags": [
+      "liberdade pessoal",
+      "direitos humanos",
+      "cadh/pacto de san josé"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-103",
+    "disciplina": "Direitos Humanos",
+    "diploma": "CADH/Pacto de San José",
+    "artigo": "Art. 8º",
+    "tema": "Garantias judiciais",
+    "resumo_simples": "Assegura devido processo, juiz competente, defesa e presunção de inocência.",
+    "por_que_cai": "Cai em processo penal e DH.",
+    "como_vunesp_cobra": "A VUNESP cobra garantias mínimas.",
+    "pegadinha": "Tratar eficiência penal como licença para ignorar defesa.",
+    "analogia": "Processo justo é trilho obrigatório da punição.",
+    "flashcard": {
+      "frente": "CADH/Pacto de San José, Art. 8º: qual é a ideia central de Garantias judiciais?",
+      "verso": "Devido processo é núcleo."
+    },
+    "questoes_relacionadas_tags": [
+      "garantias judiciais",
+      "direitos humanos",
+      "cadh/pacto de san josé"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-104",
+    "disciplina": "Direitos Humanos",
+    "diploma": "CADH/Pacto de San José",
+    "artigo": "Art. 25",
+    "tema": "Proteção judicial",
+    "resumo_simples": "Garante recurso simples e efetivo contra violações de direitos.",
+    "por_que_cai": "Cai em sistema interamericano.",
+    "como_vunesp_cobra": "A banca cobra proteção efetiva, não meramente formal.",
+    "pegadinha": "Achar que basta existir ação no papel.",
+    "analogia": "Direito precisa de porta real para reclamar.",
+    "flashcard": {
+      "frente": "CADH/Pacto de San José, Art. 25: qual é a ideia central de Proteção judicial?",
+      "verso": "Recurso efetivo."
+    },
+    "questoes_relacionadas_tags": [
+      "proteção judicial",
+      "direitos humanos",
+      "cadh/pacto de san josé"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-105",
+    "disciplina": "Direitos Humanos",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 5º, §2º",
+    "tema": "Abertura material dos direitos fundamentais",
+    "resumo_simples": "Direitos expressos não excluem outros decorrentes do regime, princípios e tratados.",
+    "por_que_cai": "Cai em incorporação e diálogo com DH.",
+    "como_vunesp_cobra": "A banca cobra abertura do catálogo.",
+    "pegadinha": "Achar que só existe direito no texto literal do art. 5º.",
+    "analogia": "O catálogo constitucional é aberto.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 5º, §2º: qual é a ideia central de Abertura material dos direitos fundamentais?",
+      "verso": "Direitos fundamentais não são lista fechada."
+    },
+    "questoes_relacionadas_tags": [
+      "abertura material dos direitos fundamentais",
+      "direitos humanos",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-106",
+    "disciplina": "Direitos Humanos",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 5º, §3º",
+    "tema": "Tratados de direitos humanos com status constitucional",
+    "resumo_simples": "Tratados aprovados com quórum qualificado equivalem a emendas constitucionais.",
+    "por_que_cai": "Tema clássico de DH constitucional.",
+    "como_vunesp_cobra": "A VUNESP cobra quórum e status.",
+    "pegadinha": "Confundir com todos os tratados de DH automaticamente constitucionais.",
+    "analogia": "O tratado sobe de nível quando passa pelo rito especial.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 5º, §3º: qual é a ideia central de Tratados de direitos humanos com status constitucional?",
+      "verso": "Quórum qualificado = status de emenda."
+    },
+    "questoes_relacionadas_tags": [
+      "tratados de direitos humanos com status constitucional",
+      "direitos humanos",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-107",
+    "disciplina": "Direitos Humanos",
+    "diploma": "Convenção contra a Tortura",
+    "artigo": "Núcleo normativo",
+    "tema": "Proibição da tortura",
+    "resumo_simples": "A tortura é proibida e deve ser prevenida, investigada e punida.",
+    "por_que_cai": "Cai em atividade policial e DH.",
+    "como_vunesp_cobra": "A banca cobra vedação absoluta.",
+    "pegadinha": "Relativizar tortura por gravidade do crime investigado.",
+    "analogia": "Tortura não é atalho investigativo; é crime e violação grave.",
+    "flashcard": {
+      "frente": "Convenção contra a Tortura, Núcleo normativo: qual é a ideia central de Proibição da tortura?",
+      "verso": "Tortura é vedação absoluta."
+    },
+    "questoes_relacionadas_tags": [
+      "proibição da tortura",
+      "direitos humanos",
+      "convenção contra a tortura"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-108",
+    "disciplina": "Direitos Humanos",
+    "diploma": "Regras de Mandela",
+    "artigo": "Tópico essencial",
+    "tema": "Tratamento de presos",
+    "resumo_simples": "Parâmetros mínimos de tratamento digno de pessoas privadas de liberdade.",
+    "por_que_cai": "Cai em execução penal e DH.",
+    "como_vunesp_cobra": "A banca cobra dignidade e prevenção de maus-tratos.",
+    "pegadinha": "Achar que preso perde todos os direitos.",
+    "analogia": "A prisão restringe liberdade, não apaga humanidade.",
+    "flashcard": {
+      "frente": "Regras de Mandela, Tópico essencial: qual é a ideia central de Tratamento de presos?",
+      "verso": "Preso mantém direitos não atingidos pela sentença."
+    },
+    "questoes_relacionadas_tags": [
+      "tratamento de presos",
+      "direitos humanos",
+      "regras de mandela"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-109",
+    "disciplina": "Direitos Humanos",
+    "diploma": "Lei 13.146/2015",
+    "artigo": "Art. 2º",
+    "tema": "Pessoa com deficiência",
+    "resumo_simples": "Define pessoa com deficiência em interação com barreiras.",
+    "por_que_cai": "Tema cobrado em grupos vulneráveis.",
+    "como_vunesp_cobra": "A banca cobra modelo social da deficiência.",
+    "pegadinha": "Reduzir deficiência a laudo médico isolado.",
+    "analogia": "A barreira do ambiente também produz exclusão.",
+    "flashcard": {
+      "frente": "Lei 13.146/2015, Art. 2º: qual é a ideia central de Pessoa com deficiência?",
+      "verso": "Modelo social: impedimento + barreira."
+    },
+    "questoes_relacionadas_tags": [
+      "pessoa com deficiência",
+      "direitos humanos",
+      "lei 13.146/2015"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-110",
+    "disciplina": "Direitos Humanos",
+    "diploma": "Lei 10.741/2003",
+    "artigo": "Art. 3º",
+    "tema": "Prioridade da pessoa idosa",
+    "resumo_simples": "Família, sociedade e Estado devem assegurar direitos com prioridade.",
+    "por_que_cai": "Cai em grupos vulneráveis.",
+    "como_vunesp_cobra": "A banca cobra dever compartilhado.",
+    "pegadinha": "Achar que só família responde.",
+    "analogia": "Proteção da pessoa idosa é rede, não pessoa isolada.",
+    "flashcard": {
+      "frente": "Lei 10.741/2003, Art. 3º: qual é a ideia central de Prioridade da pessoa idosa?",
+      "verso": "Prioridade é dever de todos."
+    },
+    "questoes_relacionadas_tags": [
+      "prioridade da pessoa idosa",
+      "direitos humanos",
+      "lei 10.741/2003"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-111",
+    "disciplina": "Direitos Humanos",
+    "diploma": "ECA",
+    "artigo": "Art. 4º",
+    "tema": "Prioridade absoluta",
+    "resumo_simples": "Criança e adolescente têm prioridade absoluta na efetivação de direitos.",
+    "por_que_cai": "Tema central em DH e ECA.",
+    "como_vunesp_cobra": "A banca cobra prioridade absoluta e proteção integral.",
+    "pegadinha": "Tratar criança como adulto em miniatura.",
+    "analogia": "É fila preferencial constitucional e legal de proteção.",
+    "flashcard": {
+      "frente": "ECA, Art. 4º: qual é a ideia central de Prioridade absoluta?",
+      "verso": "Criança/adolescente = prioridade absoluta."
+    },
+    "questoes_relacionadas_tags": [
+      "prioridade absoluta",
+      "direitos humanos",
+      "eca"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-112",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 37",
+    "tema": "Princípios administrativos",
+    "resumo_simples": "LIMPE: legalidade, impessoalidade, moralidade, publicidade e eficiência.",
+    "por_que_cai": "Base de Administrativo.",
+    "como_vunesp_cobra": "A VUNESP cobra caso prático de violação de princípio.",
+    "pegadinha": "Achar que eficiência autoriza violar legalidade.",
+    "analogia": "A Administração só dirige dentro das faixas da lei.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 37: qual é a ideia central de Princípios administrativos?",
+      "verso": "LIMPE orienta toda atuação."
+    },
+    "questoes_relacionadas_tags": [
+      "princípios administrativos",
+      "direito administrativo",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-113",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 9.784/1999",
+    "artigo": "Art. 2º",
+    "tema": "Princípios do processo administrativo",
+    "resumo_simples": "Legalidade, finalidade, motivação, razoabilidade, proporcionalidade, segurança jurídica e outros.",
+    "por_que_cai": "Cai em processo administrativo.",
+    "como_vunesp_cobra": "A banca cobra motivação e proporcionalidade.",
+    "pegadinha": "Confundir processo administrativo com processo judicial.",
+    "analogia": "É o manual de boas práticas do processo administrativo.",
+    "flashcard": {
+      "frente": "Lei 9.784/1999, Art. 2º: qual é a ideia central de Princípios do processo administrativo?",
+      "verso": "Motivação é chave."
+    },
+    "questoes_relacionadas_tags": [
+      "princípios do processo administrativo",
+      "direito administrativo",
+      "lei 9.784/1999"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-114",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 14.133/2021",
+    "artigo": "Art. 5º",
+    "tema": "Princípios das licitações",
+    "resumo_simples": "Lista princípios da nova lei de licitações.",
+    "por_que_cai": "Tema atual e importante.",
+    "como_vunesp_cobra": "A banca cobra princípios novos e antigos.",
+    "pegadinha": "Estudar só Lei 8.666 antiga.",
+    "analogia": "Licitação é competição com regras transparentes.",
+    "flashcard": {
+      "frente": "Lei 14.133/2021, Art. 5º: qual é a ideia central de Princípios das licitações?",
+      "verso": "Nova Lei 14.133 é prioridade."
+    },
+    "questoes_relacionadas_tags": [
+      "princípios das licitações",
+      "direito administrativo",
+      "lei 14.133/2021"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-115",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 14.133/2021",
+    "artigo": "Art. 28",
+    "tema": "Modalidades de licitação",
+    "resumo_simples": "Pregão, concorrência, concurso, leilão e diálogo competitivo.",
+    "por_que_cai": "Cai em nova lei de licitações.",
+    "como_vunesp_cobra": "A banca cobra modalidades e extinção de tomada de preços/convite.",
+    "pegadinha": "Citar convite como modalidade atual da Lei 14.133.",
+    "analogia": "É o cardápio atual de procedimentos competitivos.",
+    "flashcard": {
+      "frente": "Lei 14.133/2021, Art. 28: qual é a ideia central de Modalidades de licitação?",
+      "verso": "Convite e tomada saíram da nova lei."
+    },
+    "questoes_relacionadas_tags": [
+      "modalidades de licitação",
+      "direito administrativo",
+      "lei 14.133/2021"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-116",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 14.133/2021",
+    "artigo": "Art. 75",
+    "tema": "Dispensa de licitação",
+    "resumo_simples": "Hipóteses em que licitação é dispensável.",
+    "por_que_cai": "Tema recorrente.",
+    "como_vunesp_cobra": "A banca mistura dispensa e inexigibilidade.",
+    "pegadinha": "Tratar inviabilidade de competição como dispensa.",
+    "analogia": "Dispensa: poderia competir, mas a lei libera. Inexigível: competição é inviável.",
+    "flashcard": {
+      "frente": "Lei 14.133/2021, Art. 75: qual é a ideia central de Dispensa de licitação?",
+      "verso": "Dispensa ≠ inexigibilidade."
+    },
+    "questoes_relacionadas_tags": [
+      "dispensa de licitação",
+      "direito administrativo",
+      "lei 14.133/2021"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-117",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 14.133/2021",
+    "artigo": "Art. 74",
+    "tema": "Inexigibilidade",
+    "resumo_simples": "Ocorre quando é inviável a competição.",
+    "por_que_cai": "Cai no comparativo com dispensa.",
+    "como_vunesp_cobra": "A VUNESP cobra fornecedor exclusivo, artista e serviço técnico especializado.",
+    "pegadinha": "Achar que preço baixo gera inexigibilidade.",
+    "analogia": "Se não há competição possível, não há disputa a fazer.",
+    "flashcard": {
+      "frente": "Lei 14.133/2021, Art. 74: qual é a ideia central de Inexigibilidade?",
+      "verso": "Inexigibilidade = competição inviável."
+    },
+    "questoes_relacionadas_tags": [
+      "inexigibilidade",
+      "direito administrativo",
+      "lei 14.133/2021"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-118",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 8.429/1992",
+    "artigo": "Art. 1º",
+    "tema": "Improbidade administrativa",
+    "resumo_simples": "Sistema de responsabilização por atos dolosos de improbidade conforme alterações.",
+    "por_que_cai": "Tema importante e atualizado.",
+    "como_vunesp_cobra": "A banca cobra dolo após alterações legislativas.",
+    "pegadinha": "Aplicar improbidade culposa genericamente.",
+    "analogia": "Improbidade não é todo erro administrativo.",
+    "flashcard": {
+      "frente": "Lei 8.429/1992, Art. 1º: qual é a ideia central de Improbidade administrativa?",
+      "verso": "Atenção ao dolo."
+    },
+    "questoes_relacionadas_tags": [
+      "improbidade administrativa",
+      "direito administrativo",
+      "lei 8.429/1992"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-119",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 8.429/1992",
+    "artigo": "Art. 9º",
+    "tema": "Enriquecimento ilícito",
+    "resumo_simples": "Atos de improbidade que importam enriquecimento ilícito.",
+    "por_que_cai": "Cai em classificação de atos.",
+    "como_vunesp_cobra": "A banca diferencia arts. 9º, 10 e 11.",
+    "pegadinha": "Confundir enriquecimento com violação de princípios.",
+    "analogia": "É quando o agente sai mais rico indevidamente.",
+    "flashcard": {
+      "frente": "Lei 8.429/1992, Art. 9º: qual é a ideia central de Enriquecimento ilícito?",
+      "verso": "Art. 9º = vantagem patrimonial indevida."
+    },
+    "questoes_relacionadas_tags": [
+      "enriquecimento ilícito",
+      "direito administrativo",
+      "lei 8.429/1992"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-120",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 8.429/1992",
+    "artigo": "Art. 10",
+    "tema": "Dano ao erário",
+    "resumo_simples": "Atos que causam lesão ao patrimônio público.",
+    "por_que_cai": "Muito cobrado em improbidade.",
+    "como_vunesp_cobra": "A banca cobra prejuízo ao erário.",
+    "pegadinha": "Achar que todo art. 10 exige enriquecimento do agente.",
+    "analogia": "O foco é o prejuízo ao cofre público.",
+    "flashcard": {
+      "frente": "Lei 8.429/1992, Art. 10: qual é a ideia central de Dano ao erário?",
+      "verso": "Art. 10 = dano ao erário."
+    },
+    "questoes_relacionadas_tags": [
+      "dano ao erário",
+      "direito administrativo",
+      "lei 8.429/1992"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-121",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 8.429/1992",
+    "artigo": "Art. 11",
+    "tema": "Violação de princípios",
+    "resumo_simples": "Atos que violam princípios da Administração nos termos legais.",
+    "por_que_cai": "Tema recorrente e alterado.",
+    "como_vunesp_cobra": "A banca cobra rol e dolo.",
+    "pegadinha": "Usar art. 11 como cláusula aberta para qualquer falha.",
+    "analogia": "É violação qualificada de deveres nucleares.",
+    "flashcard": {
+      "frente": "Lei 8.429/1992, Art. 11: qual é a ideia central de Violação de princípios?",
+      "verso": "Art. 11 exige cautela atualizada."
+    },
+    "questoes_relacionadas_tags": [
+      "violação de princípios",
+      "direito administrativo",
+      "lei 8.429/1992"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-122",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 37, §6º",
+    "tema": "Responsabilidade civil do Estado",
+    "resumo_simples": "Pessoas jurídicas de direito público e prestadoras de serviço público respondem objetivamente por danos de seus agentes.",
+    "por_que_cai": "Cai muito.",
+    "como_vunesp_cobra": "A VUNESP cobra ação regressiva com dolo ou culpa.",
+    "pegadinha": "Confundir responsabilidade do Estado com do agente.",
+    "analogia": "Estado responde ao terceiro; depois cobra do agente se houver dolo/culpa.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 37, §6º: qual é a ideia central de Responsabilidade civil do Estado?",
+      "verso": "Estado objetiva; regresso subjetivo."
+    },
+    "questoes_relacionadas_tags": [
+      "responsabilidade civil do estado",
+      "direito administrativo",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-123",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Constituição Federal",
+    "artigo": "Art. 41",
+    "tema": "Estabilidade",
+    "resumo_simples": "Servidor efetivo adquire estabilidade após requisitos constitucionais.",
+    "por_que_cai": "Cai em agentes públicos.",
+    "como_vunesp_cobra": "A banca cobra estágio probatório e perda do cargo.",
+    "pegadinha": "Achar que estabilidade impede demissão.",
+    "analogia": "Estabilidade é cinto de segurança, não blindagem absoluta.",
+    "flashcard": {
+      "frente": "Constituição Federal, Art. 41: qual é a ideia central de Estabilidade?",
+      "verso": "Estável pode perder cargo nas hipóteses legais."
+    },
+    "questoes_relacionadas_tags": [
+      "estabilidade",
+      "direito administrativo",
+      "constituição federal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-124",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 12.527/2011",
+    "artigo": "Art. 3º",
+    "tema": "Lei de Acesso à Informação",
+    "resumo_simples": "Publicidade como regra e sigilo como exceção.",
+    "por_que_cai": "Cai em transparência e Administração.",
+    "como_vunesp_cobra": "A banca cobra diretrizes de acesso.",
+    "pegadinha": "Achar que toda informação pública é sigilosa por conveniência.",
+    "analogia": "A janela pública fica aberta; sigilo exige cortina legal.",
+    "flashcard": {
+      "frente": "Lei 12.527/2011, Art. 3º: qual é a ideia central de Lei de Acesso à Informação?",
+      "verso": "Publicidade é regra."
+    },
+    "questoes_relacionadas_tags": [
+      "lei de acesso à informação",
+      "direito administrativo",
+      "lei 12.527/2011"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-125",
+    "disciplina": "Direito Administrativo",
+    "diploma": "Lei 13.709/2018",
+    "artigo": "Art. 6º",
+    "tema": "Princípios da LGPD",
+    "resumo_simples": "Tratamento de dados deve observar finalidade, adequação, necessidade e outros princípios.",
+    "por_que_cai": "Cai em informática/administrativo.",
+    "como_vunesp_cobra": "A banca cobra finalidade e necessidade.",
+    "pegadinha": "Coletar dado sem finalidade clara.",
+    "analogia": "Dado pessoal é prova sensível: precisa finalidade e limite.",
+    "flashcard": {
+      "frente": "Lei 13.709/2018, Art. 6º: qual é a ideia central de Princípios da LGPD?",
+      "verso": "Finalidade + necessidade."
+    },
+    "questoes_relacionadas_tags": [
+      "princípios da lgpd",
+      "direito administrativo",
+      "lei 13.709/2018"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-126",
+    "disciplina": "Direito Civil",
+    "diploma": "LINDB",
+    "artigo": "Art. 1º",
+    "tema": "Vigência da lei",
+    "resumo_simples": "Salvo disposição contrária, lei começa a vigorar após vacatio legis.",
+    "por_que_cai": "Cai em LINDB.",
+    "como_vunesp_cobra": "A banca cobra vigência e revogação.",
+    "pegadinha": "Confundir publicação com vigência automática sempre.",
+    "analogia": "Publicação é anunciar; vigência é começar a valer.",
+    "flashcard": {
+      "frente": "LINDB, Art. 1º: qual é a ideia central de Vigência da lei?",
+      "verso": "Atenção à vacatio legis."
+    },
+    "questoes_relacionadas_tags": [
+      "vigência da lei",
+      "direito civil",
+      "lindb"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-127",
+    "disciplina": "Direito Civil",
+    "diploma": "LINDB",
+    "artigo": "Art. 3º",
+    "tema": "Obrigatoriedade da lei",
+    "resumo_simples": "Ninguém se escusa de cumprir a lei alegando que não a conhece.",
+    "por_que_cai": "Tema básico e pegadinha com erro de proibição no Penal.",
+    "como_vunesp_cobra": "A banca mistura LINDB com Direito Penal.",
+    "pegadinha": "Achar que desconhecimento puro sempre resolve.",
+    "analogia": "A lei não pergunta se você leu o Diário Oficial.",
+    "flashcard": {
+      "frente": "LINDB, Art. 3º: qual é a ideia central de Obrigatoriedade da lei?",
+      "verso": "Ignorância da lei não escusa."
+    },
+    "questoes_relacionadas_tags": [
+      "obrigatoriedade da lei",
+      "direito civil",
+      "lindb"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-128",
+    "disciplina": "Direito Civil",
+    "diploma": "Código Civil",
+    "artigo": "Art. 1º",
+    "tema": "Personalidade e capacidade",
+    "resumo_simples": "Toda pessoa é capaz de direitos e deveres na ordem civil.",
+    "por_que_cai": "Cai em pessoas naturais.",
+    "como_vunesp_cobra": "A banca cobra início da personalidade e capacidade.",
+    "pegadinha": "Confundir personalidade com capacidade plena.",
+    "analogia": "Personalidade é entrar no sistema; capacidade plena é poder dirigir sozinho.",
+    "flashcard": {
+      "frente": "Código Civil, Art. 1º: qual é a ideia central de Personalidade e capacidade?",
+      "verso": "Personalidade ≠ capacidade."
+    },
+    "questoes_relacionadas_tags": [
+      "personalidade e capacidade",
+      "direito civil",
+      "código civil"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-129",
+    "disciplina": "Direito Civil",
+    "diploma": "Código Civil",
+    "artigo": "Art. 2º",
+    "tema": "Início da personalidade",
+    "resumo_simples": "Personalidade civil começa do nascimento com vida, resguardados direitos do nascituro.",
+    "por_que_cai": "Muito cobrado.",
+    "como_vunesp_cobra": "A banca pergunta nascituro.",
+    "pegadinha": "Dizer que nascituro não tem qualquer proteção.",
+    "analogia": "O nascituro tem reserva jurídica antes do nascimento.",
+    "flashcard": {
+      "frente": "Código Civil, Art. 2º: qual é a ideia central de Início da personalidade?",
+      "verso": "Nascimento com vida inicia personalidade."
+    },
+    "questoes_relacionadas_tags": [
+      "início da personalidade",
+      "direito civil",
+      "código civil"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-130",
+    "disciplina": "Direito Civil",
+    "diploma": "Código Civil",
+    "artigo": "Art. 3º",
+    "tema": "Absolutamente incapazes",
+    "resumo_simples": "Menores de 16 anos são absolutamente incapazes.",
+    "por_que_cai": "Cai em capacidade.",
+    "como_vunesp_cobra": "A banca cobra alteração do Estatuto da Pessoa com Deficiência.",
+    "pegadinha": "Incluir pessoas com deficiência como absolutamente incapazes automaticamente.",
+    "analogia": "Incapacidade absoluta hoje é regra bem restrita.",
+    "flashcard": {
+      "frente": "Código Civil, Art. 3º: qual é a ideia central de Absolutamente incapazes?",
+      "verso": "Absolutamente incapaz: menor de 16."
+    },
+    "questoes_relacionadas_tags": [
+      "absolutamente incapazes",
+      "direito civil",
+      "código civil"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-131",
+    "disciplina": "Direito Civil",
+    "diploma": "Código Civil",
+    "artigo": "Art. 186",
+    "tema": "Ato ilícito",
+    "resumo_simples": "Quem viola direito e causa dano comete ato ilícito.",
+    "por_que_cai": "Base da responsabilidade civil.",
+    "como_vunesp_cobra": "A banca cobra culpa, dano e nexo.",
+    "pegadinha": "Achar que todo dano gera responsabilidade sem nexo.",
+    "analogia": "Responsabilidade é tripé: conduta, dano e nexo.",
+    "flashcard": {
+      "frente": "Código Civil, Art. 186: qual é a ideia central de Ato ilícito?",
+      "verso": "Ato ilícito exige dano e nexo."
+    },
+    "questoes_relacionadas_tags": [
+      "ato ilícito",
+      "direito civil",
+      "código civil"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-132",
+    "disciplina": "Direito Civil",
+    "diploma": "Código Civil",
+    "artigo": "Art. 187",
+    "tema": "Abuso de direito",
+    "resumo_simples": "Também comete ato ilícito quem excede limites do fim econômico/social, boa-fé ou bons costumes.",
+    "por_que_cai": "Cai em responsabilidade civil.",
+    "como_vunesp_cobra": "A banca cobra exercício irregular de direito.",
+    "pegadinha": "Achar que ter direito permite qualquer uso.",
+    "analogia": "Até uma chave legítima pode ser usada para arrombar.",
+    "flashcard": {
+      "frente": "Código Civil, Art. 187: qual é a ideia central de Abuso de direito?",
+      "verso": "Direito tem limite."
+    },
+    "questoes_relacionadas_tags": [
+      "abuso de direito",
+      "direito civil",
+      "código civil"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-133",
+    "disciplina": "Direito Civil",
+    "diploma": "Código Civil",
+    "artigo": "Art. 927",
+    "tema": "Dever de indenizar",
+    "resumo_simples": "Quem causa dano por ato ilícito deve repará-lo.",
+    "por_que_cai": "Fecha responsabilidade civil.",
+    "como_vunesp_cobra": "A banca cobra responsabilidade subjetiva e objetiva.",
+    "pegadinha": "Confundir dever de indenizar com punição penal.",
+    "analogia": "Indenização é recompor o prejuízo.",
+    "flashcard": {
+      "frente": "Código Civil, Art. 927: qual é a ideia central de Dever de indenizar?",
+      "verso": "Dano reparável gera indenização."
+    },
+    "questoes_relacionadas_tags": [
+      "dever de indenizar",
+      "direito civil",
+      "código civil"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-134",
+    "disciplina": "Medicina Legal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 158",
+    "tema": "Exame de corpo de delito",
+    "resumo_simples": "Quando a infração deixa vestígios, é indispensável exame de corpo de delito.",
+    "por_que_cai": "Muito importante para Medicina Legal e Processo Penal.",
+    "como_vunesp_cobra": "A banca cobra vestígios e prova pericial.",
+    "pegadinha": "Achar que confissão supre exame quando há vestígios.",
+    "analogia": "Se o crime deixou pegada, a perícia precisa olhar a pegada.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 158: qual é a ideia central de Exame de corpo de delito?",
+      "verso": "Vestígio exige corpo de delito."
+    },
+    "questoes_relacionadas_tags": [
+      "exame de corpo de delito",
+      "medicina legal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-135",
+    "disciplina": "Medicina Legal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 159",
+    "tema": "Perícia oficial",
+    "resumo_simples": "Exame de corpo de delito e outras perícias são realizados por perito oficial.",
+    "por_que_cai": "Cai em perícias.",
+    "como_vunesp_cobra": "A VUNESP cobra perito oficial e ausência.",
+    "pegadinha": "Confundir assistente técnico com perito oficial.",
+    "analogia": "Perito oficial é o técnico do Estado no processo.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 159: qual é a ideia central de Perícia oficial?",
+      "verso": "Perícia oficial tem regra própria."
+    },
+    "questoes_relacionadas_tags": [
+      "perícia oficial",
+      "medicina legal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-136",
+    "disciplina": "Medicina Legal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 129",
+    "tema": "Lesão corporal",
+    "resumo_simples": "Ofender integridade corporal ou saúde de outrem.",
+    "por_que_cai": "Base para traumatologia forense.",
+    "como_vunesp_cobra": "A banca cobra qualificadoras e gravidade da lesão.",
+    "pegadinha": "Confundir perigo de vida com incapacidade.",
+    "analogia": "Lesão corporal é ponte entre medicina e tipo penal.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 129: qual é a ideia central de Lesão corporal?",
+      "verso": "Art. 129 guia gravidade."
+    },
+    "questoes_relacionadas_tags": [
+      "lesão corporal",
+      "medicina legal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-137",
+    "disciplina": "Medicina Legal",
+    "diploma": "Código Penal",
+    "artigo": "Art. 121",
+    "tema": "Homicídio e exame necroscópico",
+    "resumo_simples": "Morte violenta demanda investigação da causa e circunstâncias.",
+    "por_que_cai": "Liga tanatologia ao Direito Penal.",
+    "como_vunesp_cobra": "A banca cobra sinais de morte e causa jurídica.",
+    "pegadinha": "Achar que Medicina Legal define autoria sozinha.",
+    "analogia": "A perícia conta como a morte ocorreu, não substitui toda investigação.",
+    "flashcard": {
+      "frente": "Código Penal, Art. 121: qual é a ideia central de Homicídio e exame necroscópico?",
+      "verso": "Perícia auxilia, não julga."
+    },
+    "questoes_relacionadas_tags": [
+      "homicídio e exame necroscópico",
+      "medicina legal",
+      "código penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-138",
+    "disciplina": "Medicina Legal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 162",
+    "tema": "Autópsia",
+    "resumo_simples": "Regra sobre prazo para autópsia, salvo evidência dos sinais de morte.",
+    "por_que_cai": "Cai em tanatologia.",
+    "como_vunesp_cobra": "A banca cobra intervalo e exceções.",
+    "pegadinha": "Decorar sem entender finalidade: evitar erro por morte aparente.",
+    "analogia": "É esperar sinais seguros antes de abrir o livro do corpo.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 162: qual é a ideia central de Autópsia?",
+      "verso": "Autópsia exige cautela temporal."
+    },
+    "questoes_relacionadas_tags": [
+      "autópsia",
+      "medicina legal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-139",
+    "disciplina": "Medicina Legal",
+    "diploma": "Código de Processo Penal",
+    "artigo": "Art. 167",
+    "tema": "Prova testemunhal diante do desaparecimento dos vestígios",
+    "resumo_simples": "Se vestígios desaparecerem, prova testemunhal pode suprir falta do exame.",
+    "por_que_cai": "Cai junto com corpo de delito.",
+    "como_vunesp_cobra": "A banca cobra exceção ao exame direto.",
+    "pegadinha": "Achar que nunca pode haver prova sem perícia direta.",
+    "analogia": "Se a pegada sumiu, testemunhas podem ajudar a reconstruir.",
+    "flashcard": {
+      "frente": "Código de Processo Penal, Art. 167: qual é a ideia central de Prova testemunhal diante do desaparecimento dos vestígios?",
+      "verso": "Vestígio desaparecido admite suprimento."
+    },
+    "questoes_relacionadas_tags": [
+      "prova testemunhal diante do desaparecimento dos vestígios",
+      "medicina legal",
+      "código de processo penal"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-140",
+    "disciplina": "Criminologia",
+    "diploma": "Conceito doutrinário",
+    "artigo": "Tópico essencial",
+    "tema": "Objeto da criminologia",
+    "resumo_simples": "Estuda crime, criminoso, vítima e controle social, com método empírico.",
+    "por_que_cai": "Cai como abertura da matéria.",
+    "como_vunesp_cobra": "A banca cobra objeto e método.",
+    "pegadinha": "Confundir criminologia com Direito Penal dogmático.",
+    "analogia": "Direito Penal pergunta “qual norma?”; Criminologia pergunta “por que ocorre?”.",
+    "flashcard": {
+      "frente": "Conceito doutrinário, Tópico essencial: qual é a ideia central de Objeto da criminologia?",
+      "verso": "Criminologia é empírica."
+    },
+    "questoes_relacionadas_tags": [
+      "objeto da criminologia",
+      "criminologia",
+      "conceito doutrinário"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-141",
+    "disciplina": "Criminologia",
+    "diploma": "Conceito doutrinário",
+    "artigo": "Tópico essencial",
+    "tema": "Vitimologia",
+    "resumo_simples": "Estuda a vítima e os processos de vitimização.",
+    "por_que_cai": "Tema recorrente.",
+    "como_vunesp_cobra": "A banca cobra vitimização primária, secundária e terciária.",
+    "pegadinha": "Achar que vítima é irrelevante para criminologia.",
+    "analogia": "A vítima também está no mapa do crime.",
+    "flashcard": {
+      "frente": "Conceito doutrinário, Tópico essencial: qual é a ideia central de Vitimologia?",
+      "verso": "Vitimologia = estudo da vítima."
+    },
+    "questoes_relacionadas_tags": [
+      "vitimologia",
+      "criminologia",
+      "conceito doutrinário"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-142",
+    "disciplina": "Criminologia",
+    "diploma": "Conceito doutrinário",
+    "artigo": "Tópico essencial",
+    "tema": "Prevenção primária",
+    "resumo_simples": "Atua nas causas sociais antes do crime ocorrer.",
+    "por_que_cai": "Cai em prevenção criminal.",
+    "como_vunesp_cobra": "A banca compara primária, secundária e terciária.",
+    "pegadinha": "Confundir prevenção primária com policiamento em zona quente.",
+    "analogia": "É cuidar do terreno antes da erva daninha nascer.",
+    "flashcard": {
+      "frente": "Conceito doutrinário, Tópico essencial: qual é a ideia central de Prevenção primária?",
+      "verso": "Primária = causas profundas."
+    },
+    "questoes_relacionadas_tags": [
+      "prevenção primária",
+      "criminologia",
+      "conceito doutrinário"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-143",
+    "disciplina": "Criminologia",
+    "diploma": "Conceito doutrinário",
+    "artigo": "Tópico essencial",
+    "tema": "Prevenção secundária",
+    "resumo_simples": "Atua em grupos, locais ou situações de risco.",
+    "por_que_cai": "Cai em políticas de segurança.",
+    "como_vunesp_cobra": "A banca cobra foco em risco.",
+    "pegadinha": "Confundir com ressocialização do condenado.",
+    "analogia": "É patrulhar o ponto quente antes da repetição.",
+    "flashcard": {
+      "frente": "Conceito doutrinário, Tópico essencial: qual é a ideia central de Prevenção secundária?",
+      "verso": "Secundária = risco específico."
+    },
+    "questoes_relacionadas_tags": [
+      "prevenção secundária",
+      "criminologia",
+      "conceito doutrinário"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-144",
+    "disciplina": "Criminologia",
+    "diploma": "Conceito doutrinário",
+    "artigo": "Tópico essencial",
+    "tema": "Prevenção terciária",
+    "resumo_simples": "Atua após o crime, buscando evitar reincidência.",
+    "por_que_cai": "Cai em execução e ressocialização.",
+    "como_vunesp_cobra": "A banca cobra reincidência.",
+    "pegadinha": "Confundir com prevenção social geral.",
+    "analogia": "Depois do incêndio, reforça-se a casa para não pegar fogo de novo.",
+    "flashcard": {
+      "frente": "Conceito doutrinário, Tópico essencial: qual é a ideia central de Prevenção terciária?",
+      "verso": "Terciária = evitar reincidência."
+    },
+    "questoes_relacionadas_tags": [
+      "prevenção terciária",
+      "criminologia",
+      "conceito doutrinário"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-145",
+    "disciplina": "Criminologia",
+    "diploma": "Teoria do etiquetamento",
+    "artigo": "Tópico essencial",
+    "tema": "Labeling approach",
+    "resumo_simples": "Foca na reação social e no rótulo de criminoso.",
+    "por_que_cai": "Teoria muito cobrada.",
+    "como_vunesp_cobra": "A banca pergunta criminalização primária/secundária e estigmatização.",
+    "pegadinha": "Achar que a teoria só explica a causa biológica do crime.",
+    "analogia": "O rótulo pode virar parte do problema.",
+    "flashcard": {
+      "frente": "Teoria do etiquetamento, Tópico essencial: qual é a ideia central de Labeling approach?",
+      "verso": "Labeling = reação social/etiqueta."
+    },
+    "questoes_relacionadas_tags": [
+      "labeling approach",
+      "criminologia",
+      "teoria do etiquetamento"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-146",
+    "disciplina": "Informática",
+    "diploma": "LGPD",
+    "artigo": "Art. 5º",
+    "tema": "Dado pessoal e dado sensível",
+    "resumo_simples": "Define dado pessoal e dado pessoal sensível.",
+    "por_que_cai": "Cai em proteção de dados.",
+    "como_vunesp_cobra": "A banca pergunta diferença entre dado comum e sensível.",
+    "pegadinha": "Tratar todo dado como sensível.",
+    "analogia": "Dado pessoal identifica; sensível expõe camada mais íntima/protegida.",
+    "flashcard": {
+      "frente": "LGPD, Art. 5º: qual é a ideia central de Dado pessoal e dado sensível?",
+      "verso": "Sensível tem proteção reforçada."
+    },
+    "questoes_relacionadas_tags": [
+      "dado pessoal e dado sensível",
+      "informática",
+      "lgpd"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-147",
+    "disciplina": "Informática",
+    "diploma": "LGPD",
+    "artigo": "Art. 6º",
+    "tema": "Princípios de tratamento de dados",
+    "resumo_simples": "Finalidade, adequação, necessidade, segurança, prevenção e outros.",
+    "por_que_cai": "Cai em informática jurídica.",
+    "como_vunesp_cobra": "A banca cobra finalidade e minimização.",
+    "pegadinha": "Coletar mais dados que o necessário.",
+    "analogia": "É carregar só a prova necessária no dossiê, não a casa inteira.",
+    "flashcard": {
+      "frente": "LGPD, Art. 6º: qual é a ideia central de Princípios de tratamento de dados?",
+      "verso": "Necessidade = mínimo suficiente."
+    },
+    "questoes_relacionadas_tags": [
+      "princípios de tratamento de dados",
+      "informática",
+      "lgpd"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-148",
+    "disciplina": "Informática",
+    "diploma": "LGPD",
+    "artigo": "Art. 7º",
+    "tema": "Bases legais de tratamento",
+    "resumo_simples": "Tratamento de dados exige base legal.",
+    "por_que_cai": "Tema atual e provável.",
+    "como_vunesp_cobra": "A banca cobra consentimento e outras bases.",
+    "pegadinha": "Achar que só consentimento autoriza tratamento.",
+    "analogia": "Todo tratamento precisa crachá jurídico de entrada.",
+    "flashcard": {
+      "frente": "LGPD, Art. 7º: qual é a ideia central de Bases legais de tratamento?",
+      "verso": "Base legal é obrigatória."
+    },
+    "questoes_relacionadas_tags": [
+      "bases legais de tratamento",
+      "informática",
+      "lgpd"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-149",
+    "disciplina": "Informática",
+    "diploma": "LGPD",
+    "artigo": "Art. 11",
+    "tema": "Tratamento de dados sensíveis",
+    "resumo_simples": "Dados sensíveis têm hipóteses específicas de tratamento.",
+    "por_que_cai": "Cai em segurança da informação.",
+    "como_vunesp_cobra": "A banca cobra cautela reforçada.",
+    "pegadinha": "Tratar dado sensível como dado comum.",
+    "analogia": "É informação de sala-cofre.",
+    "flashcard": {
+      "frente": "LGPD, Art. 11: qual é a ideia central de Tratamento de dados sensíveis?",
+      "verso": "Sensível exige base reforçada."
+    },
+    "questoes_relacionadas_tags": [
+      "tratamento de dados sensíveis",
+      "informática",
+      "lgpd"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-150",
+    "disciplina": "Informática",
+    "diploma": "Marco Civil da Internet",
+    "artigo": "Art. 7º",
+    "tema": "Direitos dos usuários",
+    "resumo_simples": "Garante direitos como inviolabilidade e sigilo de comunicações, salvo ordem judicial.",
+    "por_que_cai": "Cai em internet e privacidade.",
+    "como_vunesp_cobra": "A banca mistura com LGPD e interceptação.",
+    "pegadinha": "Achar que provedor entrega tudo sem ordem.",
+    "analogia": "Usuário tem escudo legal no ambiente digital.",
+    "flashcard": {
+      "frente": "Marco Civil da Internet, Art. 7º: qual é a ideia central de Direitos dos usuários?",
+      "verso": "Privacidade digital tem proteção legal."
+    },
+    "questoes_relacionadas_tags": [
+      "direitos dos usuários",
+      "informática",
+      "marco civil da internet"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  },
+  {
+    "id": "lei-151",
+    "disciplina": "Informática",
+    "diploma": "Marco Civil da Internet",
+    "artigo": "Art. 10",
+    "tema": "Guarda e disponibilização de registros",
+    "resumo_simples": "Guarda e fornecimento de dados devem preservar intimidade e observar a lei.",
+    "por_que_cai": "Cai em investigação digital.",
+    "como_vunesp_cobra": "A banca cobra ordem judicial para acesso a conteúdo.",
+    "pegadinha": "Confundir registro de conexão com conteúdo de comunicação.",
+    "analogia": "Metadado e conteúdo têm níveis diferentes de proteção.",
+    "flashcard": {
+      "frente": "Marco Civil da Internet, Art. 10: qual é a ideia central de Guarda e disponibilização de registros?",
+      "verso": "Diferencie registro e conteúdo."
+    },
+    "questoes_relacionadas_tags": [
+      "guarda e disponibilização de registros",
+      "informática",
+      "marco civil da internet"
+    ],
+    "observacao": "Resumo autoral para estudo; confira a redação legal atual antes da prova."
+  }
+]
