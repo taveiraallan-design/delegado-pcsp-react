@@ -7,6 +7,7 @@ import {
   PlayCircle, Shield, Sparkles, Target, Trophy, XCircle
 } from 'lucide-react';
 import sampleQuestions from './data/sampleQuestions.json';
+import libraryContent from './data/libraryContent.json';
 import { supabase, hasSupabase } from './lib/supabaseClient';
 import { askProfessor } from './lib/professorAi';
 import './styles/app.css';
@@ -16,18 +17,7 @@ const DISCIPLINES = [
   'Direitos Humanos','Direito Administrativo','Direito Civil','Medicina Legal','Criminologia','Informática'
 ];
 
-const starterDiscursivas = [
-  {
-    id: 'disc-001', disciplina: 'Direito Processual Penal', tema: 'Prisão preventiva',
-    enunciado: 'Explique a natureza jurídica da prisão preventiva, seus pressupostos e fundamentos, diferenciando-a da prisão temporária.',
-    espelho: 'Resposta esperada: mencionar natureza cautelar, não antecipação de pena, fumus comissi delicti, periculum libertatis, art. 312 do CPP, prova da materialidade, indícios de autoria, garantia da ordem pública/econômica, conveniência da instrução criminal, assegurar aplicação da lei penal e distinção da temporária, que possui prazo legal e hipóteses próprias.'
-  },
-  {
-    id: 'disc-002', disciplina: 'Direito Penal', tema: 'Dolo eventual e culpa consciente',
-    enunciado: 'Diferencie dolo eventual e culpa consciente, apontando o elemento psicológico que separa os institutos.',
-    espelho: 'Resposta esperada: no dolo eventual, o agente prevê o resultado e aceita/assume o risco de produzi-lo; na culpa consciente, prevê o resultado, mas acredita sinceramente que ele não ocorrerá. A chave é aceitação do risco.'
-  }
-];
+const starterDiscursivas = libraryContent.discursivas;
 
 const normalizeQuestion = (q, index = 0) => ({
   id: q.id || crypto.randomUUID?.() || `q-${Date.now()}-${index}`,
@@ -67,7 +57,7 @@ function App() {
   const [questions, setQuestions] = useLocalState('pcsp:questions', sampleQuestions.map(normalizeQuestion));
   const [answers, setAnswers] = useLocalState('pcsp:answers', []);
   const [errors, setErrors] = useLocalState('pcsp:errors', []);
-  const [flashcards, setFlashcards] = useLocalState('pcsp:flashcards', []);
+  const [flashcards, setFlashcards] = useLocalState('pcsp:flashcards', libraryContent.flashcards || []);
   const [settings, setSettings] = useLocalState('pcsp:settings', { tdah: true, immediate: true, openaiKey: '' });
 
   useEffect(() => {
@@ -126,6 +116,7 @@ function App() {
       {view === 'import' && <ImportQuestions questions={questions} setQuestions={setQuestions} syncQuestionsToSupabase={syncQuestionsToSupabase} />}
       {view === 'auth' && <Auth session={session} />}
       {view === 'professor' && <ProfessorIA questions={questions} settings={settings} setSettings={setSettings} />}
+      {view === 'library' && <LibraryContent content={libraryContent} questions={questions} setView={setView} />}
       {view === 'map' && <EditalMap stats={stats} />}
     </main>
   </div>;
@@ -137,7 +128,7 @@ function Sidebar({ view, setView, session }) {
   const items = [
     ['dashboard','Central do Candidato',LayoutDashboard], ['study','Sala de Treinamento',Brain], ['exam','Prova Real',PlayCircle],
     ['errors','Dossiê de Erros',NotebookTabs], ['flashcards','Cartões',BookOpen], ['discursive','Peça Escrita',FileText],
-    ['professor','Professor IA',Sparkles], ['map','Mapa do Edital',Target], ['import','Banco de Questões',Import], ['auth', session ? 'Conta' : 'Login', KeyRound]
+    ['professor','Professor IA',Sparkles], ['library','Biblioteca do Edital',GraduationCap], ['map','Mapa do Edital',Target], ['import','Banco de Questões',Import], ['auth', session ? 'Conta' : 'Login', KeyRound]
   ];
   return <aside className="sidebar">
     <div className="brand"><div className="badge"><Shield size={24}/></div><div><b>Delegado PC-SP</b><span>Inteligência de Estudos</span></div></div>
@@ -226,15 +217,53 @@ function ErrorsDossier({ errors, setErrors }) {
 function Flashcards({ cards, setCards }){ if(!cards.length) return <Empty title="Sem cartões" text="Erre uma questão no modo estudo para gerar flashcards automáticos."/>; return <section className="panel"><h2>Cartões de Memorização</h2><div className="cards-grid">{cards.map(c=><div className="flash" key={c.id}><b>{c.frente}</b><p>{c.verso}</p><button onClick={()=>setCards(prev=>prev.map(x=>x.id===c.id?{...x,mastered:!x.mastered}:x))}>{c.mastered?'Dominado':'Marcar dominado'}</button></div>)}</div></section>; }
 
 function Discursive({ settings }) {
+  const [discFilter, setDiscFilter] = useState('Todas');
+  const filteredDisc = starterDiscursivas.filter(d => discFilter === 'Todas' || d.disciplina === discFilter);
   const [item, setItem] = useState(starterDiscursivas[0]); const [text, setText] = useState(''); const [ai, setAi] = useState(''); const [loading, setLoading] = useState(false);
   async function correct(){ setLoading(true); const res = await askProfessor({ question: `Corrija esta resposta discursiva para Delegado PC-SP. Enunciado: ${item.enunciado}\nEspelho: ${item.espelho}\nResposta do aluno: ${text}`, apiKey: settings.openaiKey }); setAi(res); setLoading(false); }
-  return <section className="panel"><h2>Peça Escrita</h2><select onChange={e=>setItem(starterDiscursivas.find(x=>x.id===e.target.value))}>{starterDiscursivas.map(d=><option value={d.id} key={d.id}>{d.disciplina} — {d.tema}</option>)}</select><Info title="Enunciado" text={item.enunciado}/><textarea value={text} onChange={e=>setText(e.target.value)} placeholder="Digite sua resposta jurídica aqui..."/><div className="button-row"><button className="ghost" onClick={()=>setAi(item.espelho)}>Ver espelho</button><button className="primary" onClick={correct} disabled={!text || loading}>{loading?'Corrigindo...':'Corrigir com Professor IA'}</button></div>{ai && <div className="ai-box"><Sparkles/>{ai}</div>}</section>;
+  return <section className="panel"><h2>Peça Escrita</h2><select value={discFilter} onChange={e=>{setDiscFilter(e.target.value); const first = starterDiscursivas.find(d=>e.target.value==='Todas'||d.disciplina===e.target.value); if(first) setItem(first)}}><option>Todas</option>{DISCIPLINES.map(d=><option key={d}>{d}</option>)}</select><select value={item?.id} onChange={e=>setItem(starterDiscursivas.find(x=>x.id===e.target.value))}>{filteredDisc.map(d=><option value={d.id} key={d.id}>{d.disciplina} — {d.tema}</option>)}</select><Info title="Enunciado" text={item.enunciado}/><textarea value={text} onChange={e=>setText(e.target.value)} placeholder="Digite sua resposta jurídica aqui..."/><div className="button-row"><button className="ghost" onClick={()=>setAi(item.espelho)}>Ver espelho</button><button className="primary" onClick={correct} disabled={!text || loading}>{loading?'Corrigindo...':'Corrigir com Professor IA'}</button></div>{ai && <div className="ai-box"><Sparkles/>{ai}</div>}</section>;
 }
 
 function ProfessorIA({ questions, settings, setSettings }) {
   const [prompt, setPrompt] = useState('Explique dolo eventual x culpa consciente com analogia simples.'); const [answer, setAnswer] = useState(''); const [loading, setLoading] = useState(false);
   async function ask(){ setLoading(true); setAnswer(await askProfessor({ question: prompt, apiKey: settings.openaiKey, context: questions.slice(0,5) })); setLoading(false); }
   return <section className="panel"><h2>Professor IA</h2><p className="muted">Para produção, use backend/Edge Function. Aqui a chave local é só para teste.</p><input type="password" placeholder="OpenAI API Key local opcional" value={settings.openaiKey||''} onChange={e=>setSettings({...settings, openaiKey:e.target.value})}/><textarea value={prompt} onChange={e=>setPrompt(e.target.value)}/><button className="primary" onClick={ask} disabled={loading}>{loading?'Pensando...':'Perguntar'}</button>{answer && <div className="ai-box"><Sparkles/>{answer}</div>}</section>;
+}
+
+
+function LibraryContent({ content, questions, setView }) {
+  const [tab, setTab] = useState('aulas');
+  const [discipline, setDiscipline] = useState('Todas');
+  const [query, setQuery] = useState('');
+  const collections = {
+    aulas: content.aulas || [],
+    flashcards: content.flashcards || [],
+    discursivas: content.discursivas || [],
+    questoes: questions || []
+  };
+  const items = (collections[tab] || []).filter(item => {
+    const discOk = discipline === 'Todas' || item.disciplina === discipline;
+    const text = `${item.tema || ''} ${item.titulo || ''} ${item.enunciado || ''} ${item.resumo || ''}`.toLowerCase();
+    return discOk && text.includes(query.toLowerCase());
+  });
+  const counts = DISCIPLINES.map(d => ({ disciplina: d, total: (content.aulas||[]).filter(x=>x.disciplina===d).length }));
+  return <section className="panel library-page">
+    <div className="toolbar"><div><p className="kicker">Biblioteca do Edital</p><h2>Conteúdo completo por matéria</h2><p className="muted">Aulas rápidas, flashcards, discursivas e questões autorais para cobrir o edital.</p></div><button className="primary" onClick={()=>setView('study')}>Treinar agora</button></div>
+    <div className="library-metrics">
+      <Metric icon={Database} label="Questões totais" value={questions.length}/>
+      <Metric icon={BookOpen} label="Flashcards" value={(content.flashcards||[]).length}/>
+      <Metric icon={GraduationCap} label="Aulas rápidas" value={(content.aulas||[]).length}/>
+      <Metric icon={FileText} label="Discursivas" value={(content.discursivas||[]).length}/>
+    </div>
+    <div className="library-controls"><select value={discipline} onChange={e=>setDiscipline(e.target.value)}><option>Todas</option>{DISCIPLINES.map(d=><option key={d}>{d}</option>)}</select><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Buscar tema, palavra-chave ou enunciado..."/></div>
+    <div className="tabs library-tabs">{[['aulas','Aulas rápidas'],['flashcards','Flashcards'],['discursivas','Discursivas'],['questoes','Questões']].map(([id,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}>{label}</button>)}</div>
+    <div className="library-grid">
+      {tab==='aulas' && items.map(a=><article className="library-card" key={a.id}><span>{a.disciplina}</span><h3>{a.titulo}</h3><p>{a.resumo}</p><Info title="Analogia" text={a.analogia}/><details><summary>Ver aula completa</summary><p>{a.explicacao}</p><ul>{(a.pontos_chave||[]).map(p=><li key={p}>{p}</li>)}</ul><b>Revisão 10s:</b><p>{a.revisao_10s}</p></details></article>)}
+      {tab==='flashcards' && items.map(f=><article className="library-card" key={f.id}><span>{f.disciplina}</span><h3>{f.tema}</h3><b>{f.frente}</b><p>{f.verso}</p></article>)}
+      {tab==='discursivas' && items.map(d=><article className="library-card" key={d.id}><span>{d.disciplina}</span><h3>{d.tema}</h3><p>{d.enunciado}</p><details><summary>Espelho de correção</summary><p>{d.espelho}</p><ul>{(d.criterios||[]).map(c=><li key={c}>{c}</li>)}</ul></details></article>)}
+      {tab==='questoes' && items.slice(0,120).map(q=><article className="library-card" key={q.id}><span>{q.disciplina}</span><h3>{q.tema}</h3><p>{q.enunciado}</p><b>Gabarito: {q.gabarito}</b><p className="muted">{q.fundamento}</p></article>)}
+    </div>
+  </section>;
 }
 
 function ImportQuestions({ questions, setQuestions, syncQuestionsToSupabase }) {
