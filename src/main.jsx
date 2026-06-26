@@ -171,7 +171,7 @@ function Sidebar({ view, setView, session }) {
     ['professor','Professor IA',Sparkles], ['library','Biblioteca do Edital',GraduationCap], ['laws','Lei Seca Inteligente',BookOpen], ['comparisons','Não Confunda',Sparkles], ['map','Mapa do Edital',Target], ['import','Banco de Questões',Import], ['auth', session ? 'Conta' : 'Login', KeyRound]
   ];
   return <aside className="sidebar">
-    <div className="brand"><div className="badge"><Shield size={24}/></div><div><b>Delegado PC-SP</b><span>Inteligência de Estudos</span></div></div>
+    <div className="brand"><div className="badge"><Shield size={24}/></div><div><b>Delegado PC-SP</b><span>Inteligência de Estudos</span><em className="brand-motto">Estuda o bichona do carai!!</em></div></div>
     <nav>{items.map(([id,label,Icon]) => <button key={id} className={view===id?'active':''} onClick={()=>setView(id)}><Icon size={18}/>{label}</button>)}</nav>
   </aside>;
 }
