@@ -59,44 +59,207 @@ nav{display:grid;gap:8px} nav button{display:flex;align-items:center;gap:10px;pa
 }
 @media(max-width:380px){.mobile-brand b{font-size:19px}.mobile-brand span{font-size:12px}.mobile-brand em{font-size:12px}.mobile-brand{padding:13px}.mobile-brand-badge{width:50px;height:50px;flex-basis:50px}}
 
-/* Patch mobile compacto — menos rolagem na Sala de Treinamento */
-.mobile-study-actions{display:none}
-@media(max-width:720px){
-  html{-webkit-text-size-adjust:100%}
-  .question-panel.focus-study.mobile-tight-study{padding:12px 12px 132px;border-radius:20px;max-width:100%}
-  .mobile-tight-study .compact-toolbar{display:block;margin-bottom:8px}
-  .mobile-tight-study .compact-toolbar h2{font-size:30px;line-height:1.05;margin:4px 0 10px;letter-spacing:-.04em}
-  .mobile-tight-study .small-kicker{font-size:10px;letter-spacing:.22em}
-  .mobile-tight-study .compact-toolbar select{min-height:44px;margin:0 0 6px;padding:9px 12px;border-radius:16px;font-size:16px}
-  .mobile-study-actions{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:4px 0 10px}
-  .mobile-study-actions .ghost{padding:8px 10px;border-radius:12px;font-size:12px;white-space:nowrap}
-  .mobile-study-actions span{font-size:11px;color:var(--muted);text-align:right;line-height:1.2}
-  .mobile-tight-study .study-layout{gap:10px}
-  .mobile-tight-study .dossier-card.compact-question{padding:10px;border-radius:16px}
-  .mobile-tight-study .dossier-head{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;padding-bottom:8px}
-  .mobile-tight-study .dossier-head span{font-size:9px;letter-spacing:.16em;line-height:1.1;max-width:58%}
-  .mobile-tight-study .dossier-head b{font-size:12px;margin-left:auto;line-height:1.1;max-width:40%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .mobile-tight-study .dossier-head em{width:100%;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .mobile-tight-study .statement{font-size:15px;line-height:1.34;margin:10px 0 12px}
-  .mobile-tight-study .compact-alternatives{gap:6px}
-  .mobile-tight-study .compact-alternatives button{padding:8px 9px;min-height:0;border-radius:12px;gap:8px;align-items:flex-start}
-  .mobile-tight-study .compact-alternatives b{width:26px;height:26px;border-radius:9px;font-size:13px;margin-top:1px;flex:0 0 26px}
-  .mobile-tight-study .compact-alternatives span{font-size:14px;line-height:1.22}
-  .mobile-tight-study.compact-mobile-on .compact-alternatives span{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-  .mobile-tight-study.full-mobile-options .compact-alternatives span{display:block;overflow:visible}
-  .mobile-tight-study .correction-placeholder{display:none}
-  .mobile-tight-study .compact-correction{padding:12px;border-radius:16px;margin-top:10px}
-  .mobile-tight-study .result-header h3{font-size:15px}
-  .mobile-tight-study .quick-result{gap:6px;margin:8px 0}
-  .mobile-tight-study .tabs{margin:8px 0;gap:6px}
-  .mobile-tight-study .tabs button{padding:7px 9px;font-size:11px}
-  .mobile-tight-study .tab-content{padding:11px;border-radius:13px}
-  .mobile-tight-study .tab-content p{font-size:14px;line-height:1.35}
-  .sticky-next{bottom:84px!important;border-radius:16px;padding:9px 10px}
+/* Rescue patch */
+.rescue-screen{min-height:100vh;display:grid;place-items:center}.small-note{font-size:12px;margin-top:12px}
+
+/* =========================================================
+   PATCH SEGURO — MOBILE COMPACTO APENAS CSS
+   Objetivo: reduzir rolagem na Sala de Treinamento no celular
+   sem alterar main.jsx, dados ou lógica do app.
+   ========================================================= */
+@media (max-width: 720px) {
+  /* reduz áreas externas sem esconder conteúdo */
+  .content,
+  main,
+  .main {
+    padding-top: 14px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  /* deixa a Sala de Treinamento menos alta */
+  .question-panel,
+  .question-panel.focus-study,
+  .study-layout {
+    max-width: 100% !important;
+  }
+
+  .compact-toolbar,
+  .toolbar {
+    gap: 8px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .compact-toolbar h1,
+  .toolbar h1,
+  .page-title,
+  h1 {
+    font-size: 30px !important;
+    line-height: 1.05 !important;
+    margin: 0 0 12px !important;
+  }
+
+  select,
+  input,
+  textarea {
+    padding: 10px 12px !important;
+    border-radius: 14px !important;
+    margin: 6px 0 10px !important;
+    font-size: 15px !important;
+  }
+
+  /* card da questão mais compacto */
+  .dossier-card,
+  .compact-question {
+    padding: 12px !important;
+    border-radius: 18px !important;
+    margin: 10px 0 !important;
+  }
+
+  .dossier-head {
+    grid-template-columns: 1fr !important;
+    gap: 3px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .dossier-head span,
+  .small-kicker {
+    font-size: 10px !important;
+    letter-spacing: .12em !important;
+  }
+
+  .dossier-head strong,
+  .dossier-head b {
+    font-size: 15px !important;
+  }
+
+  .dossier-head em {
+    font-size: 14px !important;
+  }
+
+  .statement,
+  .compact-question .statement {
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+    margin: 10px 0 12px !important;
+  }
+
+  /* alternativas mais baixas, mas ainda completas */
+  .alternatives,
+  .compact-alternatives {
+    gap: 7px !important;
+  }
+
+  .alternatives button,
+  .compact-alternatives button {
+    padding: 9px 10px !important;
+    min-height: unset !important;
+    border-radius: 14px !important;
+    gap: 9px !important;
+    align-items: flex-start !important;
+  }
+
+  .alternatives b,
+  .compact-alternatives b {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    margin-top: 1px !important;
+  }
+
+  .alternatives span,
+  .compact-alternatives span,
+  .alternatives button,
+  .compact-alternatives button {
+    font-size: 15px !important;
+    line-height: 1.28 !important;
+  }
+
+  /* correção mais leve no mobile */
+  .correction,
+  .compact-correction {
+    padding: 12px !important;
+    border-radius: 18px !important;
+    margin-top: 12px !important;
+  }
+
+  .correction h3,
+  .result-header h3 {
+    font-size: 17px !important;
+    line-height: 1.2 !important;
+  }
+
+  .quick-result {
+    gap: 7px !important;
+    margin: 9px 0 !important;
+  }
+
+  .quick-result span,
+  .info,
+  .tdah,
+  .deep,
+  .ai-box,
+  .tab-content {
+    padding: 10px !important;
+    border-radius: 14px !important;
+    font-size: 14px !important;
+  }
+
+  .tabs {
+    gap: 6px !important;
+    margin: 8px 0 !important;
+  }
+
+  .tabs button {
+    padding: 7px 9px !important;
+    font-size: 12px !important;
+  }
+
+  /* botão fixo sem cobrir tanto conteúdo */
+  .sticky-next {
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 86px !important;
+    padding: 8px 10px !important;
+    border-radius: 16px !important;
+  }
+
+  .sticky-next span {
+    font-size: 12px !important;
+  }
+
+  .sticky-next button {
+    padding: 8px 10px !important;
+    font-size: 13px !important;
+  }
+
+  /* garante espaço para menu inferior e botão próximo */
+  body,
+  .app,
+  .question-panel.focus-study {
+    padding-bottom: 150px !important;
+  }
 }
-@media(max-width:380px){
-  .mobile-tight-study .compact-toolbar h2{font-size:26px}
-  .mobile-tight-study .statement{font-size:14px}
-  .mobile-tight-study .compact-alternatives span{font-size:13px}
-  .mobile-study-actions{display:block}.mobile-study-actions span{display:block;text-align:left;margin-top:5px}
+
+@media (max-width: 430px) {
+  .compact-toolbar h1,
+  .toolbar h1,
+  .page-title,
+  h1 {
+    font-size: 27px !important;
+  }
+
+  .statement,
+  .compact-question .statement {
+    font-size: 15px !important;
+  }
+
+  .alternatives span,
+  .compact-alternatives span,
+  .alternatives button,
+  .compact-alternatives button {
+    font-size: 14px !important;
+  }
 }
