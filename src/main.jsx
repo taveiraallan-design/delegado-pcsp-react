@@ -142,7 +142,6 @@ function App() {
     <Sidebar view={view} setView={setView} session={session} />
     <main className="main-panel">
       <Hero settings={settings} setSettings={setSettings} session={session} />
-      <MobileBrand />
       {view === 'dashboard' && <Dashboard stats={stats} questions={questions} errors={errors} flashcards={flashcards} setView={setView} />}
       {view === 'stats' && <PerformanceIntel stats={stats} answers={answers} errors={errors} setView={setView} />}
       {view === 'review' && <SmartReview errors={errors} setErrors={setErrors} setView={setView} />}
@@ -172,7 +171,7 @@ function Sidebar({ view, setView, session }) {
     ['professor','Professor IA',Sparkles], ['library','Biblioteca do Edital',GraduationCap], ['laws','Lei Seca Inteligente',BookOpen], ['comparisons','Não Confunda',Sparkles], ['map','Mapa do Edital',Target], ['import','Banco de Questões',Import], ['auth', session ? 'Conta' : 'Login', KeyRound]
   ];
   return <aside className="sidebar">
-    <div className="brand"><div className="badge"><Shield size={24}/></div><div><b>Delegado PC-SP</b><span>Inteligência de Estudos</span><em className="brand-motto">Estuda o bichona do carai!!</em></div></div>
+    <div className="brand"><div className="badge"><Shield size={24}/></div><div><b>Delegado PC-SP</b><span>Inteligência de Estudos</span></div></div>
     <nav>{items.map(([id,label,Icon]) => <button key={id} className={view===id?'active':''} onClick={()=>setView(id)}><Icon size={18}/>{label}</button>)}</nav>
   </aside>;
 }
@@ -182,18 +181,6 @@ function BottomNav({ view, setView }) {
     ['dashboard','Central',LayoutDashboard], ['study','Treino',Brain], ['exam','Prova',PlayCircle], ['review','Revisão',ListChecks], ['library','Mais',GraduationCap]
   ];
   return <nav className="bottom-nav">{items.map(([id,label,Icon]) => <button key={id} className={view===id?'active':''} onClick={()=>setView(id)}><Icon size={19}/><span>{label}</span></button>)}</nav>;
-}
-
-
-function MobileBrand(){
-  return <section className="mobile-brand">
-    <div className="mobile-brand-badge"><Shield size={26}/></div>
-    <div>
-      <b>Delegado PC-SP</b>
-      <span>Inteligência de Estudos</span>
-      <em>Estuda o bichona do carai!!</em>
-    </div>
-  </section>;
 }
 
 function Hero({ settings, setSettings, session }) {
@@ -248,15 +235,13 @@ function StudyRoom({ questions, saveAnswer, settings }) {
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState('');
   const [result, setResult] = useState(null);
-  const [compactMobile, setCompactMobile] = useLocalStorage('pcsp-mobile-compact-study', true);
   const filtered = questions.filter(q => discipline==='Todas' || q.disciplina === discipline);
   const q = filtered[idx % Math.max(filtered.length, 1)];
   if (!q) return <Empty title="Banco vazio" text="Importe questões para começar." />;
   async function answer(letter){ if (result) return; setSelected(letter); const correct = await saveAnswer(q, letter, 'study'); setResult({ correct, letter }); }
   function next(){ setSelected(''); setResult(null); setIdx(i => (i+1) % filtered.length); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-  return <section className={`panel question-panel focus-study mobile-tight-study ${compactMobile ? 'compact-mobile-on' : 'full-mobile-options'}`}>
+  return <section className="panel question-panel focus-study">
     <div className="toolbar compact-toolbar"><div><p className="kicker small-kicker">Modo foco</p><h2>Sala de Treinamento</h2></div><select value={discipline} onChange={e=>{setDiscipline(e.target.value);setIdx(0);setResult(null)}}><option>Todas</option>{DISCIPLINES.map(d=><option key={d}>{d}</option>)}</select></div>
-    <div className="mobile-study-actions"><button className="ghost" onClick={()=>setCompactMobile(v=>!v)}>{compactMobile ? 'Mostrar alternativas completas' : 'Ativar modo compacto'}</button><span>{compactMobile ? 'Celular compacto: menos rolagem' : 'Texto completo ativado'}</span></div>
     <div className="study-layout">
       <QuestionCard q={q} selected={selected} answer={answer} locked={!!result} />
       {result && <Correction q={q} selected={result.letter} correct={result.correct} tdah={settings.tdah} next={next} />}
@@ -336,9 +321,156 @@ function Flashcards({ cards, setCards }){ if(!cards.length) return <Empty title=
 function Discursive({ settings }) {
   const [discFilter, setDiscFilter] = useState('Todas');
   const filteredDisc = starterDiscursivas.filter(d => discFilter === 'Todas' || d.disciplina === discFilter);
-  const [item, setItem] = useState(starterDiscursivas[0]); const [text, setText] = useState(''); const [ai, setAi] = useState(''); const [loading, setLoading] = useState(false);
-  async function correct(){ setLoading(true); const res = await askProfessor({ question: `Corrija esta resposta discursiva para Delegado PC-SP. Enunciado: ${item.enunciado}\nEspelho: ${item.espelho}\nResposta do aluno: ${text}`, apiKey: settings.openaiKey }); setAi(res); setLoading(false); }
-  return <section className="panel"><h2>Peça Escrita</h2><select value={discFilter} onChange={e=>{setDiscFilter(e.target.value); const first = starterDiscursivas.find(d=>e.target.value==='Todas'||d.disciplina===e.target.value); if(first) setItem(first)}}><option>Todas</option>{DISCIPLINES.map(d=><option key={d}>{d}</option>)}</select><select value={item?.id} onChange={e=>setItem(starterDiscursivas.find(x=>x.id===e.target.value))}>{filteredDisc.map(d=><option value={d.id} key={d.id}>{d.disciplina} — {d.tema}</option>)}</select><Info title="Enunciado" text={item.enunciado}/><textarea value={text} onChange={e=>setText(e.target.value)} placeholder="Digite sua resposta jurídica aqui..."/><div className="button-row"><button className="ghost" onClick={()=>setAi(item.espelho)}>Ver espelho</button><button className="primary" onClick={correct} disabled={!text || loading}>{loading?'Corrigindo...':'Corrigir com Professor IA'}</button></div>{ai && <div className="ai-box"><Sparkles/>{ai}</div>}</section>;
+  const [item, setItem] = useState(starterDiscursivas[0]);
+  const [text, setText] = useState('');
+  const [ai, setAi] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [showMirror, setShowMirror] = useState(true);
+  const [showModel, setShowModel] = useState(false);
+  const [timerOn, setTimerOn] = useState(false);
+  const [seconds, setSeconds] = useState(0);
+  const [analysis, setAnalysis] = useState(null);
+  const [history, setHistory] = useLocalState('pcsp:discursiveHistory', []);
+
+  useEffect(() => {
+    if (!timerOn) return;
+    const interval = setInterval(() => setSeconds(s => s + 1), 1000);
+    return () => clearInterval(interval);
+  }, [timerOn]);
+
+  const words = text.trim() ? text.trim().split(/\s+/).filter(Boolean).length : 0;
+  const chars = text.length;
+
+  function getExpectedPoints(current) {
+    const base = Array.isArray(current?.criterios) ? current.criterios : [];
+    const extra = [];
+    const mirror = `${current?.espelho || ''} ${current?.enunciado || ''}`;
+    const patterns = [
+      ['art. 312 do CPP', /art\.?\s*312|312\s*do\s*cpp|pris[aã]o preventiva/i],
+      ['art. 313 do CPP', /art\.?\s*313|313\s*do\s*cpp/i],
+      ['contemporaneidade', /contemporaneidade|contempor[aâ]neo/i],
+      ['fundamentação concreta', /fundamenta[cç][aã]o concreta|decis[aã]o fundamentada|motiva[cç][aã]o concreta/i],
+      ['natureza cautelar', /natureza cautelar|medida cautelar|cautelar/i],
+      ['não é pena antecipada', /pena antecipada|antecipa[cç][aã]o da pena|n[aã]o.*puni/i]
+    ];
+    patterns.forEach(([label, re]) => { if (re.test(mirror) && !base.some(b => b.toLowerCase().includes(label.toLowerCase()))) extra.push(label); });
+    const all = [...base, ...extra].slice(0, 9);
+    return all.length ? all : ['Conceito correto', 'Fundamento jurídico', 'Finalidade prática', 'Objetividade', 'Conclusão'];
+  }
+
+  function pointToRegex(point) {
+    const clean = String(point).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+    const special = {
+      'natureza cautelar': /natureza\s+cautelar|medida\s+cautelar|cautelar/i,
+      'art. 312 do cpp': /art\.?\s*312|312\s*do\s*cpp/i,
+      'art. 313 do cpp': /art\.?\s*313|313\s*do\s*cpp/i,
+      'contemporaneidade': /contemporaneidade|contemporaneo|contempor[aâ]neo/i,
+      'fundamentacao concreta': /fundamenta[cç][aã]o\s+concreta|decis[aã]o\s+fundamentada|fundamenta[cç][aã]o\s+id[oô]nea/i,
+      'nao e pena antecipada': /n[aã]o\s+(e|é).*pena\s+antecipada|pena\s+antecipada|antecipa[cç][aã]o\s+da\s+pena/i,
+      'fundamento juridico': /art\.?|constitui[cç][aã]o|c[oó]digo|lei|cpp|cp|cf/i,
+      'conceito correto': /conceito|consiste|trata-se|define-se|[eé]\s/i,
+      'finalidade pratica': /finalidade|objetivo|serve|visa|fun[cç][aã]o/i,
+      'linguagem objetiva de prova discursiva': /portanto|assim|desse modo|logo|conclui/i
+    };
+    for (const [k, re] of Object.entries(special)) if (clean.includes(k)) return re;
+    const tokens = clean.split(/\W+/).filter(t => t.length > 4).slice(0, 3);
+    return new RegExp(tokens.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') || clean, 'i');
+  }
+
+  function compareWithMirror() {
+    const expected = getExpectedPoints(item);
+    const mentioned = [];
+    const missing = [];
+    expected.forEach(point => pointToRegex(point).test(text) ? mentioned.push(point) : missing.push(point));
+    const score = expected.length ? Math.round((mentioned.length / expected.length) * 100) / 10 : 0;
+    const result = { expected, mentioned, missing, score, created_at: new Date().toISOString() };
+    setAnalysis(result);
+    return result;
+  }
+
+  function saveDiscursive() {
+    const result = analysis || compareWithMirror();
+    const record = {
+      id: crypto.randomUUID?.() || `disc-${Date.now()}`,
+      discursive_id: item?.id,
+      disciplina: item?.disciplina,
+      tema: item?.tema,
+      enunciado: item?.enunciado,
+      resposta: text,
+      seconds,
+      words,
+      chars,
+      nota: result.score,
+      mencionados: result.mentioned,
+      ausentes: result.missing,
+      created_at: new Date().toISOString()
+    };
+    setHistory(prev => [record, ...prev].slice(0, 30));
+    alert('Resposta salva no histórico local.');
+  }
+
+  function clearAnswer(){ setText(''); setAnalysis(null); setAi(''); setSeconds(0); setTimerOn(false); }
+
+  async function correct(){
+    setLoading(true);
+    const res = await askProfessor({
+      question: `Corrija esta resposta discursiva para Delegado PC-SP. Não invente artigo, súmula ou jurisprudência. Se não tiver certeza, diga que precisa validar. Enunciado: ${item.enunciado}\nEspelho: ${item.espelho}\nResposta do aluno: ${text}`,
+      apiKey: settings.openaiKey
+    });
+    setAi(res);
+    setLoading(false);
+  }
+
+  const expectedPoints = getExpectedPoints(item);
+  const modelAnswer = item?.resposta_modelo || `Resposta modelo sugerida: o candidato deve iniciar conceituando ${item?.tema}, indicar o fundamento jurídico aplicável, explicar a finalidade prática do instituto, diferenciar de institutos próximos quando necessário e concluir de forma objetiva. Em prova discursiva, evite afirmações absolutas sem base legal e demonstre domínio da lei seca.`;
+
+  return <section className="panel discursive-premium">
+    <div className="toolbar"><div><p className="kicker">Peça Escrita Premium</p><h2>Treino discursivo com espelho e nota estimada</h2><p className="muted">Cronômetro, contador, checklist, comparação local por pontos e histórico de respostas.</p></div><div className="disc-timer"><Clock3 size={18}/><b>{formatTime(seconds)}</b></div></div>
+
+    <div className="discursive-controls">
+      <select value={discFilter} onChange={e=>{setDiscFilter(e.target.value); const first = starterDiscursivas.find(d=>e.target.value==='Todas'||d.disciplina===e.target.value); if(first){ setItem(first); setText(''); setAnalysis(null); }}}><option>Todas</option>{DISCIPLINES.map(d=><option key={d}>{d}</option>)}</select>
+      <select value={item?.id} onChange={e=>{const next = starterDiscursivas.find(x=>x.id===e.target.value); setItem(next); setText(''); setAnalysis(null);}}>{filteredDisc.map(d=><option value={d.id} key={d.id}>{d.disciplina} — {d.tema}</option>)}</select>
+    </div>
+
+    <div className="discursive-grid">
+      <div className="discursive-workspace">
+        <article className="disc-question-card"><span>{item?.disciplina}</span><h3>{item?.tema}</h3><p>{item?.enunciado}</p></article>
+        <div className="disc-toolbar">
+          <button className="ghost" onClick={()=>setTimerOn(true)}>Iniciar</button>
+          <button className="ghost" onClick={()=>setTimerOn(false)}>Pausar</button>
+          <button className="ghost" onClick={()=>{setSeconds(0); setTimerOn(false);}}>Zerar</button>
+        </div>
+        <textarea className="disc-textarea" value={text} onChange={e=>{setText(e.target.value); if(analysis) setAnalysis(null);}} placeholder="Digite sua resposta jurídica aqui. Estruture em: conceito, fundamento legal, desenvolvimento e conclusão objetiva." />
+        <div className="disc-counters"><span>{words} palavras</span><span>{chars} caracteres</span><span>{formatTime(seconds)} de treino</span></div>
+        <div className="button-row disc-actions">
+          <button className="primary" onClick={compareWithMirror} disabled={!text.trim()}>Comparar com espelho</button>
+          <button className="ghost" onClick={saveDiscursive} disabled={!text.trim()}>Salvar resposta</button>
+          <button className="ghost" onClick={()=>setShowMirror(v=>!v)}>{showMirror?'Ocultar espelho':'Mostrar espelho'}</button>
+          <button className="ghost" onClick={()=>setShowModel(v=>!v)}>{showModel?'Ocultar modelo':'Mostrar modelo'}</button>
+          <button className="ghost" onClick={clearAnswer}>Limpar</button>
+        </div>
+      </div>
+
+      <aside className="discursive-side">
+        <div className="score-panel"><span>Nota estimada</span><strong>{analysis ? analysis.score.toFixed(1).replace('.', ',') : '—'}/10</strong><small>{analysis ? `${analysis.mentioned.length}/${analysis.expected.length} pontos encontrados` : 'Compare sua resposta para calcular.'}</small></div>
+        <div className="check-panel"><h3>Checklist obrigatório</h3>{expectedPoints.map(point => <div className="check-row" key={point}><span>•</span><p>{point}</p></div>)}</div>
+        {analysis && <div className="analysis-panel">
+          <h3>Sua resposta mencionou</h3>
+          {analysis.mentioned.map(p => <div className="hit-row" key={p}><CheckCircle2 size={17}/><span>{p}</span></div>)}
+          {analysis.missing.map(p => <div className="miss-row" key={p}><XCircle size={17}/><span>{p}</span></div>)}
+          <Info title="Sugestão de melhoria" text={`Complemente a resposta com: ${analysis.missing.length ? analysis.missing.slice(0,4).join(', ') : 'mais objetividade, conclusão e linguagem jurídica enxuta'}. Não invente fundamento; valide artigos, súmulas e jurisprudência quando necessário.`}/>
+        </div>}
+      </aside>
+    </div>
+
+    {showMirror && <div className="mirror-box"><h3>Espelho de correção</h3><p>{item?.espelho}</p><ul>{expectedPoints.map(p=><li key={p}>{p}</li>)}</ul></div>}
+    {showModel && <div className="model-box"><h3>Resposta modelo</h3><p>{modelAnswer}</p></div>}
+
+    <div className="button-row"><button className="primary" onClick={correct} disabled={!text || loading}>{loading?'Corrigindo...':'Corrigir com Professor IA'}</button><button className="ghost" onClick={()=>alert('Resposta marcada para revisar depois no histórico local.')}>Revisar depois</button></div>
+    {ai && <div className="ai-box"><Sparkles/>{ai}</div>}
+
+    <div className="history-panel"><h3>Histórico local de respostas</h3>{history.length === 0 && <p className="muted">Nenhuma resposta salva ainda.</p>}{history.slice(0,8).map(h => <details key={h.id} className="history-card"><summary><b>{h.tema}</b><span>{new Date(h.created_at).toLocaleString('pt-BR')} • nota {Number(h.nota || 0).toFixed(1).replace('.', ',')}/10</span></summary><p>{h.resposta}</p><small>{h.words} palavras • {h.chars} caracteres • {formatTime(h.seconds)}</small><button className="ghost" onClick={()=>setHistory(prev=>prev.filter(x=>x.id!==h.id))}>Apagar</button></details>)}</div>
+  </section>;
 }
 
 function ProfessorIA({ questions, settings, setSettings }) {
