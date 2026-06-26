@@ -142,6 +142,7 @@ function App() {
     <Sidebar view={view} setView={setView} session={session} />
     <main className="main-panel">
       <Hero settings={settings} setSettings={setSettings} session={session} />
+      <MobileBrand />
       {view === 'dashboard' && <Dashboard stats={stats} questions={questions} errors={errors} flashcards={flashcards} setView={setView} />}
       {view === 'stats' && <PerformanceIntel stats={stats} answers={answers} errors={errors} setView={setView} />}
       {view === 'review' && <SmartReview errors={errors} setErrors={setErrors} setView={setView} />}
@@ -181,6 +182,18 @@ function BottomNav({ view, setView }) {
     ['dashboard','Central',LayoutDashboard], ['study','Treino',Brain], ['exam','Prova',PlayCircle], ['review','Revisão',ListChecks], ['library','Mais',GraduationCap]
   ];
   return <nav className="bottom-nav">{items.map(([id,label,Icon]) => <button key={id} className={view===id?'active':''} onClick={()=>setView(id)}><Icon size={19}/><span>{label}</span></button>)}</nav>;
+}
+
+
+function MobileBrand(){
+  return <section className="mobile-brand">
+    <div className="mobile-brand-badge"><Shield size={26}/></div>
+    <div>
+      <b>Delegado PC-SP</b>
+      <span>Inteligência de Estudos</span>
+      <em>Estuda o bichona do carai!!</em>
+    </div>
+  </section>;
 }
 
 function Hero({ settings, setSettings, session }) {
