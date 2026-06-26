@@ -248,13 +248,15 @@ function StudyRoom({ questions, saveAnswer, settings }) {
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState('');
   const [result, setResult] = useState(null);
+  const [compactMobile, setCompactMobile] = useLocalStorage('pcsp-mobile-compact-study', true);
   const filtered = questions.filter(q => discipline==='Todas' || q.disciplina === discipline);
   const q = filtered[idx % Math.max(filtered.length, 1)];
   if (!q) return <Empty title="Banco vazio" text="Importe questões para começar." />;
   async function answer(letter){ if (result) return; setSelected(letter); const correct = await saveAnswer(q, letter, 'study'); setResult({ correct, letter }); }
   function next(){ setSelected(''); setResult(null); setIdx(i => (i+1) % filtered.length); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-  return <section className="panel question-panel focus-study">
+  return <section className={`panel question-panel focus-study mobile-tight-study ${compactMobile ? 'compact-mobile-on' : 'full-mobile-options'}`}>
     <div className="toolbar compact-toolbar"><div><p className="kicker small-kicker">Modo foco</p><h2>Sala de Treinamento</h2></div><select value={discipline} onChange={e=>{setDiscipline(e.target.value);setIdx(0);setResult(null)}}><option>Todas</option>{DISCIPLINES.map(d=><option key={d}>{d}</option>)}</select></div>
+    <div className="mobile-study-actions"><button className="ghost" onClick={()=>setCompactMobile(v=>!v)}>{compactMobile ? 'Mostrar alternativas completas' : 'Ativar modo compacto'}</button><span>{compactMobile ? 'Celular compacto: menos rolagem' : 'Texto completo ativado'}</span></div>
     <div className="study-layout">
       <QuestionCard q={q} selected={selected} answer={answer} locked={!!result} />
       {result && <Correction q={q} selected={result.letter} correct={result.correct} tdah={settings.tdah} next={next} />}
