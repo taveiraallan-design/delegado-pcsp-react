@@ -1,9 +1,0 @@
-{
-  "name": "Delegado PC-SP Estudos",
-  "short_name": "PC-SP Estudos",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#080A0F",
-  "theme_color": "#080A0F",
-  "description": "Ambiente inteligente de estudos para Delegado PC-SP"
-}
