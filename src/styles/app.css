@@ -69,65 +69,69 @@ button,input,select,textarea{transition:border-color .18s ease,background .18s e
 @media(max-width:1080px){.discursive-grid{grid-template-columns:1fr}.discursive-controls{grid-template-columns:1fr}.discursive-side{position:relative;top:auto}.disc-textarea{min-height:300px}}
 @media(max-width:720px){.discursive-premium .toolbar{display:block}.disc-timer{display:inline-flex;margin-top:10px}.discursive-workspace,.discursive-side,.mirror-box,.model-box,.history-panel{padding:13px;border-radius:18px}.disc-textarea{min-height:260px;font-size:15px}.disc-actions{display:grid}.disc-actions button{width:100%}.score-panel strong{font-size:30px}.disc-counters span{font-size:11px}.panel,.metric{padding:16px}.main-panel{padding:12px}.library-card,.dossier-card,.exam-item,.law-detail,.compare-detail{border-radius:17px}.hero{display:none!important}}
 
-/* =========================================================
-   PACOTE VISUAL — DARK PREMIUM FORTE
-   Patch SOMENTE CSS. Não altera lógica, componentes ou dados.
-   Objetivo: visual mais impactante, policial, jurídico e premium.
-   ========================================================= */
+/* ==========================================================
+   Cyber Police Theme — CSS-only visual patch
+   Escopo: somente visual. Não altera lógica, dados ou conteúdo.
+   ========================================================== */
 :root{
-  --bg:#05070B;
-  --bg2:#0B0F19;
-  --card:#101827;
-  --card2:#172033;
-  --card3:#1C2940;
-  --border:rgba(148,163,184,.22);
-  --gold:#D4AF37;
-  --gold-soft:#F2D675;
-  --red-wine:#7F1D1D;
-  --red-accent:#B91C1C;
+  --bg:#030712;
+  --bg2:#020617;
+  --panel:#0B1120;
+  --panel2:#111827;
+  --panel3:#172554;
+  --line:rgba(34,211,238,.28);
+  --cyber-line:rgba(34,211,238,.28);
+  --cyber-line-soft:rgba(34,211,238,.16);
+  --red:#DC2626;
+  --red2:#EF4444;
+  --gold:#FACC15;
+  --gold2:#FDE68A;
   --green:#22C55E;
+  --blue:#2563EB;
+  --cyan:#06B6D4;
+  --cyan2:#22D3EE;
   --text:#F8FAFC;
-  --muted:#A7B0C0;
-  --tactical-shadow:0 24px 70px rgba(0,0,0,.58);
-  --card-shadow:0 18px 44px rgba(0,0,0,.40), inset 0 1px 0 rgba(255,255,255,.035);
-  --gold-glow:0 0 24px rgba(212,175,55,.16);
-  --red-glow:0 0 30px rgba(185,28,28,.20);
+  --muted:#94A3B8;
+  --premium-shadow:0 20px 70px rgba(0,0,0,.52);
+  --soft-glow:0 0 0 1px rgba(34,211,238,.10),0 18px 48px rgba(0,0,0,.38);
+  --cyber-glow:0 0 22px rgba(34,211,238,.16),0 18px 54px rgba(0,0,0,.48);
 }
 
-html{background:#05070B;}
+html{background:var(--bg)}
 body{
   background:
-    radial-gradient(circle at 12% -10%, rgba(127,29,29,.44), transparent 32%),
-    radial-gradient(circle at 82% 4%, rgba(212,175,55,.20), transparent 28%),
-    radial-gradient(circle at 50% 115%, rgba(28,41,64,.54), transparent 42%),
-    linear-gradient(145deg,#05070B 0%,#0B0F19 52%,#160707 100%) !important;
+    radial-gradient(circle at 18% -10%,rgba(6,182,212,.26),transparent 31%),
+    radial-gradient(circle at 88% 10%,rgba(37,99,235,.20),transparent 29%),
+    radial-gradient(circle at 55% 105%,rgba(220,38,38,.14),transparent 36%),
+    linear-gradient(145deg,#030712 0%,#020617 48%,#07111f 100%) !important;
   color:var(--text);
 }
-body:before{
+body::before{
   content:"";
   position:fixed;
   inset:0;
   pointer-events:none;
   z-index:-1;
-  background-image:
-    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
-  background-size:48px 48px;
-  mask-image:linear-gradient(to bottom,rgba(0,0,0,.38),transparent 75%);
+  background:
+    linear-gradient(rgba(34,211,238,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(34,211,238,.025) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:radial-gradient(circle at center,rgba(0,0,0,.55),transparent 78%);
 }
 
-/* Base premium para painéis e cards */
+/* Base surfaces */
+.sidebar,
 .hero,
 .panel,
 .metric,
 .dossier-card,
-.library-card,
-.law-detail,
-.compare-detail,
 .exam-item,
 .error-row,
 .flash,
 .map-card,
+.library-card,
+.law-detail,
+.compare-detail,
 .review-card,
 .intel-card,
 .review-sidebar,
@@ -137,364 +141,315 @@ body:before{
 .model-box,
 .history-panel,
 .correction,
+.correction-placeholder,
+.ai-box,
 .info,
 .tdah,
 .deep,
-.ai-box{
-  background:
-    linear-gradient(180deg, rgba(16,24,39,.96), rgba(8,13,24,.94)) !important;
-  border:1px solid rgba(148,163,184,.20) !important;
-  box-shadow:var(--card-shadow) !important;
-  position:relative;
-}
-.hero:after,
-.panel:before,
-.metric:before,
-.dossier-card:before,
-.library-card:before,
-.law-detail:before,
-.compare-detail:before,
-.discursive-workspace:before,
-.discursive-side:before{
-  content:"";
-  position:absolute;
-  left:14px;
-  right:14px;
-  top:0;
-  height:1px;
-  background:linear-gradient(90deg,transparent,rgba(212,175,55,.65),rgba(185,28,28,.34),transparent);
-  pointer-events:none;
+.related-box{
+  background:linear-gradient(180deg,rgba(11,17,32,.94),rgba(2,6,23,.92)) !important;
+  border-color:var(--cyber-line-soft) !important;
+  box-shadow:var(--soft-glow) !important;
 }
 
+.hero,
+.law-detail,
+.compare-detail,
+.discursive-workspace,
+.discursive-side{
+  border-color:rgba(34,211,238,.24) !important;
+  box-shadow:var(--cyber-glow) !important;
+}
 .hero{
-  border-color:rgba(212,175,55,.23)!important;
-  box-shadow:var(--tactical-shadow), var(--red-glow)!important;
+  position:relative;
+  overflow:hidden;
   background:
-    radial-gradient(circle at 92% 0%, rgba(212,175,55,.16), transparent 30%),
-    radial-gradient(circle at 6% 20%, rgba(185,28,28,.20), transparent 34%),
-    linear-gradient(135deg, rgba(16,24,39,.98), rgba(8,13,24,.96))!important;
+    radial-gradient(circle at 20% 0%,rgba(34,211,238,.18),transparent 28%),
+    linear-gradient(135deg,rgba(11,17,32,.98),rgba(15,23,42,.78)) !important;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(110deg,rgba(6,182,212,.10),transparent 42%,rgba(37,99,235,.11));
+  pointer-events:none;
 }
 .hero h1,
 .panel h2,
 .compare-title h3,
-.law-title h3{
-  text-shadow:0 12px 34px rgba(0,0,0,.55),0 0 20px rgba(212,175,55,.08);
+.law-title h3,
+.disc-question-card h3{
+  text-shadow:0 0 24px rgba(34,211,238,.13),0 10px 28px rgba(0,0,0,.45);
 }
 .kicker,
 .brand span,
-.law-title span,
 .compare-title span,
-.dossier-head span{
-  color:var(--gold-soft)!important;
+.law-title span,
+.disc-question-card span,
+.quick-result b,
+.info b,
+.tab-content b{
+  color:var(--cyan2) !important;
 }
 
-/* Sidebar: painel tático */
+/* Brand/sidebar cyber panel */
 .sidebar{
   background:
-    radial-gradient(circle at 0% 0%,rgba(127,29,29,.22),transparent 34%),
-    linear-gradient(180deg, rgba(5,7,11,.98), rgba(11,15,25,.96)) !important;
-  border-right:1px solid rgba(212,175,55,.16)!important;
-  box-shadow:14px 0 46px rgba(0,0,0,.36);
+    radial-gradient(circle at 30% 0%,rgba(6,182,212,.16),transparent 26%),
+    linear-gradient(180deg,rgba(3,7,18,.98),rgba(2,6,23,.95)) !important;
+  border-right:1px solid rgba(34,211,238,.20) !important;
 }
 .brand .badge{
-  border-color:rgba(212,175,55,.55)!important;
-  background:linear-gradient(145deg,rgba(127,29,29,.80),rgba(212,175,55,.22))!important;
-  box-shadow:0 18px 34px rgba(127,29,29,.32),inset 0 0 24px rgba(212,175,55,.12)!important;
+  border-color:rgba(34,211,238,.52) !important;
+  background:linear-gradient(145deg,rgba(37,99,235,.55),rgba(6,182,212,.18)) !important;
+  box-shadow:0 0 28px rgba(34,211,238,.20),inset 0 0 22px rgba(34,211,238,.12) !important;
 }
+.brand b{color:#fff;text-shadow:0 0 18px rgba(34,211,238,.18)}
 nav button{
-  border:1px solid transparent!important;
-  background:rgba(248,250,252,.025)!important;
-  color:#DDE5F0!important;
-  font-weight:750;
-  letter-spacing:.01em;
+  border:1px solid transparent !important;
+  color:#DDEBFF !important;
 }
-nav button:hover{
-  background:linear-gradient(90deg,rgba(127,29,29,.45),rgba(28,41,64,.68))!important;
-  border-color:rgba(212,175,55,.18)!important;
-  transform:translateX(2px);
-}
+nav button:hover,
 nav button.active{
-  background:linear-gradient(90deg,rgba(185,28,28,.62),rgba(28,41,64,.78))!important;
-  border-color:rgba(212,175,55,.35)!important;
-  box-shadow:inset 3px 0 var(--gold),0 12px 26px rgba(0,0,0,.28),0 0 22px rgba(212,175,55,.06)!important;
-  color:#fff!important;
+  border-color:rgba(34,211,238,.32) !important;
+  background:linear-gradient(90deg,rgba(37,99,235,.42),rgba(6,182,212,.13)) !important;
+  box-shadow:inset 3px 0 var(--cyan2),0 10px 28px rgba(6,182,212,.08) !important;
 }
+.sidebar nav button::after{box-shadow:0 0 14px rgba(250,204,21,.22)}
 
-/* Botões */
+/* Buttons */
+button,.primary,.hero-actions button,.error-row button,.flash button{
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease,filter .18s ease;
+}
 .primary,
 .hero-actions button:not(.ghost),
 .error-row button,
 .flash button,
-.disc-actions button:first-child,
 .mission button{
-  background:linear-gradient(135deg,#B91C1C 0%,#7F1D1D 58%,rgba(212,175,55,.78) 130%)!important;
-  border:1px solid rgba(212,175,55,.22)!important;
-  box-shadow:0 14px 30px rgba(185,28,28,.23), inset 0 1px 0 rgba(255,255,255,.08)!important;
+  background:linear-gradient(135deg,var(--blue),var(--cyan) 55%,rgba(34,211,238,.88)) !important;
+  color:#F8FAFC !important;
+  box-shadow:0 12px 28px rgba(6,182,212,.18),0 0 0 1px rgba(34,211,238,.18) !important;
   font-weight:850;
 }
 .ghost,
-button.ghost,
 .tabs button,
 .inline-answers button,
-.disc-toolbar button{
-  background:linear-gradient(180deg,rgba(23,32,51,.70),rgba(8,13,24,.86))!important;
-  border:1px solid rgba(148,163,184,.22)!important;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.035)!important;
+.disc-toolbar button,
+.history-card button{
+  background:rgba(15,23,42,.72) !important;
+  border:1px solid rgba(34,211,238,.20) !important;
+  color:#DDEBFF !important;
 }
-.primary:hover,
-.ghost:hover,
-button:hover{
-  filter:brightness(1.08);
+button:hover{filter:brightness(1.08)}
+@media(hover:hover){
+  .primary:hover,
+  .hero-actions button:hover,
+  nav button:hover,
+  .alternatives button:hover,
+  .exam-alternatives button:hover,
+  .library-card:hover,
+  .metric:hover,
+  .panel:hover{
+    transform:translateY(-1px);
+  }
 }
-
-/* Métricas e status */
-.metric strong,
-.result-big,
-.score-panel strong{
-  color:#fff;
-  text-shadow:0 0 20px rgba(212,175,55,.13);
-}
-.metric svg,
-.status-dot,
-.dossier-head span,
-.info b,
-.quick-result b{
-  filter:drop-shadow(0 0 10px rgba(212,175,55,.18));
-}
-.bar-row div{
-  background:#050A14!important;
-  border-color:rgba(148,163,184,.20)!important;
-}
-.bar-row i{
-  background:linear-gradient(90deg,#B91C1C,#D4AF37,#F2D675)!important;
-  box-shadow:0 0 18px rgba(212,175,55,.18);
+input:focus,select:focus,textarea:focus,button:focus-visible{
+  outline:2px solid rgba(34,211,238,.55) !important;
+  outline-offset:2px;
+  box-shadow:0 0 0 4px rgba(6,182,212,.10) !important;
 }
 
-/* Sala de Treinamento: inquérito de estudo */
+/* Cards depth and tactical header line */
+.metric,.panel,.dossier-card,.exam-item,.flash,.map-card,.library-card,.law-detail,.compare-detail,.discursive-workspace,.discursive-side,.review-card,.intel-card{
+  position:relative;
+  overflow:hidden;
+}
+.metric::before,.panel::before,.dossier-card::before,.exam-item::before,.flash::before,.map-card::before,.library-card::before,.law-detail::before,.compare-detail::before,.discursive-workspace::before,.discursive-side::before{
+  content:"";
+  position:absolute;
+  left:0;right:0;top:0;height:2px;
+  background:linear-gradient(90deg,transparent,rgba(34,211,238,.85),rgba(37,99,235,.65),transparent);
+  opacity:.80;
+  pointer-events:none;
+}
+.metric strong,.result-big,.score-panel strong{color:#fff;text-shadow:0 0 18px rgba(34,211,238,.16)}
+.metric svg,.map-card span{color:var(--cyan2) !important}
+.muted,.hero p,.brand span,.bar-row span,.bar-row b{color:var(--muted) !important}
+
+/* Bars/progress/status */
+.bar-row div,
+.progress-track,
+.exam-progress-track{
+  background:#020817 !important;
+  border-color:rgba(34,211,238,.18) !important;
+}
+.bar-row i,
+.progress-track i,
+.exam-progress-track i{
+  background:linear-gradient(90deg,var(--blue),var(--cyan2)) !important;
+  box-shadow:0 0 18px rgba(34,211,238,.26);
+}
+.status-dot{
+  background:var(--cyan2) !important;
+  box-shadow:0 0 22px var(--cyan2) !important;
+}
+
+/* Form fields */
+select,input,textarea,
+.disc-textarea{
+  background:linear-gradient(180deg,#06101f,#030a17) !important;
+  border-color:rgba(34,211,238,.22) !important;
+  color:var(--text) !important;
+}
+select:hover,input:hover,textarea:hover{border-color:rgba(34,211,238,.38) !important}
+textarea::placeholder,input::placeholder{color:#64748B}
+
+/* Sala de Treinamento / Prova Real */
 .dossier-card{
-  border-color:rgba(212,175,55,.27)!important;
-  background:
-    radial-gradient(circle at 100% 0%,rgba(212,175,55,.10),transparent 28%),
-    linear-gradient(180deg,rgba(16,24,39,.96),rgba(8,13,24,.96))!important;
+  border-color:rgba(34,211,238,.26) !important;
+  background:linear-gradient(180deg,rgba(15,23,42,.92),rgba(3,7,18,.94)) !important;
 }
 .dossier-head{
-  border-bottom-color:rgba(212,175,55,.18)!important;
+  border-bottom-color:rgba(34,211,238,.18) !important;
 }
-.statement{
-  color:#F8FAFC;
-  font-weight:650;
+.dossier-head span{
+  color:var(--cyan2) !important;
 }
-.alternatives button,
-.exam-alternatives button{
-  border-color:rgba(148,163,184,.20)!important;
-  background:linear-gradient(180deg,rgba(23,32,51,.72),rgba(8,13,24,.90))!important;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.03);
+.statement{color:#EAF6FF}
+.alternatives button,.exam-alternatives button,.inline-answers button{
+  background:linear-gradient(180deg,rgba(17,24,39,.88),rgba(2,6,23,.88)) !important;
+  border:1px solid rgba(34,211,238,.20) !important;
+  color:#F8FAFC !important;
 }
-.alternatives button b,
-.exam-alternatives button b,
-.inline-answers button{
-  border:1px solid rgba(212,175,55,.18);
+.alternatives b,.exam-alternatives b{
+  background:linear-gradient(135deg,rgba(37,99,235,.82),rgba(6,182,212,.48)) !important;
+  color:#fff;
+  box-shadow:0 0 16px rgba(34,211,238,.18);
 }
 .alternatives button:hover,
 .alternatives button.selected,
 .exam-alternatives button:hover,
-.exam-alternatives button.selected{
-  border-color:rgba(212,175,55,.70)!important;
-  background:linear-gradient(180deg,rgba(212,175,55,.14),rgba(23,32,51,.88))!important;
-  box-shadow:0 14px 28px rgba(0,0,0,.26),inset 0 0 0 1px rgba(212,175,55,.10)!important;
-}
-.correction.ok{
-  border-color:rgba(34,197,94,.60)!important;
-  box-shadow:0 14px 34px rgba(34,197,94,.08)!important;
-}
-.correction.bad{
-  border-color:rgba(185,28,28,.70)!important;
-  box-shadow:0 14px 34px rgba(185,28,28,.14)!important;
-}
-
-/* Prova Real */
-.exam-item{
-  border-color:rgba(212,175,55,.18)!important;
-}
-.exam-item h3,
-.exam-item b{
-  color:#fff;
-}
+.exam-alternatives button.selected,
 .inline-answers button.selected{
-  border-color:rgba(212,175,55,.75)!important;
-  background:linear-gradient(180deg,rgba(212,175,55,.18),rgba(127,29,29,.16))!important;
-  box-shadow:0 0 22px rgba(212,175,55,.10)!important;
+  border-color:rgba(34,211,238,.66) !important;
+  background:linear-gradient(180deg,rgba(37,99,235,.22),rgba(6,182,212,.08)) !important;
+  box-shadow:0 14px 30px rgba(6,182,212,.10),inset 0 0 0 1px rgba(34,211,238,.12) !important;
+}
+.correction.ok,.sticky-next.ok{border-color:rgba(34,197,94,.52) !important;box-shadow:0 0 0 1px rgba(34,197,94,.10),0 16px 42px rgba(0,0,0,.35) !important}
+.correction.bad,.sticky-next.bad{border-color:rgba(220,38,38,.54) !important;box-shadow:0 0 0 1px rgba(220,38,38,.12),0 16px 42px rgba(0,0,0,.35) !important}
+.green,.correction.ok h3 svg,.hit-row svg{color:var(--green) !important}.red,.correction.bad h3 svg,.miss-row svg{color:var(--red2) !important}
+.quick-result span,.tab-content{border-color:rgba(34,211,238,.18) !important;background:rgba(15,23,42,.75) !important}
+.tabs button.active{border-color:rgba(34,211,238,.66) !important;background:rgba(6,182,212,.12) !important;color:#F8FAFC !important}
+.sticky-next{
+  background:rgba(3,7,18,.88) !important;
+  border-color:rgba(34,211,238,.22) !important;
+  box-shadow:0 18px 48px rgba(0,0,0,.56),0 0 24px rgba(6,182,212,.10) !important;
 }
 
-/* Lei Seca Inteligente */
-.law-detail,
-.law-list button,
-.related-box{
-  border-color:rgba(148,163,184,.20)!important;
+/* Lei Seca */
+.law-list button.active,.law-list button:hover,
+.compare-list button.active,.compare-list button:hover{
+  border-color:rgba(34,211,238,.60) !important;
+  background:linear-gradient(90deg,rgba(37,99,235,.22),rgba(6,182,212,.09)) !important;
+  box-shadow:inset 3px 0 var(--cyan2),0 12px 26px rgba(0,0,0,.20) !important;
 }
-.law-list button.active,
-.law-list button:hover{
-  background:linear-gradient(90deg,rgba(212,175,55,.16),rgba(127,29,29,.18))!important;
-  border-color:rgba(212,175,55,.55)!important;
-}
-.law-title h3,
-.law-title em,
-.law-detail h3{
-  color:#fff;
-}
-.law-detail .info:nth-of-type(4),
-.law-detail .info:has(b){
-  border-color:rgba(212,175,55,.20)!important;
-}
-.law-detail .info b{
-  color:var(--gold-soft)!important;
-}
+.law-list span,.compare-list span,.law-title span{color:var(--cyan2) !important}
+.law-title h3,.law-article,.article-code{color:#FFFFFF !important}
+.importance-high,.badge-high,.danger-badge{background:rgba(220,38,38,.16)!important;border-color:rgba(220,38,38,.38)!important;color:#FCA5A5!important}
+.importance-medium,.badge-medium,.warning-badge{background:rgba(250,204,21,.12)!important;border-color:rgba(250,204,21,.32)!important;color:#FDE68A!important}
+.related-box,.law-related,.flash-related{border-color:rgba(34,211,238,.18)!important;background:rgba(15,23,42,.72)!important}
+.pegadinha,.trap,.alert-box{border-color:rgba(220,38,38,.42)!important;background:rgba(127,29,29,.18)!important;color:#FEE2E2!important}
+.analogia,.analogy-box{border-color:rgba(34,211,238,.30)!important;background:rgba(6,182,212,.08)!important}
 
 /* Não Confunda */
 .compare-main-grid .info{
-  border-color:rgba(148,163,184,.20)!important;
+  border-color:rgba(34,211,238,.18) !important;
 }
-.compare-big,
+.compare-big{
+  border-color:rgba(34,211,238,.44) !important;
+  background:linear-gradient(180deg,rgba(6,182,212,.10),rgba(15,23,42,.80)) !important;
+}
+.compare-big b{color:var(--cyan2) !important}
 .memory-phrase{
-  border-color:rgba(212,175,55,.44)!important;
-  background:linear-gradient(180deg,rgba(212,175,55,.10),rgba(16,24,39,.86))!important;
+  border-color:rgba(250,204,21,.34) !important;
+  background:rgba(250,204,21,.075) !important;
 }
-.compare-big p,
-.memory-phrase p{
-  color:#fff!important;
-}
-.compare-list button:hover,
-.compare-list button.active{
-  border-color:rgba(212,175,55,.65)!important;
-}
+.memory-phrase b,.memory-phrase p{color:var(--gold2) !important}
+.compare-title em{color:var(--cyan2) !important}
 
-/* Biblioteca e Revisão */
-.library-card h3,
-.map-card h3,
-.review-card h3,
-.flash h3{
-  color:#fff;
+/* Biblioteca/Revisão */
+.library-card,
+.review-card,
+.intel-card{
+  border-color:rgba(34,211,238,.18) !important;
 }
-.library-card span,
-.map-card span,
-.flash b,
-.review-card b{
-  color:var(--gold-soft)!important;
+.library-card span,.library-card small,.review-card small,.intel-card small{
+  color:var(--cyan2) !important;
 }
-.review-card.danger,
 .map-card.danger,
-.panel.danger{
-  border-color:rgba(185,28,28,.55)!important;
-  box-shadow:0 16px 40px rgba(185,28,28,.12)!important;
+.review-card.danger,
+.critical,.critical-card{
+  border-color:rgba(220,38,38,.42) !important;
+  background:linear-gradient(180deg,rgba(127,29,29,.16),rgba(11,17,32,.86)) !important;
 }
 
-/* Peça Escrita / Discursiva */
-.disc-textarea,
-textarea{
-  background:linear-gradient(180deg,#08101F,#050A14)!important;
-  border-color:rgba(212,175,55,.24)!important;
-  color:#F8FAFC!important;
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.025), inset 0 12px 28px rgba(0,0,0,.22)!important;
+/* Peça Escrita */
+.disc-timer{
+  border-color:rgba(34,211,238,.44) !important;
+  background:rgba(6,182,212,.08) !important;
+  color:var(--cyan2) !important;
+  box-shadow:0 0 24px rgba(6,182,212,.10);
 }
-.disc-textarea:focus,
-textarea:focus{
-  border-color:rgba(212,175,55,.62)!important;
-  box-shadow:0 0 0 3px rgba(212,175,55,.10), inset 0 12px 28px rgba(0,0,0,.22)!important;
+.disc-question-card{
+  border-color:rgba(34,211,238,.26) !important;
+  background:rgba(6,182,212,.055) !important;
+}
+.disc-question-card span{color:var(--cyan2) !important}
+.disc-textarea{
+  border-color:rgba(34,211,238,.26) !important;
+  box-shadow:inset 0 0 0 1px rgba(34,211,238,.04) !important;
 }
 .score-panel{
-  border-color:rgba(212,175,55,.58)!important;
-  background:
-    radial-gradient(circle at 100% 0,rgba(212,175,55,.22),transparent 35%),
-    linear-gradient(180deg,rgba(212,175,55,.10),rgba(8,13,24,.88))!important;
-  box-shadow:0 18px 42px rgba(0,0,0,.36),0 0 28px rgba(212,175,55,.08)!important;
+  border-color:rgba(34,211,238,.46) !important;
+  background:radial-gradient(circle at 100% 0,rgba(34,211,238,.16),transparent 36%),rgba(6,182,212,.06) !important;
 }
-.check-panel,
-.analysis-panel,
-.history-card{
-  background:linear-gradient(180deg,rgba(23,32,51,.72),rgba(8,13,24,.88))!important;
-  border-color:rgba(148,163,184,.20)!important;
+.score-panel span{color:var(--cyan2) !important}
+.check-panel,.analysis-panel,.history-card{
+  border-color:rgba(34,211,238,.18) !important;
+  background:rgba(15,23,42,.76) !important;
 }
-.hit-row{
-  color:#EAFBF1;
-}
-.miss-row{
-  color:#FFE7E7;
+.disc-counters span{
+  border-color:rgba(34,211,238,.20) !important;
+  background:rgba(6,182,212,.06) !important;
+  color:#C8F7FF !important;
 }
 
-/* Formulários e badges */
-select,input{
-  background:linear-gradient(180deg,#08101F,#050A14)!important;
-  border-color:rgba(148,163,184,.22)!important;
-  color:#F8FAFC!important;
-}
-select:focus,input:focus{
-  border-color:rgba(212,175,55,.62)!important;
-  box-shadow:0 0 0 3px rgba(212,175,55,.10)!important;
-}
-.badge,.tag,.pill,.small-badge,
-[class*="badge"], [class*="tag"]{
-  border-color:rgba(212,175,55,.22)!important;
-}
-
-/* Menu inferior mobile — glass premium */
+/* Mobile glass nav and compact safety */
 .bottom-nav{
-  background:rgba(5,7,11,.90)!important;
-  border:1px solid rgba(212,175,55,.18)!important;
-  box-shadow:0 -16px 52px rgba(0,0,0,.62), inset 0 1px 0 rgba(255,255,255,.04)!important;
-  backdrop-filter:blur(18px) saturate(130%)!important;
-  -webkit-backdrop-filter:blur(18px) saturate(130%)!important;
+  background:rgba(2,6,23,.82) !important;
+  border:1px solid rgba(34,211,238,.24) !important;
+  box-shadow:0 -10px 40px rgba(0,0,0,.58),0 0 28px rgba(6,182,212,.10) !important;
+  backdrop-filter:blur(18px) saturate(1.2);
+  -webkit-backdrop-filter:blur(18px) saturate(1.2);
 }
 .bottom-nav button{
-  color:#C8D2E0!important;
-  font-weight:800;
+  color:#B8C6DB !important;
 }
 .bottom-nav button.active{
-  color:#fff!important;
-  background:linear-gradient(180deg,rgba(127,29,29,.70),rgba(212,175,55,.18))!important;
-  box-shadow:inset 0 0 0 1px rgba(212,175,55,.24),0 8px 20px rgba(0,0,0,.20)!important;
+  color:#FFFFFF !important;
+  background:linear-gradient(180deg,rgba(37,99,235,.48),rgba(6,182,212,.16)) !important;
+  box-shadow:inset 0 0 0 1px rgba(34,211,238,.22),0 0 18px rgba(6,182,212,.12) !important;
 }
 
-/* Microinterações leves e seguras */
-.panel,
-.metric,
-.dossier-card,
-.library-card,
-.law-detail,
-.compare-detail,
-.exam-item,
-.flash,
-.map-card,
-.review-card{
-  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease;
-}
-@media (hover:hover){
-  .panel:hover,
-  .metric:hover,
-  .library-card:hover,
-  .law-detail:hover,
-  .compare-detail:hover,
-  .exam-item:hover,
-  .flash:hover,
-  .map-card:hover{
-    transform:translateY(-2px);
-    border-color:rgba(212,175,55,.30)!important;
-    box-shadow:0 22px 58px rgba(0,0,0,.46),0 0 28px rgba(212,175,55,.055)!important;
-  }
-}
+/* Text readability */
+p,li,.statement,.info p,.tab-content p,.mirror-box p,.model-box p,.history-card p{color:#DCE8F7}
+small,.muted,.compare-list small,.law-list small{color:var(--muted) !important}
+.schema{background:#020817 !important;border-color:rgba(34,211,238,.20) !important;color:#CFEFFF !important}
 
-/* Mobile: manter compacto, sem aumentar rolagem */
 @media(max-width:720px){
-  body:before{background-size:38px 38px;opacity:.55;}
-  .main-panel{padding:12px 10px 84px!important;}
-  .panel,.metric,.dossier-card,.library-card,.law-detail,.compare-detail,.exam-item,.flash,.map-card,.review-card,.discursive-workspace,.discursive-side{
-    border-radius:18px!important;
-    box-shadow:0 12px 30px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.03)!important;
-  }
-  .metric,.panel{padding:15px!important;}
-  .alternatives button,.exam-alternatives button{padding:10px 11px!important;}
-  .alternatives b{width:28px!important;height:28px!important;}
-  .statement{font-size:16px!important;line-height:1.42!important;}
-  .bottom-nav{border-radius:18px 18px 0 0;}
-  .bottom-nav button{font-size:11px!important;}
-  .disc-textarea{min-height:250px!important;}
+  body::before{background-size:56px 56px;opacity:.45}
+  .main-panel{padding:12px 12px 86px !important}
+  .metric,.panel,.dossier-card,.exam-item,.flash,.map-card,.library-card,.law-detail,.compare-detail,.discursive-workspace,.discursive-side{box-shadow:0 10px 30px rgba(0,0,0,.34),0 0 0 1px rgba(34,211,238,.08) !important}
+  .alternatives button,.exam-alternatives button{box-shadow:none !important}
+  .bottom-nav{left:10px;right:10px;bottom:8px;border-radius:22px}
 }
