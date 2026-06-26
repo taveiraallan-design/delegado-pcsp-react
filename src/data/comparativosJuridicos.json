@@ -1,0 +1,791 @@
+[
+  {
+    "id": "cmp-penal-001",
+    "disciplina": "Direito Penal",
+    "tema": "Dolo eventual x culpa consciente",
+    "instituto_a": "Dolo eventual",
+    "instituto_b": "Culpa consciente",
+    "diferenca_central": "No dolo eventual o agente prevê o resultado e aceita o risco; na culpa consciente prevê, mas confia sinceramente que evitará.",
+    "exemplo_pratico": "Motorista em velocidade absurda em rua cheia e pensa “se atropelar, paciência” = dolo eventual; motorista imprudente que acredita que conseguirá frear = culpa consciente.",
+    "analogia": "Dolo eventual é aceitar a queda do dominó; culpa consciente é achar que consegue segurar o último dominó antes de cair.",
+    "pegadinha_vunesp": "A VUNESP costuma inverter “aceitar o risco” com “confiar que evita”.",
+    "frase_memorizacao": "Dolo eventual aceita. Culpa consciente confia.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Dolo eventual e Culpa consciente?",
+      "verso": "No dolo eventual o agente prevê o resultado e aceita o risco; na culpa consciente prevê, mas confia sinceramente que evitará."
+    },
+    "questoes_relacionadas_tags": [
+      "dolo eventual",
+      "culpa consciente",
+      "art. 18",
+      "teoria do crime"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "dolo eventual",
+      "culpa consciente",
+      "art. 18",
+      "teoria do crime"
+    ]
+  },
+  {
+    "id": "cmp-penal-002",
+    "disciplina": "Direito Penal",
+    "tema": "Erro de tipo x erro de proibição",
+    "instituto_a": "Erro de tipo",
+    "instituto_b": "Erro de proibição",
+    "diferenca_central": "Erro de tipo recai sobre elemento do fato típico; erro de proibição recai sobre a ilicitude, isto é, o agente sabe o que faz, mas acredita que é permitido.",
+    "exemplo_pratico": "Quem leva guarda-chuva alheio achando ser seu incorre em erro de tipo; quem sabe que leva bem alheio, mas pensa que a lei permite, discute erro de proibição.",
+    "analogia": "Erro de tipo é errar o filme que está vendo; erro de proibição é errar a regra do cinema.",
+    "pegadinha_vunesp": "A banca troca elemento do tipo por consciência da ilicitude.",
+    "frase_memorizacao": "Tipo = fato. Proibição = ilicitude.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Erro de tipo e Erro de proibição?",
+      "verso": "Erro de tipo recai sobre elemento do fato típico; erro de proibição recai sobre a ilicitude, isto é, o agente sabe o que faz, mas acredita que é permitido."
+    },
+    "questoes_relacionadas_tags": [
+      "erro de tipo",
+      "erro de proibição",
+      "art. 20",
+      "art. 21"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "erro de tipo",
+      "erro de proibição",
+      "art. 20",
+      "art. 21"
+    ]
+  },
+  {
+    "id": "cmp-penal-003",
+    "disciplina": "Direito Penal",
+    "tema": "Crime comum x próprio x mão própria",
+    "instituto_a": "Crime comum/próprio",
+    "instituto_b": "Crime de mão própria",
+    "diferenca_central": "Crime comum pode ser praticado por qualquer pessoa; próprio exige qualidade especial; de mão própria exige execução pessoal do sujeito.",
+    "exemplo_pratico": "Homicídio é comum; peculato exige funcionário público; falso testemunho é exemplo clássico de mão própria.",
+    "analogia": "Comum é porta aberta; próprio exige crachá; mão própria exige a própria mão.",
+    "pegadinha_vunesp": "A banca confunde crime próprio com mão própria.",
+    "frase_memorizacao": "Comum: qualquer um. Próprio: qualidade. Mão própria: execução pessoal.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Crime comum/próprio e Crime de mão própria?",
+      "verso": "Crime comum pode ser praticado por qualquer pessoa; próprio exige qualidade especial; de mão própria exige execução pessoal do sujeito."
+    },
+    "questoes_relacionadas_tags": [
+      "crime próprio",
+      "crime comum",
+      "mão própria"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "crime próprio",
+      "crime comum",
+      "mão própria"
+    ]
+  },
+  {
+    "id": "cmp-penal-004",
+    "disciplina": "Direito Penal",
+    "tema": "Consumação x tentativa",
+    "instituto_a": "Consumação",
+    "instituto_b": "Tentativa",
+    "diferenca_central": "Consumação ocorre quando todos os elementos do tipo se realizam; tentativa ocorre quando a execução começa, mas o resultado não ocorre por circunstâncias alheias à vontade do agente.",
+    "exemplo_pratico": "Disparar para matar e acertar causando morte = consumado; disparar e a vítima sobrevive por socorro rápido = tentativa.",
+    "analogia": "Consumação é cruzar a linha de chegada; tentativa é ser impedido antes dela.",
+    "pegadinha_vunesp": "A banca tenta confundir preparação com tentativa.",
+    "frase_memorizacao": "Tentativa exige início de execução.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Consumação e Tentativa?",
+      "verso": "Consumação ocorre quando todos os elementos do tipo se realizam; tentativa ocorre quando a execução começa, mas o resultado não ocorre por circunstâncias alheias à vontade do agente."
+    },
+    "questoes_relacionadas_tags": [
+      "tentativa",
+      "consumação",
+      "art. 14"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "tentativa",
+      "consumação",
+      "art. 14"
+    ]
+  },
+  {
+    "id": "cmp-penal-005",
+    "disciplina": "Direito Penal",
+    "tema": "Desistência voluntária x arrependimento eficaz",
+    "instituto_a": "Desistência voluntária",
+    "instituto_b": "Arrependimento eficaz",
+    "diferenca_central": "Na desistência voluntária o agente interrompe a execução; no arrependimento eficaz ele já praticou os atos executórios, mas impede o resultado.",
+    "exemplo_pratico": "Começa a envenenar e para antes de ministrar toda dose = desistência; ministra veneno e depois dá antídoto eficaz = arrependimento eficaz.",
+    "analogia": "Desistência é tirar o pé do acelerador; arrependimento eficaz é puxar o freio depois que o carro já embalou.",
+    "pegadinha_vunesp": "A banca costuma chamar tudo de tentativa, mas nesses casos responde só pelos atos já praticados.",
+    "frase_memorizacao": "Desistiu durante. Arrependeu depois e impediu.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Desistência voluntária e Arrependimento eficaz?",
+      "verso": "Na desistência voluntária o agente interrompe a execução; no arrependimento eficaz ele já praticou os atos executórios, mas impede o resultado."
+    },
+    "questoes_relacionadas_tags": [
+      "desistência voluntária",
+      "arrependimento eficaz",
+      "art. 15"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "desistência voluntária",
+      "arrependimento eficaz",
+      "art. 15"
+    ]
+  },
+  {
+    "id": "cmp-penal-006",
+    "disciplina": "Direito Penal",
+    "tema": "Arrependimento posterior x arrependimento eficaz",
+    "instituto_a": "Arrependimento posterior",
+    "instituto_b": "Arrependimento eficaz",
+    "diferenca_central": "O arrependimento posterior ocorre depois da consumação, nos crimes sem violência ou grave ameaça, com reparação do dano; o eficaz ocorre antes da consumação e impede o resultado.",
+    "exemplo_pratico": "Furto consumado com restituição antes da denúncia pode gerar arrependimento posterior; impedir a morte após ato executório é arrependimento eficaz.",
+    "analogia": "Posterior é consertar depois do dano; eficaz é impedir o dano acontecer.",
+    "pegadinha_vunesp": "A banca mistura momento antes/depois da consumação.",
+    "frase_memorizacao": "Eficaz impede resultado; posterior repara depois.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Arrependimento posterior e Arrependimento eficaz?",
+      "verso": "O arrependimento posterior ocorre depois da consumação, nos crimes sem violência ou grave ameaça, com reparação do dano; o eficaz ocorre antes da consumação e impede o resultado."
+    },
+    "questoes_relacionadas_tags": [
+      "arrependimento posterior",
+      "arrependimento eficaz",
+      "art. 15",
+      "art. 16"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "arrependimento posterior",
+      "arrependimento eficaz",
+      "art. 15",
+      "art. 16"
+    ]
+  },
+  {
+    "id": "cmp-penal-007",
+    "disciplina": "Direito Penal",
+    "tema": "Concussão x corrupção passiva",
+    "instituto_a": "Concussão",
+    "instituto_b": "Corrupção passiva",
+    "diferenca_central": "Na concussão o funcionário público exige vantagem indevida; na corrupção passiva solicita, recebe ou aceita promessa.",
+    "exemplo_pratico": "Policial exige dinheiro para não autuar = concussão; servidor pede ou aceita vantagem = corrupção passiva.",
+    "analogia": "Concussão é “manda pagar”; corrupção passiva é “pede/aceita”.",
+    "pegadinha_vunesp": "A palavra-chave “exigir” muda tudo.",
+    "frase_memorizacao": "Exigiu = concussão. Solicitou/recebeu/aceitou = corrupção passiva.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Concussão e Corrupção passiva?",
+      "verso": "Na concussão o funcionário público exige vantagem indevida; na corrupção passiva solicita, recebe ou aceita promessa."
+    },
+    "questoes_relacionadas_tags": [
+      "concussão",
+      "corrupção passiva",
+      "art. 316",
+      "art. 317"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "concussão",
+      "corrupção passiva",
+      "art. 316",
+      "art. 317"
+    ]
+  },
+  {
+    "id": "cmp-penal-008",
+    "disciplina": "Direito Penal",
+    "tema": "Peculato x apropriação indébita",
+    "instituto_a": "Peculato",
+    "instituto_b": "Apropriação indébita",
+    "diferenca_central": "Peculato exige funcionário público e posse em razão do cargo; apropriação indébita é crime comum de quem se apropria de coisa alheia móvel de que tem posse.",
+    "exemplo_pratico": "Servidor desvia dinheiro público que recebeu pelo cargo = peculato; particular que se apropria de bem recebido licitamente = apropriação indébita.",
+    "analogia": "Peculato exige crachá público; apropriação indébita não.",
+    "pegadinha_vunesp": "A banca esconde a qualidade de funcionário público no enunciado.",
+    "frase_memorizacao": "Cargo + posse funcional = peculato.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Peculato e Apropriação indébita?",
+      "verso": "Peculato exige funcionário público e posse em razão do cargo; apropriação indébita é crime comum de quem se apropria de coisa alheia móvel de que tem posse."
+    },
+    "questoes_relacionadas_tags": [
+      "peculato",
+      "apropriação indébita",
+      "art. 312"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "peculato",
+      "apropriação indébita",
+      "art. 312"
+    ]
+  },
+  {
+    "id": "cmp-penal-009",
+    "disciplina": "Direito Penal",
+    "tema": "Furto x roubo x extorsão",
+    "instituto_a": "Furto",
+    "instituto_b": "Roubo/Extorsão",
+    "diferenca_central": "Furto é subtração sem violência ou grave ameaça; roubo tem violência ou grave ameaça para subtrair; extorsão exige colaboração da vítima para obter vantagem.",
+    "exemplo_pratico": "Pegar celular sem a vítima ver = furto; tomar com ameaça = roubo; obrigar vítima a fazer Pix = extorsão.",
+    "analogia": "Furto é tirar escondido; roubo é tomar na força; extorsão é fazer a vítima entregar/agir.",
+    "pegadinha_vunesp": "A banca usa Pix e senha para aproximar extorsão e roubo.",
+    "frase_memorizacao": "Furto tira. Roubo toma. Extorsão obriga.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Furto e Roubo/Extorsão?",
+      "verso": "Furto é subtração sem violência ou grave ameaça; roubo tem violência ou grave ameaça para subtrair; extorsão exige colaboração da vítima para obter vantagem."
+    },
+    "questoes_relacionadas_tags": [
+      "furto",
+      "roubo",
+      "extorsão",
+      "art. 155",
+      "art. 157",
+      "art. 158"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "furto",
+      "roubo",
+      "extorsão",
+      "art. 155",
+      "art. 157",
+      "art. 158"
+    ]
+  },
+  {
+    "id": "cmp-penal-010",
+    "disciplina": "Direito Penal",
+    "tema": "Roubo próprio x roubo impróprio",
+    "instituto_a": "Roubo próprio",
+    "instituto_b": "Roubo impróprio",
+    "diferenca_central": "No roubo próprio a violência ou ameaça é usada antes ou durante a subtração; no impróprio, depois da subtração, para assegurar impunidade ou detenção da coisa.",
+    "exemplo_pratico": "Ameaçar para pegar bolsa = roubo próprio; furtar e depois agredir segurança para fugir com o bem = roubo impróprio.",
+    "analogia": "Próprio: força abre a porta. Impróprio: força segura a fuga.",
+    "pegadinha_vunesp": "A ordem dos fatos é a pegadinha central.",
+    "frase_memorizacao": "Antes/durante = próprio. Depois = impróprio.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Roubo próprio e Roubo impróprio?",
+      "verso": "No roubo próprio a violência ou ameaça é usada antes ou durante a subtração; no impróprio, depois da subtração, para assegurar impunidade ou detenção da coisa."
+    },
+    "questoes_relacionadas_tags": [
+      "roubo próprio",
+      "roubo impróprio",
+      "art. 157"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "roubo próprio",
+      "roubo impróprio",
+      "art. 157"
+    ]
+  },
+  {
+    "id": "cmp-penal-011",
+    "disciplina": "Direito Penal",
+    "tema": "Homicídio privilegiado x qualificado",
+    "instituto_a": "Privilegiado",
+    "instituto_b": "Qualificado",
+    "diferenca_central": "Privilegiado reduz pena por relevante valor social/moral ou domínio de violenta emoção; qualificado aumenta gravidade por motivo, meio, modo ou finalidade previstos em lei.",
+    "exemplo_pratico": "Matar sob violenta emoção após injusta provocação pode privilegiar; matar por motivo torpe ou mediante emboscada qualifica.",
+    "analogia": "Privilegiadora é freio da pena; qualificadora é acelerador da gravidade.",
+    "pegadinha_vunesp": "A banca mistura motivo privilegiador com qualificadora subjetiva.",
+    "frase_memorizacao": "Privilegia reduz; qualifica agrava.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Privilegiado e Qualificado?",
+      "verso": "Privilegiado reduz pena por relevante valor social/moral ou domínio de violenta emoção; qualificado aumenta gravidade por motivo, meio, modo ou finalidade previstos em lei."
+    },
+    "questoes_relacionadas_tags": [
+      "homicídio privilegiado",
+      "homicídio qualificado",
+      "art. 121"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "homicídio privilegiado",
+      "homicídio qualificado",
+      "art. 121"
+    ]
+  },
+  {
+    "id": "cmp-proc-001",
+    "disciplina": "Direito Processual Penal",
+    "tema": "Prisão preventiva x prisão temporária",
+    "instituto_a": "Prisão preventiva",
+    "instituto_b": "Prisão temporária",
+    "diferenca_central": "Preventiva é cautelar sem prazo fixo legal geral e exige requisitos dos arts. 312 e 313 do CPP; temporária é prisão para investigação, com prazo e hipóteses legais próprias.",
+    "exemplo_pratico": "Preventiva protege processo/ordem/instrução/aplicação da lei; temporária auxilia investigação em crimes previstos e hipóteses específicas.",
+    "analogia": "Preventiva é freio de emergência; temporária é ferramenta investigativa com prazo de validade.",
+    "pegadinha_vunesp": "A banca chama preventiva de pena antecipada ou confunde com prazo da temporária.",
+    "frase_memorizacao": "Preventiva protege. Temporária investiga com prazo.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Prisão preventiva e Prisão temporária?",
+      "verso": "Preventiva é cautelar sem prazo fixo legal geral e exige requisitos dos arts. 312 e 313 do CPP; temporária é prisão para investigação, com prazo e hipóteses legais próprias."
+    },
+    "questoes_relacionadas_tags": [
+      "prisão preventiva",
+      "prisão temporária",
+      "art. 312",
+      "art. 313"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "prisão preventiva",
+      "prisão temporária",
+      "art. 312",
+      "art. 313"
+    ]
+  },
+  {
+    "id": "cmp-proc-002",
+    "disciplina": "Direito Processual Penal",
+    "tema": "Prova ilícita x prova ilegítima",
+    "instituto_a": "Prova ilícita",
+    "instituto_b": "Prova ilegítima",
+    "diferenca_central": "Ilícita viola norma de direito material ou direito fundamental; ilegítima viola norma processual.",
+    "exemplo_pratico": "Interceptação sem autorização judicial pode ser ilícita; desrespeito a regra processual de produção pode ser ilegitimidade.",
+    "analogia": "Ilícita nasce contaminada no direito fundamental; ilegítima tropeça no procedimento.",
+    "pegadinha_vunesp": "A banca usa “ilegal” genericamente para confundir as categorias.",
+    "frase_memorizacao": "Ilícita = direito material. Ilegítima = processo.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Prova ilícita e Prova ilegítima?",
+      "verso": "Ilícita viola norma de direito material ou direito fundamental; ilegítima viola norma processual."
+    },
+    "questoes_relacionadas_tags": [
+      "prova ilícita",
+      "prova ilegítima",
+      "art. 157"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "prova ilícita",
+      "prova ilegítima",
+      "art. 157"
+    ]
+  },
+  {
+    "id": "cmp-proc-003",
+    "disciplina": "Direito Processual Penal",
+    "tema": "Flagrante próprio x impróprio x presumido",
+    "instituto_a": "Flagrante próprio",
+    "instituto_b": "Flagrante impróprio/presumido",
+    "diferenca_central": "Próprio ocorre durante ou logo após o crime; impróprio envolve perseguição logo após; presumido ocorre quando o agente é encontrado logo depois com instrumentos, armas, objetos ou papéis que façam presumir autoria.",
+    "exemplo_pratico": "Visto cometendo o crime = próprio; perseguido logo após = impróprio; encontrado com bens da vítima logo depois = presumido.",
+    "analogia": "Próprio é foto do crime; impróprio é perseguição; presumido é rastro forte.",
+    "pegadinha_vunesp": "A banca troca perseguição por encontro casual com objetos.",
+    "frase_memorizacao": "Próprio vê. Impróprio persegue. Presumido encontra rastros.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Flagrante próprio e Flagrante impróprio/presumido?",
+      "verso": "Próprio ocorre durante ou logo após o crime; impróprio envolve perseguição logo após; presumido ocorre quando o agente é encontrado logo depois com instrumentos, armas, objetos ou papéis que façam presumir autoria."
+    },
+    "questoes_relacionadas_tags": [
+      "flagrante",
+      "art. 302"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "flagrante",
+      "art. 302"
+    ]
+  },
+  {
+    "id": "cmp-proc-004",
+    "disciplina": "Direito Processual Penal",
+    "tema": "Busca pessoal x busca domiciliar",
+    "instituto_a": "Busca pessoal",
+    "instituto_b": "Busca domiciliar",
+    "diferenca_central": "Busca pessoal recai sobre a pessoa e exige fundada suspeita; domiciliar ingressa na casa e exige hipóteses constitucionais/legais, com maior proteção.",
+    "exemplo_pratico": "Revistar suspeito com fundada suspeita = busca pessoal; entrar em casa exige mandado ou situação excepcional como flagrante.",
+    "analogia": "Bolso tem proteção; casa tem muralha constitucional.",
+    "pegadinha_vunesp": "A banca tenta banalizar entrada domiciliar com mera suspeita.",
+    "frase_memorizacao": "Casa exige proteção reforçada.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Busca pessoal e Busca domiciliar?",
+      "verso": "Busca pessoal recai sobre a pessoa e exige fundada suspeita; domiciliar ingressa na casa e exige hipóteses constitucionais/legais, com maior proteção."
+    },
+    "questoes_relacionadas_tags": [
+      "busca pessoal",
+      "busca domiciliar",
+      "art. 240"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "busca pessoal",
+      "busca domiciliar",
+      "art. 240"
+    ]
+  },
+  {
+    "id": "cmp-proc-005",
+    "disciplina": "Direito Processual Penal",
+    "tema": "Ação penal pública condicionada x incondicionada",
+    "instituto_a": "Pública incondicionada",
+    "instituto_b": "Pública condicionada",
+    "diferenca_central": "Incondicionada independe de representação; condicionada depende de representação do ofendido ou requisição quando prevista.",
+    "exemplo_pratico": "Homicídio é ação pública incondicionada; ameaça geralmente depende de representação.",
+    "analogia": "Incondicionada anda sozinha; condicionada precisa de autorização.",
+    "pegadinha_vunesp": "A banca confunde representação com queixa-crime.",
+    "frase_memorizacao": "Condicionada precisa de condição.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Pública incondicionada e Pública condicionada?",
+      "verso": "Incondicionada independe de representação; condicionada depende de representação do ofendido ou requisição quando prevista."
+    },
+    "questoes_relacionadas_tags": [
+      "ação penal",
+      "representação",
+      "art. 24"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "ação penal",
+      "representação",
+      "art. 24"
+    ]
+  },
+  {
+    "id": "cmp-proc-006",
+    "disciplina": "Direito Processual Penal",
+    "tema": "Representação x requisição",
+    "instituto_a": "Representação",
+    "instituto_b": "Requisição",
+    "diferenca_central": "Representação é manifestação do ofendido ou representante; requisição é ato do Ministro da Justiça em hipóteses legais.",
+    "exemplo_pratico": "Vítima autoriza persecução em crime condicionado = representação; certas hipóteses envolvendo Presidente/estrangeiro podem exigir requisição.",
+    "analogia": "Representação vem da vítima; requisição vem da autoridade política prevista.",
+    "pegadinha_vunesp": "A banca troca legitimado da condição de procedibilidade.",
+    "frase_memorizacao": "Vítima representa; Ministro requisita.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Representação e Requisição?",
+      "verso": "Representação é manifestação do ofendido ou representante; requisição é ato do Ministro da Justiça em hipóteses legais."
+    },
+    "questoes_relacionadas_tags": [
+      "representação",
+      "requisição"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "representação",
+      "requisição"
+    ]
+  },
+  {
+    "id": "cmp-proc-007",
+    "disciplina": "Direito Processual Penal",
+    "tema": "Arquivamento do inquérito x trancamento",
+    "instituto_a": "Arquivamento",
+    "instituto_b": "Trancamento",
+    "diferenca_central": "Arquivamento decorre da atuação do Ministério Público e controle legal; trancamento é medida excepcional, geralmente por habeas corpus, diante de flagrante ilegalidade.",
+    "exemplo_pratico": "MP entende ausência de justa causa e promove arquivamento; defesa busca trancar investigação abusiva por HC.",
+    "analogia": "Arquivamento é porta fechada pelo titular; trancamento é cadeado judicial contra ilegalidade.",
+    "pegadinha_vunesp": "A banca usa ambos como sinônimos.",
+    "frase_memorizacao": "Arquiva pelo fluxo acusatório; tranca por ilegalidade evidente.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Arquivamento e Trancamento?",
+      "verso": "Arquivamento decorre da atuação do Ministério Público e controle legal; trancamento é medida excepcional, geralmente por habeas corpus, diante de flagrante ilegalidade."
+    },
+    "questoes_relacionadas_tags": [
+      "arquivamento",
+      "trancamento",
+      "inquérito"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "arquivamento",
+      "trancamento",
+      "inquérito"
+    ]
+  },
+  {
+    "id": "cmp-proc-008",
+    "disciplina": "Direito Processual Penal",
+    "tema": "Competência absoluta x relativa",
+    "instituto_a": "Competência absoluta",
+    "instituto_b": "Competência relativa",
+    "diferenca_central": "Absoluta protege interesse público e não preclui; relativa protege interesse das partes e deve ser alegada oportunamente.",
+    "exemplo_pratico": "Competência em razão da matéria é típica absoluta; territorial costuma ser relativa.",
+    "analogia": "Absoluta é estrutura do prédio; relativa é sala escolhida.",
+    "pegadinha_vunesp": "A banca troca consequência da não alegação.",
+    "frase_memorizacao": "Absoluta não convalida; relativa pode precluir.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Competência absoluta e Competência relativa?",
+      "verso": "Absoluta protege interesse público e não preclui; relativa protege interesse das partes e deve ser alegada oportunamente."
+    },
+    "questoes_relacionadas_tags": [
+      "competência absoluta",
+      "competência relativa"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "competência absoluta",
+      "competência relativa"
+    ]
+  },
+  {
+    "id": "cmp-adm-001",
+    "disciplina": "Direito Administrativo",
+    "tema": "Anulação x revogação",
+    "instituto_a": "Anulação",
+    "instituto_b": "Revogação",
+    "diferenca_central": "Anulação retira ato ilegal; revogação retira ato válido por conveniência e oportunidade.",
+    "exemplo_pratico": "Ato com vício de legalidade deve ser anulado; autorização válida pode ser revogada por interesse público.",
+    "analogia": "Anulação corrige erro jurídico; revogação muda decisão administrativa válida.",
+    "pegadinha_vunesp": "A banca troca legalidade por mérito administrativo.",
+    "frase_memorizacao": "Ilegal anula. Válido inconveniente revoga.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Anulação e Revogação?",
+      "verso": "Anulação retira ato ilegal; revogação retira ato válido por conveniência e oportunidade."
+    },
+    "questoes_relacionadas_tags": [
+      "anulação",
+      "revogação",
+      "atos administrativos"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "anulação",
+      "revogação",
+      "atos administrativos"
+    ]
+  },
+  {
+    "id": "cmp-adm-002",
+    "disciplina": "Direito Administrativo",
+    "tema": "Descentralização x desconcentração",
+    "instituto_a": "Descentralização",
+    "instituto_b": "Desconcentração",
+    "diferenca_central": "Descentralização cria/atribui competência a outra pessoa jurídica; desconcentração distribui competências dentro da mesma pessoa jurídica, por órgãos.",
+    "exemplo_pratico": "Criar autarquia = descentralização; criar departamento dentro de secretaria = desconcentração.",
+    "analogia": "Descentralizar é criar outra pessoa; desconcentrar é arrumar cômodos da mesma casa.",
+    "pegadinha_vunesp": "A banca confunde órgão com entidade.",
+    "frase_memorizacao": "Entidade = descentralização. Órgão = desconcentração.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Descentralização e Desconcentração?",
+      "verso": "Descentralização cria/atribui competência a outra pessoa jurídica; desconcentração distribui competências dentro da mesma pessoa jurídica, por órgãos."
+    },
+    "questoes_relacionadas_tags": [
+      "descentralização",
+      "desconcentração"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "descentralização",
+      "desconcentração"
+    ]
+  },
+  {
+    "id": "cmp-adm-003",
+    "disciplina": "Direito Administrativo",
+    "tema": "Poder de polícia x polícia judiciária",
+    "instituto_a": "Poder de polícia administrativo",
+    "instituto_b": "Polícia judiciária",
+    "diferenca_central": "Poder de polícia limita direitos em prol do interesse público; polícia judiciária investiga infrações penais e auxilia persecução penal.",
+    "exemplo_pratico": "Fiscalização sanitária ou interdição administrativa = poder de polícia; investigação de crime pela Polícia Civil = polícia judiciária.",
+    "analogia": "Poder de polícia organiza a cidade; polícia judiciária monta o inquérito.",
+    "pegadinha_vunesp": "A palavra “polícia” leva a confundir Direito Administrativo com Processo Penal.",
+    "frase_memorizacao": "Administrativo limita; judiciária investiga crime.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Poder de polícia administrativo e Polícia judiciária?",
+      "verso": "Poder de polícia limita direitos em prol do interesse público; polícia judiciária investiga infrações penais e auxilia persecução penal."
+    },
+    "questoes_relacionadas_tags": [
+      "poder de polícia",
+      "polícia judiciária"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "poder de polícia",
+      "polícia judiciária"
+    ]
+  },
+  {
+    "id": "cmp-adm-004",
+    "disciplina": "Direito Administrativo",
+    "tema": "Responsabilidade objetiva x subjetiva do Estado",
+    "instituto_a": "Responsabilidade objetiva",
+    "instituto_b": "Responsabilidade subjetiva",
+    "diferenca_central": "Objetiva dispensa prova de culpa do Estado, exigindo dano e nexo; subjetiva exige culpa/dolo, comum em omissões específicas conforme o caso.",
+    "exemplo_pratico": "Viatura em serviço causa dano a terceiro = objetiva; omissão estatal pode exigir análise de culpa conforme situação.",
+    "analogia": "Objetiva é dano + nexo; subjetiva pede investigação da culpa.",
+    "pegadinha_vunesp": "A banca esquece nexo causal ou aplica objetiva a toda omissão sem cuidado.",
+    "frase_memorizacao": "Objetiva: dano e nexo. Subjetiva: culpa também.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Responsabilidade objetiva e Responsabilidade subjetiva?",
+      "verso": "Objetiva dispensa prova de culpa do Estado, exigindo dano e nexo; subjetiva exige culpa/dolo, comum em omissões específicas conforme o caso."
+    },
+    "questoes_relacionadas_tags": [
+      "responsabilidade civil do estado",
+      "objetiva",
+      "subjetiva"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "responsabilidade civil do estado",
+      "objetiva",
+      "subjetiva"
+    ]
+  },
+  {
+    "id": "cmp-const-001",
+    "disciplina": "Direito Constitucional",
+    "tema": "Direitos humanos x direitos fundamentais",
+    "instituto_a": "Direitos humanos",
+    "instituto_b": "Direitos fundamentais",
+    "diferenca_central": "Direitos humanos têm vocação internacional e universal; direitos fundamentais são aqueles positivados na Constituição de um Estado.",
+    "exemplo_pratico": "DUDH trata de direitos humanos; art. 5º da CF trata de direitos fundamentais.",
+    "analogia": "Humanos são horizonte internacional; fundamentais são a versão constitucional interna.",
+    "pegadinha_vunesp": "A banca trata os termos como sempre sinônimos absolutos.",
+    "frase_memorizacao": "Humanos = internacional. Fundamentais = Constituição.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Direitos humanos e Direitos fundamentais?",
+      "verso": "Direitos humanos têm vocação internacional e universal; direitos fundamentais são aqueles positivados na Constituição de um Estado."
+    },
+    "questoes_relacionadas_tags": [
+      "direitos humanos",
+      "direitos fundamentais"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "direitos humanos",
+      "direitos fundamentais"
+    ]
+  },
+  {
+    "id": "cmp-crim-001",
+    "disciplina": "Criminologia",
+    "tema": "Prevenção primária x secundária x terciária",
+    "instituto_a": "Primária/secundária",
+    "instituto_b": "Terciária",
+    "diferenca_central": "Primária atua nas causas sociais antes do crime; secundária foca grupos/situações de risco; terciária atua após o crime para evitar reincidência.",
+    "exemplo_pratico": "Educação e iluminação pública = primária; patrulhamento em área crítica = secundária; ressocialização do condenado = terciária.",
+    "analogia": "Primária vacina; secundária monitora risco; terciária trata recaída.",
+    "pegadinha_vunesp": "A banca mistura prevenção secundária com repressão posterior.",
+    "frase_memorizacao": "Antes da causa, no risco, depois do crime.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Primária/secundária e Terciária?",
+      "verso": "Primária atua nas causas sociais antes do crime; secundária foca grupos/situações de risco; terciária atua após o crime para evitar reincidência."
+    },
+    "questoes_relacionadas_tags": [
+      "prevenção primária",
+      "prevenção secundária",
+      "prevenção terciária"
+    ],
+    "nivel_importancia": "Alta",
+    "tags": [
+      "prevenção primária",
+      "prevenção secundária",
+      "prevenção terciária"
+    ]
+  },
+  {
+    "id": "cmp-dh-001",
+    "disciplina": "Direitos Humanos",
+    "tema": "Sistema global x sistema interamericano",
+    "instituto_a": "Sistema global",
+    "instituto_b": "Sistema interamericano",
+    "diferenca_central": "Sistema global está ligado à ONU; sistema interamericano envolve OEA, Comissão Interamericana e Corte IDH.",
+    "exemplo_pratico": "DUDH e pactos da ONU = global; Convenção Americana e Corte IDH = interamericano.",
+    "analogia": "Global é o guarda-chuva mundial; interamericano é o guarda-chuva regional das Américas.",
+    "pegadinha_vunesp": "A banca troca órgãos da ONU com órgãos da OEA.",
+    "frase_memorizacao": "ONU = global. OEA/Corte IDH = interamericano.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Sistema global e Sistema interamericano?",
+      "verso": "Sistema global está ligado à ONU; sistema interamericano envolve OEA, Comissão Interamericana e Corte IDH."
+    },
+    "questoes_relacionadas_tags": [
+      "ONU",
+      "OEA",
+      "Corte IDH",
+      "Pacto de San José"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "ONU",
+      "OEA",
+      "Corte IDH",
+      "Pacto de San José"
+    ]
+  },
+  {
+    "id": "cmp-civil-001",
+    "disciplina": "Direito Civil",
+    "tema": "Prescrição x decadência",
+    "instituto_a": "Prescrição",
+    "instituto_b": "Decadência",
+    "diferenca_central": "Prescrição atinge a pretensão; decadência atinge o próprio direito potestativo.",
+    "exemplo_pratico": "Cobrança de dívida envolve prescrição; prazo para anular negócio pode envolver decadência.",
+    "analogia": "Prescrição enfraquece a cobrança; decadência apaga a chave do direito.",
+    "pegadinha_vunesp": "A banca pergunta o que se extingue: pretensão ou direito.",
+    "frase_memorizacao": "Prescrição = pretensão. Decadência = direito.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Prescrição e Decadência?",
+      "verso": "Prescrição atinge a pretensão; decadência atinge o próprio direito potestativo."
+    },
+    "questoes_relacionadas_tags": [
+      "prescrição",
+      "decadência"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "prescrição",
+      "decadência"
+    ]
+  },
+  {
+    "id": "cmp-med-001",
+    "disciplina": "Medicina Legal",
+    "tema": "Enforcamento x estrangulamento x esganadura",
+    "instituto_a": "Enforcamento",
+    "instituto_b": "Estrangulamento/Esganadura",
+    "diferenca_central": "Enforcamento envolve constrição do pescoço pelo peso do corpo; estrangulamento por laço com força externa; esganadura por mãos.",
+    "exemplo_pratico": "Corpo suspenso com laço e peso corporal = enforcamento; laço puxado por terceiro = estrangulamento; mãos comprimindo pescoço = esganadura.",
+    "analogia": "Enforcamento usa o peso; estrangulamento usa o laço; esganadura usa as mãos.",
+    "pegadinha_vunesp": "A banca troca instrumento e força causadora.",
+    "frase_memorizacao": "Peso, laço, mãos.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Enforcamento e Estrangulamento/Esganadura?",
+      "verso": "Enforcamento envolve constrição do pescoço pelo peso do corpo; estrangulamento por laço com força externa; esganadura por mãos."
+    },
+    "questoes_relacionadas_tags": [
+      "asfixiologia",
+      "enforcamento",
+      "estrangulamento",
+      "esganadura"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "asfixiologia",
+      "enforcamento",
+      "estrangulamento",
+      "esganadura"
+    ]
+  },
+  {
+    "id": "cmp-info-001",
+    "disciplina": "Informática",
+    "tema": "Phishing x malware",
+    "instituto_a": "Phishing",
+    "instituto_b": "Malware",
+    "diferenca_central": "Phishing é técnica de enganar usuário para obter dados; malware é software malicioso instalado/executado.",
+    "exemplo_pratico": "E-mail falso do banco pedindo senha = phishing; arquivo que criptografa dados = malware/ransomware.",
+    "analogia": "Phishing é isca; malware é o veneno/arma digital.",
+    "pegadinha_vunesp": "A banca chama todo golpe digital de vírus.",
+    "frase_memorizacao": "Phishing engana; malware infecta.",
+    "flashcard_relacionado": {
+      "frente": "Qual a diferença central entre Phishing e Malware?",
+      "verso": "Phishing é técnica de enganar usuário para obter dados; malware é software malicioso instalado/executado."
+    },
+    "questoes_relacionadas_tags": [
+      "phishing",
+      "malware",
+      "segurança da informação"
+    ],
+    "nivel_importancia": "Média",
+    "tags": [
+      "phishing",
+      "malware",
+      "segurança da informação"
+    ]
+  }
+]

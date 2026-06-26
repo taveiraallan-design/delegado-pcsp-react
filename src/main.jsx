@@ -9,6 +9,7 @@ import {
 import sampleQuestions from './data/sampleQuestions.json';
 import libraryContent from './data/libraryContent.json';
 import legalContent from './data/legalContent.json';
+import comparativosJuridicos from './data/comparativosJuridicos.json';
 import { supabase, hasSupabase } from './lib/supabaseClient';
 import { askProfessor } from './lib/professorAi';
 import './styles/app.css';
@@ -154,6 +155,7 @@ function App() {
       {view === 'professor' && <ProfessorIA questions={questions} settings={settings} setSettings={setSettings} />}
       {view === 'library' && <LibraryContent content={libraryContent} questions={questions} setView={setView} />}
       {view === 'laws' && <LegalCode content={legalContent} questions={questions} setView={setView} />}
+      {view === 'comparisons' && <ComparativosJuridicos content={comparativosJuridicos} questions={questions} flashcards={flashcards} setView={setView} />}
       {view === 'map' && <EditalMap stats={stats} />}
     </main>
     <BottomNav view={view} setView={setView} />
@@ -166,7 +168,7 @@ function Sidebar({ view, setView, session }) {
   const items = [
     ['dashboard','Central do Candidato',LayoutDashboard], ['study','Sala de Treinamento',Brain], ['exam','Prova Real',PlayCircle],
     ['stats','Inteligência',BarChart3], ['review','Revisão Inteligente',ListChecks], ['errors','Dossiê de Erros',NotebookTabs], ['flashcards','Cartões',BookOpen], ['discursive','Peça Escrita',FileText],
-    ['professor','Professor IA',Sparkles], ['library','Biblioteca do Edital',GraduationCap], ['laws','Lei Seca Inteligente',BookOpen], ['map','Mapa do Edital',Target], ['import','Banco de Questões',Import], ['auth', session ? 'Conta' : 'Login', KeyRound]
+    ['professor','Professor IA',Sparkles], ['library','Biblioteca do Edital',GraduationCap], ['laws','Lei Seca Inteligente',BookOpen], ['comparisons','Não Confunda',Sparkles], ['map','Mapa do Edital',Target], ['import','Banco de Questões',Import], ['auth', session ? 'Conta' : 'Login', KeyRound]
   ];
   return <aside className="sidebar">
     <div className="brand"><div className="badge"><Shield size={24}/></div><div><b>Delegado PC-SP</b><span>Inteligência de Estudos</span></div></div>
@@ -362,6 +364,55 @@ function LibraryContent({ content, questions, setView }) {
       {tab==='flashcards' && items.map(f=><article className="library-card" key={f.id}><span>{f.disciplina}</span><h3>{f.tema}</h3><b>{f.frente}</b><p>{f.verso}</p></article>)}
       {tab==='discursivas' && items.map(d=><article className="library-card" key={d.id}><span>{d.disciplina}</span><h3>{d.tema}</h3><p>{d.enunciado}</p><details><summary>Espelho de correção</summary><p>{d.espelho}</p><ul>{(d.criterios||[]).map(c=><li key={c}>{c}</li>)}</ul></details></article>)}
       {tab==='questoes' && items.slice(0,120).map(q=><article className="library-card" key={q.id}><span>{q.disciplina}</span><h3>{q.tema}</h3><p>{q.enunciado}</p><b>Gabarito: {q.gabarito}</b><p className="muted">{q.fundamento}</p></article>)}
+    </div>
+  </section>;
+}
+
+
+function ComparativosJuridicos({ content, questions, flashcards, setView }) {
+  const [discipline, setDiscipline] = useState('Todas');
+  const [query, setQuery] = useState('');
+  const [active, setActive] = useState(null);
+  const filtered = (content || []).filter(item => {
+    const discOk = discipline === 'Todas' || item.disciplina === discipline;
+    const text = `${item.disciplina} ${item.tema} ${item.instituto_a} ${item.instituto_b} ${item.diferenca_central} ${(item.tags||[]).join(' ')}`.toLowerCase();
+    return discOk && text.includes(query.toLowerCase());
+  });
+  const selected = active ? filtered.find(x => x.id === active) || filtered[0] : filtered[0];
+  const relatedQuestions = selected ? questions.filter(q => {
+    const hay = `${q.disciplina} ${q.tema} ${(q.tags||[]).join(' ')} ${q.enunciado} ${q.fundamento}`.toLowerCase();
+    return (selected.questoes_relacionadas_tags || []).some(tag => hay.includes(String(tag).toLowerCase().split(' ')[0]));
+  }).slice(0, 8) : [];
+  const relatedFlashcards = selected ? flashcards.filter(f => {
+    const hay = `${f.disciplina||''} ${f.tema||''} ${f.frente||''} ${f.verso||''}`.toLowerCase();
+    return (selected.questoes_relacionadas_tags || []).some(tag => hay.includes(String(tag).toLowerCase().split(' ')[0]));
+  }).slice(0, 6) : [];
+  return <section className="panel compare-page">
+    <div className="toolbar"><div><p className="kicker">Não Confunda</p><h2>Comparativos jurídicos essenciais</h2><p className="muted">Diferença central, exemplo prático, analogia, pegadinha VUNESP, frase de memorização e vínculos com questões/flashcards.</p></div><button className="primary" onClick={()=>setView('study')}>Treinar com questões</button></div>
+    <div className="library-metrics">
+      <Metric icon={Sparkles} label="Comparativos" value={(content||[]).length}/>
+      <Metric icon={Target} label="Disciplinas" value={new Set((content||[]).map(x=>x.disciplina)).size}/>
+      <Metric icon={Database} label="Questões vinculáveis" value={questions.length}/>
+      <Metric icon={BookOpen} label="Flashcards" value={flashcards.length}/>
+    </div>
+    <div className="library-controls"><select value={discipline} onChange={e=>{setDiscipline(e.target.value); setActive(null);}}><option>Todas</option>{DISCIPLINES.map(d=><option key={d}>{d}</option>)}</select><input value={query} onChange={e=>{setQuery(e.target.value); setActive(null);}} placeholder="Buscar comparativo, tema, instituto ou palavra-chave..."/></div>
+    <div className="compare-layout">
+      <aside className="compare-list">
+        {filtered.map(item => <button key={item.id} className={selected?.id===item.id?'active':''} onClick={()=>setActive(item.id)}><span>{item.disciplina}</span><b>{item.tema}</b><small>{item.instituto_a} × {item.instituto_b}</small></button>)}
+      </aside>
+      {selected ? <article className="compare-detail">
+        <div className="compare-title"><span>DOSSIÊ NÃO CONFUNDA</span><h3>{selected.tema}</h3><p>{selected.instituto_a} <b>×</b> {selected.instituto_b}</p><em>Importância: {selected.nivel_importancia}</em></div>
+        <div className="compare-main-grid">
+          <div className="compare-big"><b>Diferença central</b><p>{selected.diferenca_central}</p></div>
+          <Info title="Exemplo prático" text={selected.exemplo_pratico}/>
+          <Info title="Analogia" text={selected.analogia}/>
+          <Info title="Pegadinha da VUNESP" text={selected.pegadinha_vunesp}/>
+          <div className="info memory-phrase"><b>Frase para memorizar</b><p>{selected.frase_memorizacao}</p></div>
+          <div className="info flash-law"><b>Flashcard relacionado</b><p><strong>Frente:</strong> {selected.flashcard_relacionado?.frente}</p><p><strong>Verso:</strong> {selected.flashcard_relacionado?.verso}</p></div>
+        </div>
+        <div className="related-box"><div className="panel-title-row"><h3>Questões relacionadas</h3><button className="ghost" onClick={()=>setView('study')}>Ir para Sala de Treinamento</button></div>{relatedQuestions.length ? relatedQuestions.map(q => <div className="related-question" key={q.id}><b>{q.disciplina} • {q.tema}</b><p>{q.enunciado}</p><small>Gabarito {q.gabarito} • {q.fundamento}</small></div>) : <p className="muted">Nenhuma questão relacionada encontrada ainda. Use as tags para vincular novas questões.</p>}</div>
+        <div className="related-box"><div className="panel-title-row"><h3>Flashcards relacionados</h3><button className="ghost" onClick={()=>setView('flashcards')}>Abrir cartões</button></div>{relatedFlashcards.length ? relatedFlashcards.map(f => <div className="related-question" key={f.id}><b>{f.tema || selected.tema}</b><p>{f.frente}</p><small>{f.verso}</small></div>) : <p className="muted">Nenhum flashcard relacionado encontrado ainda. O card acima já pode virar flashcard oficial.</p>}</div>
+      </article> : <Empty title="Nenhum comparativo encontrado" text="Ajuste os filtros para ver os comparativos jurídicos."/>}
     </div>
   </section>;
 }
